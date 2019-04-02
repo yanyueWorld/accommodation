@@ -1,0 +1,22 @@
+.layui-nav-tree li a{
+    color: rgba(255,255,255,.7);
+}
+.layui-nav-tree li{
+    text-align: center;
+}
+#power-tree li a i{
+    color:rgba(255,255,255,0.7);
+}
+.layui-nav-tree li:hover a{
+    color:rgba(255,255,255,1);
+}
+/*
+#power-tree li a i:first-child :after{
+    content: "&#xe66f;"
+}*/
+.layui-footer{
+    text-align: center;
+}
+.show-btn{
+    float: right;
+}

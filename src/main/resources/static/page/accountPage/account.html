@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="../../layui/css/layui.css">
+    <script type="text/javascript" src="../../layui/layui.all.js"></script>
+</head>
+<body>
+<div class="search-info">
+    <from class="'layui-form layui-form-pane search-form">
+        <div class="layui-form-item layui-inline">
+            <label class="layui-form-label">账户名：</label>
+            <div class="layui-input-inline">
+                <input type="text" name="accountName" placeholder="请输入账户名" autocomplete="off" class="layui-input">
+            </div>
+        </div>
+        <div class="layui-form-item layui-inline">
+            <label class="layui-form-label">真实姓名：</label>
+            <div class="layui-input-inline">
+                <input type="text" name="name" placeholder="请输入真实姓名" autocomplete="off" class="layui-input">
+            </div>
+        </div>
+        <div class="layui-form-item layui-inline">
+            <label class="layui-form-label">电话号码：</label>
+            <div class="layui-input-inline">
+                <input type="text" name="telephone" placeholder="请输入电话号码" autocomplete="off" class="layui-input">
+            </div>
+        </div>
+        <div class="layui-form-item layui-inline">
+            <button class="layui-btn" lay-submit="" lay-filter="demo2" id="search-btn"><i class="layui-icon layui-icon-search"></i> 搜索</button>
+        </div>
+    </from>
+    <div class="layui-form-item layui-inline show-btn">
+        <button type="button" class="layui-btn" lay-filter="demo2" id="btn-customer">只查看客户账户</button>
+        <button type="button" class="layui-btn" lay-filter="demo2" id="btn-seller">只查看商家账户</button>
+    </div>
+</div>
+<table id="table-account" class="layui-hide" lay-filter="accountTable"></table>
+<script type="text/html" id="barDemo">
+    <a class="layui-btn layui-btn-xs" lay-event="edit">编辑</a>
+    <a class="layui-btn layui-btn-danger layui-btn-xs" lay-event="del">删除</a>
+</script>
+<script>
+    layui.use(['table','jquery','layer'],function () {
+        var table=layui.table;
+        var $=layui.$;
+        var tableInit=table.render({
+            elem:"#table-account",
+            page:true,
+            url:"../../getAccountsByExample",
+            cols:[[
+                {field:'accountId', width:120, title: '账户id', align:'center'},
+                {field:'accountName', width:120, title: '账户名', align:'center'},
+                {field:'gender', width:100, title: '性别',sort: true, align:'center'},
+                {field:'name', width:120, title: '真实姓名', align:'center'},
+                {field:'birth', width:200, title: '出生日期', align:'center'},
+                {field:'telephone', width:300, title: '联系电话', align:'center'},
+                {field:'password', width:300, title: '密码', align:'center'},
+                {field:'remainderMoney', width:118, title: '余额',sort: true, align:'center'},
+                {title: '操作',align:'center',toolbar: '#barDemo'}
+            ]],
+            id:"tableReload"
+        });
+        table.on('tool(accountTable)',function (obj) {
+            var data=obj.data;
+            if(obj.event==='edit'){
+                layer.open({
+                    type:2,
+                    title:'编辑',
+                    shadeClose:true,
+                    shade:0.8,
+                    area:['400px','50%'],
+                    content:"page/accountPage/edit.html?"+data.accountId,
+                    btn:['确认'],
+                    btnAlign:'c',
+                    yes:function(index,layero){
+                        var body=layer.getChildFrame('body',index);
+                        var accountName=body.find("input[name='accountName']").val();
+                        var gender=body.find("input[name='gender']:checked").val();
+                        var birth=body.find("input[name='birth']").val();
+                        var password=body.find("input[name='password']").val();
+                        var accountId=body.find("input[name='accountId']").val();
+                        $.ajax({
+                            url:"../../modify",
+                            type:"post",
+                            dataType:"json",
+                            data:{accountId:accountId,accountName:accountName,gender:gender,birth:birth,password:password},
+                            success:function(res){
+                                if(res>0){
+                                    layer.msg("修改成功");
+                                    layer.close(index);
+                                    parent.$("#table-account").load("page/accountPage/account.html");
+
+                                }
+                            }
+                        })
+                    }
+                });
+            }
+            if(obj.event==='del'){
+                console.log(obj.data.accountId);
+                layer.confirm('确认删除',function (index) {
+                    $.post("../../modify",{accountId:obj.data.accountId,status:1},function(res){
+
+                    })
+                    layer.close(index);
+                    layer.msg("删除成功");
+                    obj.del();
+                })
+            }
+        })
+        $("#btn-customer").click(function(){
+            tableInit.reload({
+                url:"../../getAccountsByExample",
+                where:{
+                    roleId:3,
+                    status:0
+                },
+                page:{
+                    curr:1
+                }
+            })
+        })
+        $("#btn-seller").click(function(){
+            tableInit.reload({
+                url:"../../getAccountsByExample",
+                where:{
+                    roleId:2,
+                    status:0
+                },
+                page:{
+                    curr:1
+                }
+            })
+        })
+        $("#search-btn").click(function(){
+            var accountName=$("input[name='accountName']").val();
+            var realName=$("input[name='name']").val();
+            var telephone=$("input[name='telephone']").val();
+            if(!/^[0-9]*$/.test(telephone)||telephone.length>11){
+                layer.msg("电话号码请输入数字,并且数字不能超过11位!!!",{
+                    time:20000,
+                    btn:['确认']
+                })
+            };
+            tableInit.reload({
+                url:"../../getAccountsByExample",
+                where:{
+                    "name":realName,
+                    "telphone":telephone,
+                    "accountName":accountName
+                },
+                page:{
+                    curr:1
+                }
+            })
+        })
+    })
+</script>
+
+</body>
+</html>

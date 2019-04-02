@@ -1,0 +1,45 @@
+server:
+  port: 80
+  servlet:
+    context-path: /
+spring:
+  datasource:
+    driver-class-name: com.mysql.jdbc.Driver
+    url: jdbc:mysql://localhost/accommodation?serverTimezone=GMT%2B8
+    username: root
+    password: root
+    type: com.alibaba.druid.pool.DruidDataSource
+  mvc:
+    date-format: yyyy-MM-dd
+  thymeleaf:
+    cache: false
+  devtools:
+    restart:
+      enabled: true
+  redis:
+    host: 192.168.88.3
+    timeout: PT30M
+  session:
+    store-type: redis
+    timeout: PT30M
+  jackson:
+    date-format: yyyy-MM-dd
+    time-zone: GMT+8
+  jpa:
+    database: MYSQL
+    show-sql: true
+pagehelper:
+  helper-dialect: mysql
+  reasonable: true
+  support-methods-arguments: true
+  params: pageNum=page,pageSize=limit
+mybatis:
+  mapper-locations: classpath:mybatis/mapper/*.xml
+  type-aliases-package: com.example.yanyue.pojo
+  configuration:
+    aggressive-lazy-loading: false
+    lazy-loading-enabled: true
+    use-generated-keys: true
+    map-underscore-to-camel-case: true
+    cache-enabled: true
+

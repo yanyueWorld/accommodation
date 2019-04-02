@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <base href="localhost">
+    <link href="layui/css/layui.css" rel="stylesheet">
+    <link href="css/room.css" rel="stylesheet">
+    <script src="layui/layui.all.js"></script>
+    <script src="../../js/jquery.js"></script>
+    <script src="../../distpicker/js/distpicker.data.js"></script>
+    <script src="../../distpicker/js/distpicker.js"></script>
+    <script src="../../distpicker/js/main.js"></script>
+</head>
+<body>
+<div class="search-info">
+    <form class="layui-form layui-form-pane">
+        <div class="layui-form-item layui-inline">
+            <label class="layui-form-label">公寓名</label>
+            <div class="layui-input-inline">
+                <input type="text" name="appartmentName" placeholder="请输入公寓名" class="layui-input">
+            </div>
+        </div>
+        <div class="layui-form-item layui-inline area">
+            <label class="layui-form-label">地点</label>
+            <div class="layui-input-inline">
+                <select name="province">
+                    <option value="">请选择省</option>
+                </select>
+            </div>
+            <div class="layui-input-inline">
+                <select name="city">
+                    <option value="">请选择市</option>
+                </select>
+            </div>
+            <div class="layui-input-inline">
+                <select name="area">
+                    <option value="">请选择区</option>
+                </select>
+            </div>
+        </div>
+    </form>
+</div>
+<table id="appartment_table" lay-filter="appartment">
+</table>
+<script type="text/html" id="barDemo">
+    <a class="layui-btn layui-btn-xs layui-btn-normal" lay-event="show">查看</a>
+    <a class="layui-btn layui-btn-xs" lay-event="edit">编辑</a>
+    <a class="layui-btn layui-btn-danger layui-btn-xs" lay-event="del">删除</a>
+</script>
+<script>
+
+    layui.use(['table', 'element', 'jquery', 'form', 'layer'], function () {
+        var table = layui.table;
+        var element = layui.element;
+        var $ = layui.$;
+        var form = layui.form;
+        var layer = layui.layer;
+        table.render({
+            elem: "#appartment_table",
+            page: true,
+            url: "getAppartmentByExample",
+            cols: [[
+                {field: 'apartmentId', width: 120, title: '公寓id', align: 'center'},
+                {field: 'apartmentName', width: 200, title: '公寓名', align: 'center'},
+                {field: 'typeName', width: 100, title: '公寓类型', sort: true, align: 'center'},
+                {field: 'price', width: 120, title: '价格', align: 'center'},
+                {field: 'address', width: 450, title: '地址', align: 'center'},
+                {field: 'name', width: 300, title: '房主', align: 'center'},
+                {title: '操作', align: 'center', toolbar: '#barDemo'}
+            ]],
+        })//table_end
+        form.on('select(province)',function(data){
+            $("#province").val(data.value).change();
+            form.render();
+        })
+        form.on('select(city)',function(data){
+            $("#city").val(data.value).change();
+            form.render();
+        })
+        form.on('select(area)',function(data){
+            $("#area").val(data.value).change();
+            form.render();
+        })
+    })
+</script>
+</body>
+</html>
