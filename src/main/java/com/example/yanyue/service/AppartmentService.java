@@ -14,5 +14,5 @@ import java.util.List;
  **/
 public interface AppartmentService {
 
-    List<AppartmentVO> getAppartmentByExample(Integer currentPage, Integer pageSize);
+    List<AppartmentVO> getAppartmentByExample(Integer currentPage, Integer pageSize,AppartmentVO appartmentVO);
 }

@@ -1,5 +1,6 @@
 package com.example.yanyue.dao;
 
+import com.example.yanyue.pojo.vo.AppartmentVO;
 import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -16,6 +17,8 @@ public class AppartmentDaoTest {
 
     @Test
     public void getAppartmentByExample(){
-        System.out.println(appartmentDao.getAppartmentByExample(1,1));
+        AppartmentVO appartmentVO=new AppartmentVO();
+        appartmentVO.setApartmentName("蛋");
+        System.out.println(appartmentDao.getAppartmentByExample(1,1,appartmentVO));
     }
 }

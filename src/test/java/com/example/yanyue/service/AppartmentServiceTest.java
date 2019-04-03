@@ -17,6 +17,6 @@ public class AppartmentServiceTest {
 
     @Test
     public void getAppartmentByExample(){
-        System.out.println(appartmentService.getAppartmentByExample(1,1));
+        System.out.println(appartmentService.getAppartmentByExample(1,1,null));
     }
 }

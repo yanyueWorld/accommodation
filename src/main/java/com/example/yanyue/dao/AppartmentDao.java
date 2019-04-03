@@ -34,5 +34,5 @@ public interface AppartmentDao {
      * @return
      **/
     List<AppartmentVO> getAppartmentByExample(@Param("page") Integer currentPage,
-                                              @Param("limit") Integer pageSize);
+                                              @Param("limit") Integer pageSize,AppartmentVO appartmentVO);
 }

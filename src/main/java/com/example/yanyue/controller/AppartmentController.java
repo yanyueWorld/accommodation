@@ -30,9 +30,10 @@ public class AppartmentController {
     @RequestMapping("/getAppartmentByExample")
     @ResponseBody
     public Result<List<AppartmentVO>> getAppartmentByExample(@RequestParam(value = "page", defaultValue = "1", required = false) Integer currentPage,
-                                                             @RequestParam(value = "limit", defaultValue = "10", required = false) Integer pageSize) {
+                                                             @RequestParam(value = "limit", defaultValue = "10", required = false) Integer pageSize,AppartmentVO appartmentVO) {
         List<AppartmentVO> appartmentVOS = appartmentService.getAppartmentByExample(currentPage,
-                pageSize);
+                pageSize,appartmentVO);
+        System.out.println(appartmentVO);
         Result<List<AppartmentVO>> result = Result.success(appartmentVOS);
         PageInfo<AppartmentVO> pageInfo = new PageInfo<>(appartmentVOS);
         result.setCount(pageInfo.getTotal());

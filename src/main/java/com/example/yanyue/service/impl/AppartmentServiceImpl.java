@@ -24,9 +24,9 @@ public class AppartmentServiceImpl implements AppartmentService {
     private AppartmentDao appartmentDao;
 
     @Override
-    public List<AppartmentVO> getAppartmentByExample(Integer currentPage, Integer pageSize) {
+    public List<AppartmentVO> getAppartmentByExample(Integer currentPage, Integer pageSize,AppartmentVO appartmentVO) {
         List<AppartmentVO> appartmentVOS = appartmentDao.getAppartmentByExample(currentPage,
-                pageSize);
+                pageSize,appartmentVO);
 
         return appartmentVOS;
     }
