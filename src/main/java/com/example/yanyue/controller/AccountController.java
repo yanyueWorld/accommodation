@@ -7,10 +7,7 @@ import javax.servlet.http.HttpSession;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
-import org.springframework.web.bind.annotation.PostMapping;
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RequestParam;
-import org.springframework.web.bind.annotation.ResponseBody;
+import org.springframework.web.bind.annotation.*;
 
 import com.example.yanyue.pojo.Account;
 import com.example.yanyue.pojo.common.Result;
@@ -38,6 +35,7 @@ public class AccountController {
      **/
     @ResponseBody
     @PostMapping("/login")
+    @CrossOrigin
     public Account login(String accountName, String password, HttpServletRequest request) {
         HttpSession session = request.getSession();
         Account account = accountServer.login(accountName, password);
@@ -60,6 +58,7 @@ public class AccountController {
      **/
     @RequestMapping("/logout")
     @ResponseBody
+    @CrossOrigin
     public String logout(HttpServletRequest request) {
         String msg;
         HttpSession session = request.getSession();
@@ -82,6 +81,7 @@ public class AccountController {
      **/
     @RequestMapping("/getAccountsByExample")
     @ResponseBody
+    @CrossOrigin
     public Result<List<Account>> fidndAllCustomers(@RequestParam(value = "page", defaultValue = "1", required = false) Integer currentPage,
                                                    @RequestParam(value = "limit", defaultValue = "10", required = false) Integer pageSize,
                                                    AccountVO accountVO) {
@@ -104,6 +104,7 @@ public class AccountController {
      **/
     @RequestMapping("/getAccountByAccountId")
     @ResponseBody
+    @CrossOrigin
     public Account getAccountByAccountId(Integer accountId) {
         Account account;
         if (accountId == null) {
@@ -126,6 +127,7 @@ public class AccountController {
      **/
     @RequestMapping("/modify")
     @ResponseBody
+    @CrossOrigin
     public int updateByPrimaryKeySelective(Account account) {
         if (account == null) {
             return -1;
