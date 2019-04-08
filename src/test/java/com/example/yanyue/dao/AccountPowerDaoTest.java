@@ -1,6 +1,5 @@
 package com.example.yanyue.dao;
 
-import com.example.yanyue.pojo.Account;
 import com.example.yanyue.pojo.common.MenuTreeVO;
 import com.example.yanyue.pojo.vo.AccountPowerVO;
 import com.example.yanyue.util.TreeUtil;
