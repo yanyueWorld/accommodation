@@ -11,9 +11,6 @@ import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.ResponseBody;
 
-import com.example.yanyue.pojo.vo.AccountPowerVO;
-import com.example.yanyue.service.AccountPowerService;
-
 /**
  * @ClassName AccountPowerController
  * @Author yanyue
@@ -23,30 +20,30 @@ import com.example.yanyue.service.AccountPowerService;
  **/
 @Controller
 public class AccountPowerController {
-    @Autowired
-    private AccountPowerService accountPowerService;
-
-    /**
-     * @Author yanyue
-     * @Description 获取账户权限
-     * @Date 14:59 2019/3/25
-     * @Param HttpServletRequest request
-     * @return List
-     **/
-    @PostMapping("/getAccountPower")
-    @ResponseBody
-    public List<AccountPowerVO> getAccountPowerByAccountId(HttpServletRequest request) {
-        HttpSession session = request.getSession();
-        List<AccountPowerVO> accountPowerVOs;
-        if (session.getAttribute("accountId") == null) {
-            accountPowerVOs = new ArrayList<>();
-        } else {
-            Integer accountId = Integer.parseInt(session.getAttribute("accountId").toString());
-            accountPowerVOs = accountPowerService.getAccountPowerByAccountId(accountId);
-        }
-        if (accountPowerVOs == null || accountPowerVOs.size() == 0) {
-            accountPowerVOs = new ArrayList<>();
-        }
-        return accountPowerVOs;
-    }
+//    @Autowired
+//    private AccountPowerService accountPowerService;
+//
+//    /**
+//     * @Author yanyue
+//     * @Description 获取账户权限
+//     * @Date 14:59 2019/3/25
+//     * @Param HttpServletRequest request
+//     * @return List
+//     **/
+//    @PostMapping("/getAccountPower")
+//    @ResponseBody
+//    public List<AccountPowerVO> getAccountPowerByAccountId(HttpServletRequest request) {
+//        HttpSession session = request.getSession();
+//        List<AccountPowerVO> accountPowerVOs;
+//        if (session.getAttribute("accountId") == null) {
+//            accountPowerVOs = new ArrayList<>();
+//        } else {
+//            Integer accountId = Integer.parseInt(session.getAttribute("accountId").toString());
+//            accountPowerVOs = accountPowerService.getAccountPowerByAccountId(accountId);
+//        }
+//        if (accountPowerVOs == null || accountPowerVOs.size() == 0) {
+//            accountPowerVOs = new ArrayList<>();
+//        }
+//        return accountPowerVOs;
+//    }
 }
