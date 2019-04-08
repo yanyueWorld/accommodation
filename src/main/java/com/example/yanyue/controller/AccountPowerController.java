@@ -44,7 +44,7 @@ public class AccountPowerController {
     public List<MenuTreeVO> getAccountPowerByAccountId(HttpServletRequest request) {
           HttpSession session = request.getSession();
           List<AccountPowerVO> accountPowerVOs;
-        System.out.println(session.getAttribute("accountId"));
+          System.out.println(session.getAttribute("accountId"));
          if (session.getAttribute("accountId") == null) {
              accountPowerVOs = new ArrayList<>();
          } else {
