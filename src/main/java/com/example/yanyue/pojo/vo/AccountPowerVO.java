@@ -1,11 +1,18 @@
 package com.example.yanyue.pojo.vo;
 
+import lombok.Getter;
+import lombok.Setter;
+
 import java.io.Serializable;
+import java.util.List;
+
 /**
  * @Author yanyue
  * @Description 账户权限视图类
  * @Date 10:33 2019/3/25
  **/
+@Getter
+@Setter
 public class AccountPowerVO implements Serializable {
 
     private Integer accountId;//账户id
@@ -14,30 +21,8 @@ public class AccountPowerVO implements Serializable {
     private String resourceName;//资源名
     private String url;//资源路径
     private Integer resourceId;//资源id
-
-    public Integer getAccountId() {
-        return accountId;
-    }
-
-    public String getAccountName() {
-        return accountName;
-    }
-
-    public String getPassword() {
-        return password;
-    }
-
-    public String getResourceName() {
-        return resourceName;
-    }
-
-    public String getUrl() {
-        return url;
-    }
-
-    public Integer getResourceId() {
-        return resourceId;
-    }
+    private Integer resourcePid;
+    private List<AccountPowerVO> children;
 
     public AccountPowerVO(Integer accountId, String accountName, String password, String resourceName, String url, Integer resourceId) {
         this.accountId = accountId;

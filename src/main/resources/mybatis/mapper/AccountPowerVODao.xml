@@ -9,6 +9,7 @@
         <result column="url" jdbcType="VARCHAR" property="url"/>
         <result column="resource_id" jdbcType="INTEGER" property="resourceId"/>
         <result column="resource_pid" jdbcType="INTEGER" property="resourcePid"/>
+        <collection property="children" select="getChildAccountPowerByAcccountId" column="resource_id"></collection>
     </resultMap>
     <select id="getAccountPowerByAcccountId" resultMap="BaseResultMap" >
         select account.account_id id,account.account_name account_name,account.password password,resource.resource_name resource_name,
@@ -17,7 +18,18 @@
             where account.account_id=account_role.account_id
             and role.role_id=account_role.role_id
             and resource.resource_id=role_resource.resource_id
+            and resource.resource_id=resource.resource_pid
             and role.role_id=role_resource.role_id
             and account.account_id=#{account_id}
+    </select>
+    <select id="getChildAccountPowerByAcccountId" resultMap="BaseResultMap" >
+        select account.account_id id,account.account_name account_name,account.password password,resource.resource_name resource_name,
+                resource.url url,resource.resource_id resource_id,resource.resource_pid resource_pid
+            from account,account_role,role,role_resource,resource
+            where account.account_id=account_role.account_id
+            and role.role_id=account_role.role_id
+            and resource.resource_id=role_resource.resource_id
+            and resource.resource_pid=#{resource_id}
+            and role.role_id=role_resource.role_id
     </select>
 </mapper>
