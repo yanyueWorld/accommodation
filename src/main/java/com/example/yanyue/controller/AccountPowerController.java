@@ -12,6 +12,7 @@ import com.example.yanyue.service.AccountPowerVOService;
 import com.example.yanyue.util.TreeUtil;
 import org.springframework.beans.BeanUtils;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.session.Session;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.CrossOrigin;
 import org.springframework.web.bind.annotation.PostMapping;
@@ -39,10 +40,11 @@ public class AccountPowerController {
      **/
     @RequestMapping("/getAccountPower")
     @ResponseBody
-    @CrossOrigin
+    @CrossOrigin()
     public List<MenuTreeVO> getAccountPowerByAccountId(HttpServletRequest request) {
           HttpSession session = request.getSession();
           List<AccountPowerVO> accountPowerVOs;
+        System.out.println(session.getAttribute("accountId"));
          if (session.getAttribute("accountId") == null) {
              accountPowerVOs = new ArrayList<>();
          } else {
