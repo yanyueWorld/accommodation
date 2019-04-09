@@ -25,5 +25,6 @@ public class MenuTreeVO {
     private String url;//资源路径
     private Integer resourceId;//资源id
     private Integer resourcePid;//资源父id
+    private String icon;//图标
     private List<MenuTreeVO> children;//子信息
 }
