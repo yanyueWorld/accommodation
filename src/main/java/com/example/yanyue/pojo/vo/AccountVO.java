@@ -1,5 +1,9 @@
 package com.example.yanyue.pojo.vo;
 
+import lombok.Getter;
+import lombok.Setter;
+import lombok.ToString;
+
 import java.io.Serializable;
 import java.util.Date;
 /**
@@ -9,6 +13,9 @@ import java.util.Date;
  * @Param 
  * @return 
  **/
+@Getter
+@Setter
+@ToString
 public class AccountVO implements Serializable {
 
     private Integer accountId;//账户id
@@ -19,6 +26,7 @@ public class AccountVO implements Serializable {
     private String telphone;//联系电话
     private Double remainderMoney;//余额
     private Integer roleId;//角色id
+    private String idNumber;//身份证号码
     private Integer status;//账户状态
     private String role_name;//角色名
 

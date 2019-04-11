@@ -38,7 +38,7 @@
   </select>
 
   <select id="getAccountsByExample" resultMap="BaseResultMap">
-    select account.account_id account_id,account.gender gender,account.birth birth,account.password password,account.name name,
+    select account.account_id account_id,account.gender gender,account.birth birth,account.password password,account.name name,account.id_number id_number,
       account.account_name account_name,account.telephone telephone,account.remainder_money remainder_money,role.role_name role_name
       from account,account_role,role
       where role.role_id=account_role.role_id

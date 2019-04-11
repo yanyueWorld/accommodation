@@ -2,31 +2,19 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="972affcc-9252-498c-8756-440758abf2a1" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_google_code_gson_gson_2_8_5.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/com/example/yanyue/controller/AccountControllerTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/com/example/yanyue/service/AccountPowerVOServiceTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/yanyue/pojo/Resource.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/yanyue/pojo/Resource.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/yanyue/pojo/common/MenuTreeVO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/yanyue/pojo/common/MenuTreeVO.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/yanyue/pojo/vo/AccountPowerVO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/yanyue/pojo/vo/AccountPowerVO.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/mybatis/mapper/AccountPowerVODao.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/mybatis/mapper/AccountPowerVODao.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/static/distpicker/dist/distpicker.data.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/static/distpicker/dist/distpicker.data.min.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/static/distpicker/dist/distpicker.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/static/distpicker/dist/distpicker.min.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/static/distpicker/index.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/static/distpicker/js/distpicker.data.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/static/distpicker/js/distpicker.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/static/distpicker/js/main.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/static/distpicker/src/distpicker.data.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/static/distpicker/src/distpicker.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/static/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/accommodation.iml" beforeDir="false" afterPath="$PROJECT_DIR$/accommodation.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/yanyue/pojo/vo/AccountVO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/yanyue/pojo/vo/AccountVO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/mybatis/mapper/AccountDao.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/mybatis/mapper/AccountDao.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/login.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/login.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/example/yanyue/service/AccountPowerServiceTest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/mybatis/mapper/AccountDao.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/mybatis/mapper/AccountDao.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/mybatis/mapper/AccountPowerVODao.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/mybatis/mapper/AccountPowerVODao.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/static/login.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/static/login.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/static/page/accountPage/account.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/static/page/accountPage/edit.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/static/page/consolePage/baseInfo.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/static/page/consolePage/console.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/static/page/consolePage/setting.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/static/page/messagePage/message.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/static/page/orderPage/order.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/static/page/roomPage/room.html" beforeDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -72,56 +60,44 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/example/yanyue/AccommodationApplication.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="89">
-              <caret line="11" lean-forward="true" selection-start-line="11" selection-end-line="11" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/example/yanyue/pojo/Resource.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="219">
-              <caret line="17" column="9" selection-start-line="17" selection-start-column="9" selection-end-line="17" selection-end-column="9" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/example/yanyue/pojo/vo/AccountPowerVO.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="193">
-              <caret line="24" column="28" selection-start-line="24" selection-start-column="28" selection-end-line="24" selection-end-column="28" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/example/yanyue/pojo/common/MenuTreeVO.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="143">
-              <caret line="27" column="28" selection-start-line="27" selection-start-column="28" selection-end-line="27" selection-end-column="28" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/main/resources/mybatis/mapper/AccountPowerVODao.xml">
+        <entry file="file://$PROJECT_DIR$/src/test/java/com/example/yanyue/controller/AccountControllerTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="400">
-              <caret line="16" column="119" selection-start-line="16" selection-start-column="119" selection-end-line="16" selection-end-column="119" />
+            <state relative-caret-position="163">
+              <caret line="44" column="58" selection-start-line="44" selection-start-column="58" selection-end-line="44" selection-end-column="58" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/pom.xml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="776">
+              <caret line="90" selection-start-line="90" selection-end-line="90" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/example/yanyue/controller/AccountController.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="488">
+              <caret line="130" column="48" selection-start-line="130" selection-start-column="48" selection-end-line="130" selection-end-column="48" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/example/yanyue/pojo/Account.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-8">
+              <caret line="2" column="5" lean-forward="true" selection-start-line="2" selection-start-column="5" selection-end-line="2" selection-end-column="5" />
             </state>
           </provider>
         </entry>
@@ -132,11 +108,11 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="JavaScript File" />
-        <option value="JUnit4 Test Class" />
         <option value="CSS File" />
         <option value="HTML File" />
         <option value="Interface" />
         <option value="Class" />
+        <option value="JUnit4 Test Class" />
       </list>
     </option>
   </component>
@@ -172,10 +148,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/src/main/java/com/example/yanyue/service/impl/AccountPowerServiceImpl.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/example/yanyue/pojo/Account.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/example/yanyue/pojo/AccountRole.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/example/yanyue/pojo/ApartmentAttr.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/example/yanyue/pojo/ApartmentClass.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/example/yanyue/pojo/ApartmentPic.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/example/yanyue/pojo/Appartment.java" />
@@ -209,7 +181,6 @@
         <option value="$PROJECT_DIR$/src/main/java/com/example/yanyue/service/AccountPowerVOService.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/example/yanyue/service/impl/AccountPowerVOServiceImpl.java" />
         <option value="$PROJECT_DIR$/src/test/java/com/example/yanyue/dao/AccountPowerDaoTest.java" />
-        <option value="$PROJECT_DIR$/pom.xml" />
         <option value="$PROJECT_DIR$/src/main/java/com/example/yanyue/filter/CorsFilter.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/example/yanyue/pojo/common/RedisTemplate.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/example/yanyue/pojo/common/MyRedisTemplate.java" />
@@ -218,11 +189,16 @@
         <option value="$PROJECT_DIR$/src/main/resources/application.yml" />
         <option value="$PROJECT_DIR$/src/main/java/com/example/yanyue/configuration/RedisSessionConfig.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/example/yanyue/component/CorsFilter.java" />
-        <option value="$PROJECT_DIR$/src/main/resources/static/login.html" />
         <option value="$PROJECT_DIR$/src/main/java/com/example/yanyue/pojo/Resource.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/example/yanyue/pojo/vo/AccountPowerVO.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/example/yanyue/pojo/common/MenuTreeVO.java" />
         <option value="$PROJECT_DIR$/src/main/resources/mybatis/mapper/AccountPowerVODao.xml" />
+        <option value="$PROJECT_DIR$/src/test/java/com/example/yanyue/service/AccountPowerVOServiceTest.java" />
+        <option value="$PROJECT_DIR$/src/main/resources/static/login.html" />
+        <option value="$PROJECT_DIR$/src/main/java/com/example/yanyue/pojo/vo/AccountVO.java" />
+        <option value="$PROJECT_DIR$/src/main/resources/mybatis/mapper/AccountDao.xml" />
+        <option value="$PROJECT_DIR$/pom.xml" />
+        <option value="$PROJECT_DIR$/src/test/java/com/example/yanyue/controller/AccountControllerTest.java" />
       </list>
     </option>
   </component>
@@ -273,8 +249,8 @@
     </treeState>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="57" />
-    <option name="y" value="406" />
+    <option name="x" value="-70" />
+    <option name="y" value="444" />
     <option name="width" value="1932" />
     <option name="height" value="479" />
   </component>
@@ -285,7 +261,6 @@
     </navigator>
     <panes>
       <pane id="PackagesPane" />
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -332,94 +307,6 @@
               <item name="accommodation" type="b2602c69:ProjectViewProjectNode" />
               <item name="accommodation" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="yanyue" type="462c0819:PsiDirectoryNode" />
-              <item name="pojo" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="accommodation" type="b2602c69:ProjectViewProjectNode" />
-              <item name="accommodation" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="yanyue" type="462c0819:PsiDirectoryNode" />
-              <item name="pojo" type="462c0819:PsiDirectoryNode" />
-              <item name="common" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="accommodation" type="b2602c69:ProjectViewProjectNode" />
-              <item name="accommodation" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="yanyue" type="462c0819:PsiDirectoryNode" />
-              <item name="pojo" type="462c0819:PsiDirectoryNode" />
-              <item name="vo" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="accommodation" type="b2602c69:ProjectViewProjectNode" />
-              <item name="accommodation" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="resources" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="accommodation" type="b2602c69:ProjectViewProjectNode" />
-              <item name="accommodation" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="resources" type="462c0819:PsiDirectoryNode" />
-              <item name="mybatis" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="accommodation" type="b2602c69:ProjectViewProjectNode" />
-              <item name="accommodation" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="resources" type="462c0819:PsiDirectoryNode" />
-              <item name="mybatis" type="462c0819:PsiDirectoryNode" />
-              <item name="mapper" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="accommodation" type="b2602c69:ProjectViewProjectNode" />
-              <item name="accommodation" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="resources" type="462c0819:PsiDirectoryNode" />
-              <item name="static" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="accommodation" type="b2602c69:ProjectViewProjectNode" />
-              <item name="accommodation" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="resources" type="462c0819:PsiDirectoryNode" />
-              <item name="static" type="462c0819:PsiDirectoryNode" />
-              <item name="css" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="accommodation" type="b2602c69:ProjectViewProjectNode" />
-              <item name="accommodation" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="resources" type="462c0819:PsiDirectoryNode" />
-              <item name="static" type="462c0819:PsiDirectoryNode" />
-              <item name="img" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="accommodation" type="b2602c69:ProjectViewProjectNode" />
-              <item name="accommodation" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="resources" type="462c0819:PsiDirectoryNode" />
-              <item name="static" type="462c0819:PsiDirectoryNode" />
-              <item name="js" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="accommodation" type="b2602c69:ProjectViewProjectNode" />
-              <item name="accommodation" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="test" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -436,11 +323,39 @@
               <item name="test" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
               <item name="yanyue" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="accommodation" type="b2602c69:ProjectViewProjectNode" />
+              <item name="accommodation" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="test" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="yanyue" type="462c0819:PsiDirectoryNode" />
+              <item name="controller" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="accommodation" type="b2602c69:ProjectViewProjectNode" />
+              <item name="accommodation" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="test" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="yanyue" type="462c0819:PsiDirectoryNode" />
+              <item name="dao" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="accommodation" type="b2602c69:ProjectViewProjectNode" />
+              <item name="accommodation" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="test" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="yanyue" type="462c0819:PsiDirectoryNode" />
+              <item name="service" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
         </subPane>
       </pane>
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -472,13 +387,18 @@
   </component>
   <component name="RecentsManager">
     <key name="CreateTestDialog.RecentsKey">
+      <recent name="com.example.yanyue.controller" />
       <recent name="com.example.yanyue.service" />
       <recent name="com.example.yanyue.dao" />
       <recent name="com.example.yanyue.server" />
       <recent name="com.example.yanyue.server.impl" />
     </key>
-    <key name="CreateClassDialog.RecentsKey">
-      <recent name="com.example.yanyue.server" />
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="G:\idea-workspace\accommodation\src\main\resources\static" />
+      <recent name="G:\idea-workspace\accommodation\src\main\resources\templates" />
+      <recent name="G:\idea-workspace\accommodation\src\main\java\com\example\yanyue\pojo\vo" />
+      <recent name="G:\idea-workspace\accommodation\src\main\resources\static\js" />
+      <recent name="G:\idea-workspace\accommodation\src\main\resources\static\img" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
       <recent name="D:\idea-workspace\accommodation\src\main\java\com\example\yanyue\util" />
@@ -490,12 +410,8 @@
     <key name="CreateTestDialog.Recents.Supers">
       <recent name="" />
     </key>
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="G:\idea-workspace\accommodation\src\main\resources\static" />
-      <recent name="G:\idea-workspace\accommodation\src\main\resources\templates" />
-      <recent name="G:\idea-workspace\accommodation\src\main\java\com\example\yanyue\pojo\vo" />
-      <recent name="G:\idea-workspace\accommodation\src\main\resources\static\js" />
-      <recent name="G:\idea-workspace\accommodation\src\main\resources\static\img" />
+    <key name="CreateClassDialog.RecentsKey">
+      <recent name="com.example.yanyue.server" />
     </key>
   </component>
   <component name="RequestMappingsEndpointTabSettings">
@@ -513,8 +429,56 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Spring Boot.AccommodationApplication">
-    <configuration name="AccountPowerDaoTest.getAccountPowerByAcccountId" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+  <component name="RunManager" selected="JUnit.AccountControllerTest.updateByPrimaryKeySelective">
+    <configuration name="AccountControllerTest.fidndAllCustomers" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="accommodation" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.example.yanyue.controller.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.example.yanyue.controller" />
+      <option name="MAIN_CLASS_NAME" value="com.example.yanyue.controller.AccountControllerTest" />
+      <option name="METHOD_NAME" value="fidndAllCustomers" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="AccountControllerTest.getAccountByAccountId" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="accommodation" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.example.yanyue.controller.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.example.yanyue.controller" />
+      <option name="MAIN_CLASS_NAME" value="com.example.yanyue.controller.AccountControllerTest" />
+      <option name="METHOD_NAME" value="getAccountByAccountId" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="AccountControllerTest.updateByPrimaryKeySelective" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="accommodation" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.example.yanyue.controller.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.example.yanyue.controller" />
+      <option name="MAIN_CLASS_NAME" value="com.example.yanyue.controller.AccountControllerTest" />
+      <option name="METHOD_NAME" value="updateByPrimaryKeySelective" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="AccountDaoTest.getAccountsByExample" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="accommodation" />
       <extension name="coverage">
         <pattern>
@@ -523,30 +487,14 @@
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="com.example.yanyue.dao" />
-      <option name="MAIN_CLASS_NAME" value="com.example.yanyue.dao.AccountPowerDaoTest" />
-      <option name="METHOD_NAME" value="getAccountPowerByAcccountId" />
+      <option name="MAIN_CLASS_NAME" value="com.example.yanyue.dao.AccountDaoTest" />
+      <option name="METHOD_NAME" value="getAccountsByExample" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="AppartmentDaoTest.getAppartmentByExample" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="accommodation" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.example.yanyue.dao.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="com.example.yanyue.dao" />
-      <option name="MAIN_CLASS_NAME" value="com.example.yanyue.dao.AppartmentDaoTest" />
-      <option name="METHOD_NAME" value="getAppartmentByExample" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="AppartmentServiceTest.getAppartmentByExample" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="AccountServerTest.getAccountsByExample" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="accommodation" />
       <extension name="coverage">
         <pattern>
@@ -555,40 +503,8 @@
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="com.example.yanyue.service" />
-      <option name="MAIN_CLASS_NAME" value="com.example.yanyue.service.AppartmentServiceTest" />
-      <option name="METHOD_NAME" value="getAppartmentByExample" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="Test.getRedis" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="accommodation" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.example.yanyue.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="com.example.yanyue" />
-      <option name="MAIN_CLASS_NAME" value="com.example.yanyue.Test" />
-      <option name="METHOD_NAME" value="getRedis" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="Test.test" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="accommodation" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.example.yanyue.service.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="com.example.yanyue.service" />
-      <option name="MAIN_CLASS_NAME" value="com.example.yanyue.service.Test" />
-      <option name="METHOD_NAME" value="test" />
+      <option name="MAIN_CLASS_NAME" value="com.example.yanyue.service.AccountServerTest" />
+      <option name="METHOD_NAME" value="getAccountsByExample" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -603,11 +519,11 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="JUnit.Test.getRedis" />
-        <item itemvalue="JUnit.AccountPowerDaoTest.getAccountPowerByAcccountId" />
-        <item itemvalue="JUnit.AppartmentServiceTest.getAppartmentByExample" />
-        <item itemvalue="JUnit.AppartmentDaoTest.getAppartmentByExample" />
-        <item itemvalue="JUnit.Test.test" />
+        <item itemvalue="JUnit.AccountControllerTest.updateByPrimaryKeySelective" />
+        <item itemvalue="JUnit.AccountControllerTest.fidndAllCustomers" />
+        <item itemvalue="JUnit.AccountControllerTest.getAccountByAccountId" />
+        <item itemvalue="JUnit.AccountDaoTest.getAccountsByExample" />
+        <item itemvalue="JUnit.AccountServerTest.getAccountsByExample" />
       </list>
     </recent_temporary>
   </component>
@@ -702,6 +618,9 @@
       <workItem from="1554713761047" duration="375000" />
       <workItem from="1554770160308" duration="4983000" />
       <workItem from="1554786263368" duration="6224000" />
+      <workItem from="1554858603586" duration="214000" />
+      <workItem from="1554858843894" duration="3831000" />
+      <workItem from="1554943465863" duration="11784000" />
     </task>
     <task id="LOCAL-00001" summary="第一次提交">
       <created>1554188811697</created>
@@ -833,39 +752,39 @@
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="AccountPowerDaoTest_getAccountPowerByAcccountId - 2019.04.08 at 10h 00m 32s.xml">
-      <configuration name="AccountPowerDaoTest.getAccountPowerByAcccountId" configurationId="JUnit" />
+    <history-entry file="AccountControllerTest_fidndAllCustomers - 2019.04.11 at 13h 48m 33s.xml">
+      <configuration name="AccountControllerTest.fidndAllCustomers" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="AccountPowerDaoTest_getAccountPowerByAcccountId - 2019.04.08 at 10h 00m 57s.xml">
-      <configuration name="AccountPowerDaoTest.getAccountPowerByAcccountId" configurationId="JUnit" />
+    <history-entry file="AccountControllerTest_fidndAllCustomers - 2019.04.11 at 13h 50m 01s.xml">
+      <configuration name="AccountControllerTest.fidndAllCustomers" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="AccountPowerDaoTest_getAccountPowerByAcccountId - 2019.04.08 at 10h 31m 01s.xml">
-      <configuration name="AccountPowerDaoTest.getAccountPowerByAcccountId" configurationId="JUnit" />
+    <history-entry file="AccountControllerTest_fidndAllCustomers - 2019.04.11 at 13h 54m 53s.xml">
+      <configuration name="AccountControllerTest.fidndAllCustomers" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="Test_getRedis - 2019.04.08 at 16h 16m 19s.xml">
-      <configuration name="Test.getRedis" configurationId="JUnit" />
+    <history-entry file="AccountControllerTest_fidndAllCustomers - 2019.04.11 at 13h 55m 20s.xml">
+      <configuration name="AccountControllerTest.fidndAllCustomers" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="Test_getRedis - 2019.04.08 at 16h 19m 31s.xml">
-      <configuration name="Test.getRedis" configurationId="JUnit" />
+    <history-entry file="AccountControllerTest_fidndAllCustomers - 2019.04.11 at 13h 58m 01s.xml">
+      <configuration name="AccountControllerTest.fidndAllCustomers" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="Test_getRedis - 2019.04.08 at 16h 21m 01s.xml">
-      <configuration name="Test.getRedis" configurationId="JUnit" />
+    <history-entry file="AccountControllerTest_fidndAllCustomers - 2019.04.11 at 14h 00m 27s.xml">
+      <configuration name="AccountControllerTest.fidndAllCustomers" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="Test_getRedis - 2019.04.08 at 16h 21m 36s.xml">
-      <configuration name="Test.getRedis" configurationId="JUnit" />
+    <history-entry file="AccountControllerTest_updateByPrimaryKeySelective - 2019.04.11 at 14h 06m 24s.xml">
+      <configuration name="AccountControllerTest.updateByPrimaryKeySelective" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="Test_getRedis - 2019.04.08 at 16h 23m 02s.xml">
-      <configuration name="Test.getRedis" configurationId="JUnit" />
+    <history-entry file="AccountControllerTest_updateByPrimaryKeySelective - 2019.04.11 at 14h 07m 44s.xml">
+      <configuration name="AccountControllerTest.updateByPrimaryKeySelective" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="Test_getRedis - 2019.04.08 at 16h 25m 55s.xml">
-      <configuration name="Test.getRedis" configurationId="JUnit" />
+    <history-entry file="AccountControllerTest_updateByPrimaryKeySelective - 2019.04.11 at 14h 11m 03s.xml">
+      <configuration name="AccountControllerTest.updateByPrimaryKeySelective" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="Test_getRedis - 2019.04.08 at 16h 31m 30s.xml">
-      <configuration name="Test.getRedis" configurationId="JUnit" />
+    <history-entry file="AccountControllerTest_fidndAllCustomers - 2019.04.11 at 14h 14m 09s.xml">
+      <configuration name="AccountControllerTest.fidndAllCustomers" configurationId="JUnit" />
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="356193000" />
+    <option name="totallyTimeSpent" value="372022000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -880,7 +799,7 @@
     <frame x="-8" y="-8" width="1936" height="1096" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.23827292" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.27025586" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Designer" order="2" />
       <window_info id="Image Layers" order="3" />
@@ -890,7 +809,7 @@
       <window_info id="Web" order="7" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.25779626" />
-      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.46162048" weight="0.66839916" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" sideWeight="0.46162048" visible="true" weight="0.2962578" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4116424" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -911,7 +830,7 @@
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
-      <window_info anchor="right" id="Maven" order="3" sideWeight="0.49603173" visible="true" weight="0.22334754" />
+      <window_info anchor="right" id="Maven" order="3" sideWeight="0.49603173" visible="true" weight="0.2228145" />
       <window_info anchor="right" id="Palette" order="4" />
       <window_info anchor="right" id="Capture Analysis" order="5" />
       <window_info anchor="right" id="Database" order="6" weight="0.32971245" />
@@ -992,29 +911,6 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/example/yanyue/service/impl/AccountPowerServiceImpl.java" />
-    <entry file="file://$PROJECT_DIR$/.idea/vcs.xml">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/com/example/yanyue/service/Test.java" />
-    <entry file="file://$PROJECT_DIR$/src/main/resources/static/index_content.html" />
-    <entry file="file://$PROJECT_DIR$/src/main/resources/static/css/room.css" />
-    <entry file="file://$PROJECT_DIR$/target/classes/static/css/area.css" />
-    <entry file="file://$PROJECT_DIR$/src/main/resources/static/css/area.css" />
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/example/yanyue/dao/AppartmentDao.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="301">
-          <caret line="33" column="14" lean-forward="true" selection-start-line="33" selection-start-column="14" selection-end-line="33" selection-end-column="14" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/example/yanyue/dao/AttrValDao.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="120">
-          <caret line="4" column="17" selection-start-line="4" selection-start-column="17" selection-end-line="4" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/example/yanyue/service/AppartmentService.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="480">
@@ -1032,13 +928,6 @@
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/mybatis/mapper/AccountDao.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="360">
-          <caret line="45" column="33" lean-forward="true" selection-start-line="45" selection-start-column="6" selection-end-line="45" selection-end-column="33" />
         </state>
       </provider>
     </entry>
@@ -1075,34 +964,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/example/yanyue/dao/AccountPowerVODao.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret column="31" selection-start-column="31" selection-end-column="31" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/com/example/yanyue/service/AccountPowerServiceTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="275">
-          <caret line="17" column="11" lean-forward="true" selection-start-line="17" selection-start-column="11" selection-end-line="17" selection-end-column="11" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/example/yanyue/util/TreeUtil.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="562">
           <caret line="71" lean-forward="true" selection-start-line="71" selection-end-line="71" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/example/yanyue/service/AccountPowerVOService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="175">
-          <caret line="7" column="61" selection-start-line="7" selection-start-column="61" selection-end-line="7" selection-end-column="61" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
@@ -1120,20 +985,6 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/example/yanyue/filter/CorsFilter.java" />
-    <entry file="file://$PROJECT_DIR$/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="734">
-          <caret line="92" column="59" selection-start-line="92" selection-start-column="59" selection-end-line="92" selection-end-column="59" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/example/yanyue/service/impl/AccountPowerVOServiceImpl.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-19">
-          <caret line="5" column="62" lean-forward="true" selection-start-line="5" selection-start-column="62" selection-end-line="5" selection-end-column="62" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/example/yanyue/pojo/common/RedisTemplate.java" />
     <entry file="file://$PROJECT_DIR$/src/main/java/com/example/yanyue/pojo/common/MyRedisTemplate.java" />
     <entry file="file://$PROJECT_DIR$/src/test/java/com/example/yanyue/AccommodationApplicationTests.java">
@@ -1146,23 +997,9 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/com/example/yanyue/service/AccountServerTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="150">
-          <caret line="15" column="13" selection-start-line="15" selection-start-column="13" selection-end-line="15" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/.idea/workspace.xml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-375" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/example/yanyue/controller/AccountPowerController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-180">
-          <caret line="41" column="17" selection-start-line="41" selection-start-column="17" selection-end-line="41" selection-end-column="17" />
-        </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/com/example/yanyue/Test.java" />
@@ -1180,16 +1017,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="475">
           <caret line="19" column="24" selection-start-line="19" selection-start-column="10" selection-end-line="19" selection-end-column="24" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/example/yanyue/controller/AccountController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="300">
-          <caret line="36" column="24" selection-start-line="36" selection-start-column="19" selection-end-line="36" selection-end-column="24" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1214,23 +1041,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/example/yanyue/component/CorsFilter.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-75">
-          <caret line="9" column="10" selection-start-line="9" selection-start-column="10" selection-end-line="9" selection-end-column="10" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/static/login.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="125">
-          <caret line="230" column="94" selection-start-line="230" selection-start-column="94" selection-end-line="230" selection-end-column="94" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/resources/static/css/index.css">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="400">
@@ -1245,10 +1055,11 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/com/example/yanyue/service/AccountPowerServiceTest.java" />
     <entry file="file://$PROJECT_DIR$/src/main/java/com/example/yanyue/AccommodationApplication.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="89">
-          <caret line="11" lean-forward="true" selection-start-line="11" selection-end-line="11" />
+        <state relative-caret-position="200">
+          <caret line="11" selection-start-line="11" selection-end-line="11" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
@@ -1257,14 +1068,14 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/example/yanyue/pojo/Resource.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="219">
+        <state relative-caret-position="300">
           <caret line="17" column="9" selection-start-line="17" selection-start-column="9" selection-end-line="17" selection-end-column="9" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/example/yanyue/pojo/vo/AccountPowerVO.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="193">
+        <state relative-caret-position="500">
           <caret line="24" column="28" selection-start-line="24" selection-start-column="28" selection-end-line="24" selection-end-column="28" />
           <folding>
             <element signature="imports" expanded="true" />
@@ -1274,7 +1085,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/example/yanyue/pojo/common/MenuTreeVO.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="143">
+        <state relative-caret-position="500">
           <caret line="27" column="28" selection-start-line="27" selection-start-column="28" selection-end-line="27" selection-end-column="28" />
           <folding>
             <element signature="imports" expanded="true" />
@@ -1284,8 +1095,159 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/resources/mybatis/mapper/AccountPowerVODao.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="400">
-          <caret line="16" column="119" selection-start-line="16" selection-start-column="119" selection-end-line="16" selection-end-column="119" />
+        <state relative-caret-position="275">
+          <caret line="11" column="34" selection-start-line="11" selection-start-column="34" selection-end-line="11" selection-end-column="34" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/example/yanyue/component/CorsFilter.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="500">
+          <caret line="20" column="27" selection-start-line="20" selection-start-column="27" selection-end-line="20" selection-end-column="27" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/example/yanyue/service/AccountPowerVOService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="175">
+          <caret line="7" column="41" selection-start-line="7" selection-start-column="25" selection-end-line="7" selection-end-column="41" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/example/yanyue/service/impl/AccountServiceImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="312">
+          <caret line="22" column="13" selection-start-line="22" selection-start-column="13" selection-end-line="22" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/example/yanyue/service/impl/AccountPowerVOServiceImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="450">
+          <caret line="18" column="37" selection-start-line="18" selection-start-column="10" selection-end-line="18" selection-end-column="37" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/example/yanyue/dao/AccountPowerVODao.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="397">
+          <caret line="21" column="31" lean-forward="true" selection-start-line="21" selection-start-column="31" selection-end-line="21" selection-end-column="31" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/example/yanyue/dao/AppartmentDao.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="725">
+          <caret line="33" column="14" lean-forward="true" selection-start-line="33" selection-start-column="14" selection-end-line="33" selection-end-column="14" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/example/yanyue/controller/AccountPowerController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="92">
+          <caret line="41" column="17" selection-start-line="41" selection-start-column="17" selection-end-line="41" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/example/yanyue/service/AccountService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-483">
+          <caret line="14" column="17" selection-start-line="14" selection-start-column="17" selection-end-line="14" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/static/login.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="425">
+          <caret line="230" column="102" selection-start-line="230" selection-start-column="102" selection-end-line="230" selection-end-column="102" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/com/example/yanyue/service/AccountServerTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="25">
+          <caret line="35" lean-forward="true" selection-start-line="35" selection-end-line="35" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/com/example/yanyue/dao/AccountDaoTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-125">
+          <caret line="13" column="13" selection-start-line="13" selection-start-column="13" selection-end-line="13" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/example/yanyue/dao/AccountDao.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="217">
+          <caret line="16" column="17" selection-start-line="16" selection-start-column="17" selection-end-line="16" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/example/yanyue/pojo/vo/AccountVO.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="192">
+          <caret line="17" column="9" selection-start-line="17" selection-start-column="9" selection-end-line="17" selection-end-column="9" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/mybatis/mapper/AccountDao.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-140">
+          <caret line="40" column="155" selection-start-line="40" selection-start-column="155" selection-end-line="40" selection-end-column="155" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/com/example/yanyue/service/AccountPowerVOServiceTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="217">
+          <caret line="14" column="13" selection-start-line="14" selection-start-column="13" selection-end-line="14" selection-end-column="13" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/example/yanyue/controller/AccountController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="488">
+          <caret line="130" column="48" selection-start-line="130" selection-start-column="48" selection-end-line="130" selection-end-column="48" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="776">
+          <caret line="90" selection-start-line="90" selection-end-line="90" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/example/yanyue/pojo/Account.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-8">
+          <caret line="2" column="5" lean-forward="true" selection-start-line="2" selection-start-column="5" selection-end-line="2" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/com/example/yanyue/controller/AccountControllerTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="163">
+          <caret line="44" column="58" selection-start-line="44" selection-start-column="58" selection-end-line="44" selection-end-column="58" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>

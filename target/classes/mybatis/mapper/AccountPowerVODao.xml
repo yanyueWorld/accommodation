@@ -9,11 +9,12 @@
         <result column="url" property="url"/>
         <result column="resource_id" property="resourceId"/>
         <result column="resource_pid" property="resourcePid"/>
+        <result column="icon" property="icon"/>
     </resultMap>
 
     <select id="getAccountPowers" resultMap="AccountPower">
     select account.account_id id,account.account_name account_name,account.password password,resource.resource_name resource_name,
-                resource.url url,resource.resource_id resource_id,resource.resource_pid resource_pid
+                resource.url url,resource.resource_id resource_id,resource.resource_pid resource_pid,resource.icon icon
             from account,account_role,role,role_resource,resource
             where account.account_id=account_role.account_id
             and role.role_id=account_role.role_id
