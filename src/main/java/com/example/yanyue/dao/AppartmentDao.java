@@ -14,17 +14,27 @@ import java.util.List;
  * @Version 1.0
  **/
 public interface AppartmentDao {
+    /**
+     * 根据主键删除公寓id
+     * @param apartmentId
+     * @return
+     */
     int deleteByPrimaryKey(Integer apartmentId);
 
+    /**
+     * 新增公寓信息
+     * @param record
+     * @return
+     */
     int insert(Appartment record);
 
-    int insertSelective(Appartment record);
-
-    Appartment selectByPrimaryKey(Integer apartmentId);
-
+    /**
+     * 修改公寓信息
+     * @param record
+     * @return
+     */
     int updateByPrimaryKeySelective(Appartment record);
 
-    int updateByPrimaryKey(Appartment record);
 
     /**
      * @Author yanyue

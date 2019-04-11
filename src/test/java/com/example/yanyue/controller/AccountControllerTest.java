@@ -37,10 +37,6 @@ public class AccountControllerTest {
 
     @Test
     public void fidndAllCustomers() throws Exception {
-        AccountVO accountVO=new AccountVO();
-        accountVO.setName("三");
-        Gson gson=new Gson();
-        String json=gson.toJson(accountVO);
         mockMvc.perform(MockMvcRequestBuilders.post("/getAccountsByExample").contentType(MediaType.APPLICATION_JSON_UTF8)
         .param("page","1").param("limit","10").param("name","三").accept(MediaType.APPLICATION_JSON)).andExpect(MockMvcResultMatchers.status().isOk())
                 .andDo(MockMvcResultHandlers.print());
