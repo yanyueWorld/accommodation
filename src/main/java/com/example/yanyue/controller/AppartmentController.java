@@ -2,8 +2,11 @@ package com.example.yanyue.controller;
 
 import java.util.List;
 
+import com.example.yanyue.pojo.Appartment;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Component;
 import org.springframework.stereotype.Controller;
+import org.springframework.web.bind.annotation.CrossOrigin;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.ResponseBody;
@@ -29,6 +32,7 @@ public class AppartmentController {
 
     @RequestMapping("/getAppartmentByExample")
     @ResponseBody
+    @CrossOrigin
     public Result<List<AppartmentVO>> getAppartmentByExample(@RequestParam(value = "page", defaultValue = "1", required = false) Integer currentPage,
                                                              @RequestParam(value = "limit", defaultValue = "10", required = false) Integer pageSize,AppartmentVO appartmentVO) {
         List<AppartmentVO> appartmentVOS = appartmentService.getAppartmentByExample(currentPage,
@@ -38,5 +42,27 @@ public class AppartmentController {
         PageInfo<AppartmentVO> pageInfo = new PageInfo<>(appartmentVOS);
         result.setCount(pageInfo.getTotal());
         return result;
+    }
+
+    @RequestMapping("/deleteByPrimaryKey")
+    @ResponseBody
+    @CrossOrigin
+    public int deleteByPrimaryKey(Integer appartmentId){
+        if(appartmentId==null||appartmentId==0){
+            return -1;
+        }else{
+            return appartmentService.deleteByPrimaryKey(appartmentId);
+        }
+    }
+
+    @RequestMapping("/update")
+    @ResponseBody
+    @CrossOrigin
+    public int updateByPrimaryKeySelective(Appartment appartment){
+        if(appartment.getApartmentId()==null||appartment.getApartmentId()==0){
+            return -1;
+        }else{
+            return appartmentService.updateByPrimaryKeySelective(appartment);
+        }
     }
 }

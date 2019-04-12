@@ -1,6 +1,7 @@
 package com.example.yanyue.dao;
 
 
+import com.example.yanyue.pojo.Appartment;
 import com.example.yanyue.pojo.vo.AppartmentVO;
 import org.junit.Test;
 import org.junit.runner.RunWith;
@@ -27,5 +28,20 @@ public class AppartmentDaoTest {
     @Test
     public void deleteByPrimaryKey(){
         System.out.println(appartmentDao.deleteByPrimaryKey(3));
+    }
+
+    @Test
+    public void updateByPrimaryKeySelective(){
+        Appartment appartment=new Appartment();
+        appartment.setApartmentId(1);
+        appartment.setTypeId(2);
+        System.out.println(appartmentDao.updateByPrimaryKeySelective(appartment));
+    }
+
+    @Test
+    public void insertSelective(){
+        Appartment appartment=new Appartment();
+        appartment.setApartmentName("你好");
+        System.out.println(appartmentDao.insertSelective(appartment));
     }
 }

@@ -15,4 +15,10 @@ import java.util.List;
 public interface AppartmentService {
 
     List<AppartmentVO> getAppartmentByExample(Integer currentPage, Integer pageSize,AppartmentVO appartmentVO);
+
+    int deleteByPrimaryKey(Integer appartmentId);
+
+    int updateByPrimaryKeySelective(Appartment appartment);
+
+    int insertSelective(Appartment appartment);
 }

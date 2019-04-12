@@ -1,8 +1,8 @@
 package com.example.yanyue.service.impl;
 
-import java.util.ArrayList;
 import java.util.List;
 
+import com.example.yanyue.pojo.Appartment;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
@@ -30,4 +30,33 @@ public class AppartmentServiceImpl implements AppartmentService {
 
         return appartmentVOS;
     }
+
+    @Override
+    public int deleteByPrimaryKey(Integer appartmentId) {
+        if(appartmentId==null||appartmentId==0){
+            return -1;
+        }else{
+            return appartmentDao.deleteByPrimaryKey(appartmentId);
+        }
+    }
+
+    @Override
+    public int updateByPrimaryKeySelective(Appartment appartment) {
+        if(appartment.getApartmentId()==null||appartment.getApartmentId()==0){
+            return -1;
+        }else{
+            return appartmentDao.updateByPrimaryKeySelective(appartment);
+        }
+    }
+
+    @Override
+    public int insertSelective(Appartment appartment) {
+        if(appartment==null||(appartment.getApartmentName()==null||appartment.getApartmentName().length()==0)){
+            return -1;
+        }else{
+            return appartmentDao.insertSelective(appartment);
+        }
+    }
+
+
 }

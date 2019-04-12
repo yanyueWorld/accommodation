@@ -29,6 +29,13 @@ public interface AppartmentDao {
     int insert(Appartment record);
 
     /**
+     * 新增公寓信息，信息可以为空
+     * @param record
+     * @return
+     */
+    int insertSelective(Appartment record);
+
+    /**
      * 修改公寓信息
      * @param record
      * @return

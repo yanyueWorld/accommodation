@@ -34,4 +34,11 @@ public class AppartmentControllerTest {
                 .param("page","1").param("limit","10").param("apartmentName","蛋").accept(MediaType.APPLICATION_JSON)).andExpect(MockMvcResultMatchers.status().isOk())
                 .andDo(MockMvcResultHandlers.print());
     }
+
+    @Test
+    public void updateByPrimaryKeySelective() throws Exception{
+        mockMvc.perform(MockMvcRequestBuilders.post("/update").contentType(MediaType.APPLICATION_JSON_UTF8)
+        .param("apartmentId","1").param("typeId","2")
+        .accept(MediaType.APPLICATION_JSON)).andExpect(MockMvcResultMatchers.status().isOk()).andDo(MockMvcResultHandlers.print());
+    }
 }
