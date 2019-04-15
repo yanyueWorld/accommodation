@@ -65,4 +65,15 @@ public class AppartmentController {
             return appartmentService.updateByPrimaryKeySelective(appartment);
         }
     }
+
+    @RequestMapping("/insert")
+    @ResponseBody
+    @CrossOrigin
+    public int insert(Appartment appartment){
+        if(appartment==null||(appartment.getApartmentName()==null||appartment.getApartmentName().length()==0)) {
+            return -1;
+        }else{
+            return appartmentService.insertSelective(appartment);
+        }
+    }
 }

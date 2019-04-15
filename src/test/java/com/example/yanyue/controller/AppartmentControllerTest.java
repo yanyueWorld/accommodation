@@ -41,4 +41,18 @@ public class AppartmentControllerTest {
         .param("apartmentId","1").param("typeId","2")
         .accept(MediaType.APPLICATION_JSON)).andExpect(MockMvcResultMatchers.status().isOk()).andDo(MockMvcResultHandlers.print());
     }
+
+    @Test
+    public void deleteByPrimaryKey() throws Exception{
+        mockMvc.perform(MockMvcRequestBuilders.post("/deleteByPrimaryKey").contentType(MediaType.APPLICATION_JSON_UTF8)
+        .param("appartmentId","4").accept(MediaType.APPLICATION_JSON)).andExpect(MockMvcResultMatchers.status().isOk())
+        .andDo(MockMvcResultHandlers.print());
+    }
+
+    @Test
+    public void insert() throws Exception{
+        mockMvc.perform(MockMvcRequestBuilders.post("/insert").contentType(MediaType.APPLICATION_JSON_UTF8)
+        .param("apartmentName","4").accept(MediaType.APPLICATION_JSON)).andExpect(MockMvcResultMatchers.status().isOk())
+                .andDo(MockMvcResultHandlers.print());
+    }
 }
