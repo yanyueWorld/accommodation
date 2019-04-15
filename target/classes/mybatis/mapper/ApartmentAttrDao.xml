@@ -9,6 +9,22 @@
   <sql id="Base_Column_List">
     attr_id, attr_name, class_id
   </sql>
+
+  <select id="getAll" resultMap="BaseResultMap">
+    select
+    <include refid="Base_Column_List"/>
+    from apartment_attr
+    <if test="_parameter!=null">
+        <where>
+        <if test="attrName!=null">
+         and attr_name like concat('%',#{attrName},'%')
+        </if>
+        <if test="classId!=null">
+          and class_id like concat('%',#{classId},'%')
+        </if>
+        </where>
+    </if>
+  </select>
   <select id="selectByPrimaryKey" parameterType="java.lang.Integer" resultMap="BaseResultMap">
     select 
     <include refid="Base_Column_List" />

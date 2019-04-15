@@ -42,4 +42,6 @@ mybatis:
     use-generated-keys: true
     map-underscore-to-camel-case: true
     cache-enabled: true
-
+logging:
+  level:
+    com.example.yanyue.dao: debug

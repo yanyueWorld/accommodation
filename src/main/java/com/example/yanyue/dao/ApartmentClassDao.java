@@ -2,6 +2,8 @@ package com.example.yanyue.dao;
 
 import com.example.yanyue.pojo.ApartmentClass;
 
+import java.util.List;
+
 public interface ApartmentClassDao {
     int deleteByPrimaryKey(Integer classId);
 
@@ -14,4 +16,6 @@ public interface ApartmentClassDao {
     int updateByPrimaryKeySelective(ApartmentClass record);
 
     int updateByPrimaryKey(ApartmentClass record);
+
+    List<ApartmentClass> getAll(ApartmentClass apartmentClass);
 }
