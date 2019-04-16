@@ -2,29 +2,33 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="972affcc-9252-498c-8756-440758abf2a1" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/test/java/com/example/yanyue/dao/AccountRoleDaoTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/com/example/yanyue/dao/ApartmentAttrDaoTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/com/example/yanyue/dao/ApartmentClassDaoTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/com/example/yanyue/dao/ApartmentPicDaoTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/com/example/yanyue/dao/AppartmentTypeDaoTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/com/example/yanyue/dao/AttrValDaoTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/com/example/yanyue/dao/InformationCheckInDaoTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/com/example/yanyue/dao/MessageDaoTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/com/example/yanyue/dao/OrderDaoTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/com/example/yanyue/dao/PictureDaoTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/com/example/yanyue/pojo/MessageTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/yanyue/dao/AccountRoleDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/yanyue/dao/AccountRoleDao.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/yanyue/dao/ApartmentAttrDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/yanyue/dao/ApartmentAttrDao.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/yanyue/dao/ApartmentClassDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/yanyue/dao/ApartmentClassDao.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/yanyue/dao/ApartmentPicDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/yanyue/dao/ApartmentPicDao.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/yanyue/dao/AppartmentTypeDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/yanyue/dao/AppartmentTypeDao.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/application.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/mybatis/mapper/AccountRoleDao.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/mybatis/mapper/AccountRoleDao.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/mybatis/mapper/ApartmentAttrDao.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/mybatis/mapper/ApartmentAttrDao.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/mybatis/mapper/ApartmentClassDao.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/mybatis/mapper/ApartmentClassDao.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/mybatis/mapper/ApartmentPicDao.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/mybatis/mapper/ApartmentPicDao.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/mybatis/mapper/AppartmentTypeDao.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/mybatis/mapper/AppartmentTypeDao.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/application.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/mybatis/mapper/AccountRoleDao.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/mybatis/mapper/AccountRoleDao.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/mybatis/mapper/ApartmentAttrDao.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/mybatis/mapper/ApartmentAttrDao.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/mybatis/mapper/ApartmentClassDao.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/mybatis/mapper/ApartmentClassDao.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/mybatis/mapper/ApartmentPicDao.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/mybatis/mapper/ApartmentPicDao.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/mybatis/mapper/AppartmentTypeDao.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/mybatis/mapper/AppartmentTypeDao.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/yanyue/dao/AttrValDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/yanyue/dao/AttrValDao.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/yanyue/dao/InformationCheckInDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/yanyue/dao/InformationCheckInDao.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/yanyue/dao/MessageDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/yanyue/dao/MessageDao.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/yanyue/dao/OrderDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/yanyue/dao/OrderDao.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/yanyue/dao/PictureDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/yanyue/dao/PictureDao.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/yanyue/pojo/AttrVal.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/yanyue/pojo/AttrVal.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/yanyue/pojo/InformationCheckIn.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/yanyue/pojo/InformationCheckIn.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/yanyue/pojo/Message.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/yanyue/pojo/Message.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/yanyue/pojo/Order.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/yanyue/pojo/Order.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/yanyue/pojo/Picture.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/yanyue/pojo/Picture.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/mybatis/mapper/AttrValDao.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/mybatis/mapper/AttrValDao.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/mybatis/mapper/InformationCheckInDao.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/mybatis/mapper/InformationCheckInDao.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/mybatis/mapper/MessageDao.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/mybatis/mapper/MessageDao.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/mybatis/mapper/OrderDao.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/mybatis/mapper/OrderDao.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/mybatis/mapper/PictureDao.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/mybatis/mapper/PictureDao.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/mybatis/mapper/AttrValDao.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/mybatis/mapper/AttrValDao.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/mybatis/mapper/InformationCheckInDao.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/mybatis/mapper/InformationCheckInDao.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/mybatis/mapper/MessageDao.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/mybatis/mapper/MessageDao.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/mybatis/mapper/OrderDao.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/mybatis/mapper/OrderDao.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/mybatis/mapper/PictureDao.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/mybatis/mapper/PictureDao.xml" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -69,18 +73,47 @@
     <option name="isMigrated" value="true" />
   </component>
   <component name="FileEditorManager">
-    <leaf>
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/test/java/com/example/yanyue/dao/AppartmentTypeDaoTest.java">
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/example/yanyue/pojo/Picture.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="360">
-              <caret line="30" column="65" selection-start-line="30" selection-start-column="65" selection-end-line="30" selection-end-column="65" />
+            <state relative-caret-position="35">
+              <caret line="11" column="4" lean-forward="true" selection-start-line="11" selection-start-column="4" selection-end-line="11" selection-end-column="4" />
               <folding>
                 <element signature="imports" expanded="true" />
-                <element signature="e#731#732#0" expanded="true" />
-                <element signature="e#767#768#0" expanded="true" />
-                <element signature="e#865#866#0" expanded="true" />
-                <element signature="e#901#902#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/resources/mybatis/mapper/PictureDao.xml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="510">
+              <caret line="21" column="53" selection-start-line="21" selection-start-column="53" selection-end-line="21" selection-end-column="53" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/example/yanyue/dao/PictureDao.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="160">
+              <caret line="11" column="24" lean-forward="true" selection-start-line="11" selection-start-column="24" selection-end-line="11" selection-end-column="24" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/test/java/com/example/yanyue/dao/PictureDaoTest.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="411">
+              <caret line="36" column="52" selection-start-line="36" selection-start-column="52" selection-end-line="36" selection-end-column="52" />
+              <folding>
+                <element signature="imports" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -123,7 +156,11 @@
       <find>logout</find>
       <find>@SpringBootApplication</find>
       <find>郫县</find>
+      <find>arrt</find>
     </findStrings>
+    <replaceStrings>
+      <replace>attr</replace>
+    </replaceStrings>
   </component>
   <component name="Git.Settings">
     <option name="ROOT_SYNC" value="DONT_SYNC" />
@@ -132,27 +169,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/src/main/resources/static/distpicker/src/distpicker.data.js" />
-        <option value="$PROJECT_DIR$/src/main/resources/static/page/roomPage/room.html" />
-        <option value="$PROJECT_DIR$/src/main/java/com/example/yanyue/controller/AccountController.java" />
-        <option value="$PROJECT_DIR$/src/test/java/com/example/yanyue/service/AccountPowerServiceTest.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/example/yanyue/dao/AccountPowerVODao.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/example/yanyue/util/TreeUtil.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/example/yanyue/service/AccountPowerVOService.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/example/yanyue/service/impl/AccountPowerVOServiceImpl.java" />
-        <option value="$PROJECT_DIR$/src/test/java/com/example/yanyue/dao/AccountPowerDaoTest.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/example/yanyue/filter/CorsFilter.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/example/yanyue/pojo/common/RedisTemplate.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/example/yanyue/pojo/common/MyRedisTemplate.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/example/yanyue/controller/AccountPowerController.java" />
-        <option value="$PROJECT_DIR$/src/test/java/com/example/yanyue/Test.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/example/yanyue/configuration/RedisSessionConfig.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/example/yanyue/component/CorsFilter.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/example/yanyue/pojo/Resource.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/example/yanyue/pojo/vo/AccountPowerVO.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/example/yanyue/pojo/common/MenuTreeVO.java" />
-        <option value="$PROJECT_DIR$/src/main/resources/mybatis/mapper/AccountPowerVODao.xml" />
-        <option value="$PROJECT_DIR$/src/test/java/com/example/yanyue/service/AccountPowerVOServiceTest.java" />
         <option value="$PROJECT_DIR$/src/main/resources/static/login.html" />
         <option value="$PROJECT_DIR$/src/main/java/com/example/yanyue/pojo/vo/AccountVO.java" />
         <option value="$PROJECT_DIR$/pom.xml" />
@@ -183,6 +199,27 @@
         <option value="$PROJECT_DIR$/src/main/java/com/example/yanyue/dao/AppartmentTypeDao.java" />
         <option value="$PROJECT_DIR$/src/main/resources/mybatis/mapper/AppartmentTypeDao.xml" />
         <option value="$PROJECT_DIR$/src/test/java/com/example/yanyue/dao/AppartmentTypeDaoTest.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/example/yanyue/dao/AttrValDao.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/example/yanyue/pojo/AttrVal.java" />
+        <option value="$PROJECT_DIR$/src/main/resources/mybatis/mapper/AttrValDao.xml" />
+        <option value="$PROJECT_DIR$/src/test/java/com/example/yanyue/dao/AttrValDaoTest.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/example/yanyue/dao/InformationCheckInDao.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/example/yanyue/pojo/InformationCheckIn.java" />
+        <option value="$PROJECT_DIR$/src/main/resources/mybatis/mapper/InformationCheckInDao.xml" />
+        <option value="$PROJECT_DIR$/src/test/java/com/example/yanyue/dao/InformationCheckInDaoTest.java" />
+        <option value="$PROJECT_DIR$/src/main/resources/mybatis/mapper/MessageDao.xml" />
+        <option value="$PROJECT_DIR$/src/main/java/com/example/yanyue/dao/MessageDao.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/example/yanyue/pojo/Message.java" />
+        <option value="$PROJECT_DIR$/src/test/java/com/example/yanyue/pojo/MessageTest.java" />
+        <option value="$PROJECT_DIR$/src/test/java/com/example/yanyue/dao/MessageDaoTest.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/example/yanyue/dao/OrderDao.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/example/yanyue/pojo/Order.java" />
+        <option value="$PROJECT_DIR$/src/main/resources/mybatis/mapper/OrderDao.xml" />
+        <option value="$PROJECT_DIR$/src/test/java/com/example/yanyue/dao/OrderDaoTest.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/example/yanyue/dao/PictureDao.java" />
+        <option value="$PROJECT_DIR$/src/main/resources/mybatis/mapper/PictureDao.xml" />
+        <option value="$PROJECT_DIR$/src/main/java/com/example/yanyue/pojo/Picture.java" />
+        <option value="$PROJECT_DIR$/src/test/java/com/example/yanyue/dao/PictureDaoTest.java" />
       </list>
     </option>
   </component>
@@ -246,8 +283,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
-      <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -406,12 +441,23 @@
               <item name="test" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
               <item name="yanyue" type="462c0819:PsiDirectoryNode" />
+              <item name="pojo" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="accommodation" type="b2602c69:ProjectViewProjectNode" />
+              <item name="accommodation" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="test" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="yanyue" type="462c0819:PsiDirectoryNode" />
               <item name="service" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
         </subPane>
       </pane>
+      <pane id="Scope" />
+      <pane id="PackagesPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -444,13 +490,17 @@
   <component name="RecentsManager">
     <key name="CreateTestDialog.RecentsKey">
       <recent name="com.example.yanyue.dao" />
+      <recent name="com.example.yanyue.pojo" />
       <recent name="com.example.yanyue.controller" />
       <recent name="com.example.yanyue.service" />
       <recent name="com.example.yanyue.server" />
-      <recent name="com.example.yanyue.server.impl" />
     </key>
-    <key name="CreateClassDialog.RecentsKey">
-      <recent name="com.example.yanyue.server" />
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="G:\idea-workspace\accommodation\src\main\resources\static" />
+      <recent name="G:\idea-workspace\accommodation\src\main\resources\templates" />
+      <recent name="G:\idea-workspace\accommodation\src\main\java\com\example\yanyue\pojo\vo" />
+      <recent name="G:\idea-workspace\accommodation\src\main\resources\static\js" />
+      <recent name="G:\idea-workspace\accommodation\src\main\resources\static\img" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
       <recent name="D:\idea-workspace\accommodation\src\main\java\com\example\yanyue\util" />
@@ -462,12 +512,8 @@
     <key name="CreateTestDialog.Recents.Supers">
       <recent name="" />
     </key>
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="G:\idea-workspace\accommodation\src\main\resources\static" />
-      <recent name="G:\idea-workspace\accommodation\src\main\resources\templates" />
-      <recent name="G:\idea-workspace\accommodation\src\main\java\com\example\yanyue\pojo\vo" />
-      <recent name="G:\idea-workspace\accommodation\src\main\resources\static\js" />
-      <recent name="G:\idea-workspace\accommodation\src\main\resources\static\img" />
+    <key name="CreateClassDialog.RecentsKey">
+      <recent name="com.example.yanyue.server" />
     </key>
   </component>
   <component name="RequestMappingsEndpointTabSettings">
@@ -485,8 +531,8 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="JUnit.AppartmentTypeDaoTest.delete">
-    <configuration name="ApartmentPicDaoTest.delete" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+  <component name="RunManager" selected="JUnit.PictureDaoTest.delete">
+    <configuration name="OrderDaoTest.delete" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="accommodation" />
       <extension name="coverage">
         <pattern>
@@ -495,14 +541,14 @@
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="com.example.yanyue.dao" />
-      <option name="MAIN_CLASS_NAME" value="com.example.yanyue.dao.ApartmentPicDaoTest" />
+      <option name="MAIN_CLASS_NAME" value="com.example.yanyue.dao.OrderDaoTest" />
       <option name="METHOD_NAME" value="delete" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="AppartmentTypeDaoTest.delete" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="PictureDaoTest.delete" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="accommodation" />
       <extension name="coverage">
         <pattern>
@@ -511,14 +557,14 @@
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="com.example.yanyue.dao" />
-      <option name="MAIN_CLASS_NAME" value="com.example.yanyue.dao.AppartmentTypeDaoTest" />
+      <option name="MAIN_CLASS_NAME" value="com.example.yanyue.dao.PictureDaoTest" />
       <option name="METHOD_NAME" value="delete" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="AppartmentTypeDaoTest.getAll" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="PictureDaoTest.getAll" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="accommodation" />
       <extension name="coverage">
         <pattern>
@@ -527,14 +573,14 @@
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="com.example.yanyue.dao" />
-      <option name="MAIN_CLASS_NAME" value="com.example.yanyue.dao.AppartmentTypeDaoTest" />
+      <option name="MAIN_CLASS_NAME" value="com.example.yanyue.dao.PictureDaoTest" />
       <option name="METHOD_NAME" value="getAll" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="AppartmentTypeDaoTest.insert" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="PictureDaoTest.insert" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="accommodation" />
       <extension name="coverage">
         <pattern>
@@ -543,14 +589,14 @@
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="com.example.yanyue.dao" />
-      <option name="MAIN_CLASS_NAME" value="com.example.yanyue.dao.AppartmentTypeDaoTest" />
+      <option name="MAIN_CLASS_NAME" value="com.example.yanyue.dao.PictureDaoTest" />
       <option name="METHOD_NAME" value="insert" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="AppartmentTypeDaoTest.update" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="PictureDaoTest.update" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="accommodation" />
       <extension name="coverage">
         <pattern>
@@ -559,7 +605,7 @@
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="com.example.yanyue.dao" />
-      <option name="MAIN_CLASS_NAME" value="com.example.yanyue.dao.AppartmentTypeDaoTest" />
+      <option name="MAIN_CLASS_NAME" value="com.example.yanyue.dao.PictureDaoTest" />
       <option name="METHOD_NAME" value="update" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
@@ -575,11 +621,11 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="JUnit.AppartmentTypeDaoTest.delete" />
-        <item itemvalue="JUnit.AppartmentTypeDaoTest.getAll" />
-        <item itemvalue="JUnit.AppartmentTypeDaoTest.update" />
-        <item itemvalue="JUnit.AppartmentTypeDaoTest.insert" />
-        <item itemvalue="JUnit.ApartmentPicDaoTest.delete" />
+        <item itemvalue="JUnit.PictureDaoTest.delete" />
+        <item itemvalue="JUnit.PictureDaoTest.getAll" />
+        <item itemvalue="JUnit.PictureDaoTest.update" />
+        <item itemvalue="JUnit.PictureDaoTest.insert" />
+        <item itemvalue="JUnit.OrderDaoTest.delete" />
       </list>
     </recent_temporary>
   </component>
@@ -680,7 +726,8 @@
       <workItem from="1555029167608" duration="3596000" />
       <workItem from="1555049527053" duration="4658000" />
       <workItem from="1555289502527" duration="20223000" />
-      <workItem from="1555317350394" duration="1535000" />
+      <workItem from="1555317350394" duration="1617000" />
+      <workItem from="1555376973823" duration="12264000" />
     </task>
     <task id="LOCAL-00001" summary="第一次提交">
       <created>1554188811697</created>
@@ -836,43 +883,50 @@
       <option name="project" value="LOCAL" />
       <updated>1555295137263</updated>
     </task>
-    <option name="localTasksCounter" value="23" />
+    <task id="LOCAL-00023" summary="daoTest working">
+      <created>1555318926050</created>
+      <option name="number" value="00023" />
+      <option name="presentableId" value="LOCAL-00023" />
+      <option name="project" value="LOCAL" />
+      <updated>1555318926050</updated>
+    </task>
+    <option name="localTasksCounter" value="24" />
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="AppartmentTypeDaoTest_getAll - 2019.04.15 at 16h 28m 24s.xml">
-      <configuration name="AppartmentTypeDaoTest.getAll" configurationId="JUnit" />
+    <history-entry file="OrderDaoTest_getAll - 2019.04.16 at 13h 46m 15s.xml">
+      <configuration name="OrderDaoTest.getAll" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="AppartmentTypeDaoTest_getAll - 2019.04.15 at 16h 29m 16s.xml">
-      <configuration name="AppartmentTypeDaoTest.getAll" configurationId="JUnit" />
+    <history-entry file="OrderDaoTest_getAll - 2019.04.16 at 13h 49m 36s.xml">
+      <configuration name="OrderDaoTest.getAll" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="AppartmentTypeDaoTest_getAll - 2019.04.15 at 16h 30m 16s.xml">
-      <configuration name="AppartmentTypeDaoTest.getAll" configurationId="JUnit" />
+    <history-entry file="OrderDaoTest_getAll - 2019.04.16 at 13h 49m 58s.xml">
+      <configuration name="OrderDaoTest.getAll" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="AppartmentTypeDaoTest_insert - 2019.04.15 at 16h 51m 29s.xml">
-      <configuration name="AppartmentTypeDaoTest.insert" configurationId="JUnit" />
+    <history-entry file="OrderDaoTest_getAll - 2019.04.16 at 13h 51m 04s.xml">
+      <configuration name="OrderDaoTest.getAll" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="AppartmentTypeDaoTest_getAll - 2019.04.15 at 16h 51m 46s.xml">
-      <configuration name="AppartmentTypeDaoTest.getAll" configurationId="JUnit" />
+    <history-entry file="OrderDaoTest_insert - 2019.04.16 at 13h 56m 39s.xml">
+      <configuration name="OrderDaoTest.insert" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="AppartmentTypeDaoTest_update - 2019.04.15 at 16h 56m 36s.xml">
-      <configuration name="AppartmentTypeDaoTest.update" configurationId="JUnit" />
+    <history-entry file="OrderDaoTest_insert - 2019.04.16 at 13h 57m 45s.xml">
+      <configuration name="OrderDaoTest.insert" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="AppartmentTypeDaoTest_getAll - 2019.04.15 at 16h 56m 52s.xml">
-      <configuration name="AppartmentTypeDaoTest.getAll" configurationId="JUnit" />
+    <history-entry file="OrderDaoTest_update - 2019.04.16 at 13h 59m 01s.xml">
+      <configuration name="OrderDaoTest.update" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="AppartmentTypeDaoTest_update - 2019.04.15 at 16h 57m 37s.xml">
-      <configuration name="AppartmentTypeDaoTest.update" configurationId="JUnit" />
+    <history-entry file="OrderDaoTest_delete - 2019.04.16 at 13h 59m 50s.xml">
+      <configuration name="OrderDaoTest.delete" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="AppartmentTypeDaoTest_getAll - 2019.04.15 at 16h 57m 53s.xml">
-      <configuration name="AppartmentTypeDaoTest.getAll" configurationId="JUnit" />
+    <history-entry file="PictureDaoTest_insert - 2019.04.16 at 14h 14m 01s.xml">
+      <configuration name="PictureDaoTest.insert" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="AppartmentTypeDaoTest_delete - 2019.04.15 at 16h 58m 09s.xml">
-      <configuration name="AppartmentTypeDaoTest.delete" configurationId="JUnit" />
+    <history-entry file="PictureDaoTest_update - 2019.04.16 at 14h 15m 35s.xml">
+      <configuration name="PictureDaoTest.update" configurationId="JUnit" />
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="409575000" />
+    <option name="totallyTimeSpent" value="421921000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -887,7 +941,7 @@
     <frame x="-8" y="-8" width="1936" height="1096" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.282516" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.2857143" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Designer" order="2" />
       <window_info id="Image Layers" order="3" />
@@ -895,7 +949,6 @@
       <window_info id="UI Designer" order="5" />
       <window_info id="Favorites" order="6" side_tool="true" />
       <window_info id="Web" order="7" side_tool="true" />
-      <window_info anchor="bottom" id="Statistic" weight="0.32848233" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.25779626" />
       <window_info active="true" anchor="bottom" id="Run" order="2" sideWeight="0.46162048" visible="true" weight="0.44386694" />
@@ -916,6 +969,7 @@
       <window_info anchor="bottom" id="Duplicate detector" order="17" weight="0.32917964" />
       <window_info anchor="bottom" id="Inspection Results" order="18" weight="0.32917964" />
       <window_info anchor="bottom" id="CheckStyle" order="19" weight="0.32917964" />
+      <window_info anchor="bottom" id="Statistic" order="20" weight="0.32848233" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
@@ -996,198 +1050,14 @@
     <MESSAGE value="account mock test finished" />
     <MESSAGE value="appartment working" />
     <MESSAGE value="appartment finished" />
-    <option name="LAST_COMMIT_MESSAGE" value="appartment finished" />
+    <MESSAGE value="daoTest working" />
+    <option name="LAST_COMMIT_MESSAGE" value="daoTest working" />
   </component>
   <component name="antWorkspaceConfiguration">
     <option name="IS_AUTOSCROLL_TO_SOURCE" value="false" />
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/example/yanyue/dao/AccountPowerVODao.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="397">
-          <caret line="21" column="31" lean-forward="true" selection-start-line="21" selection-start-column="31" selection-end-line="21" selection-end-column="31" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/example/yanyue/service/AccountService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-483">
-          <caret line="14" column="17" selection-start-line="14" selection-start-column="17" selection-end-line="14" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/example/yanyue/pojo/vo/AccountVO.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="192">
-          <caret line="17" column="9" selection-start-line="17" selection-start-column="9" selection-end-line="17" selection-end-column="9" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/static/login.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-552">
-          <caret line="140" column="4" selection-start-line="140" selection-start-column="4" selection-end-line="140" selection-end-column="4" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/com/example/yanyue/controller/AccountPowerControllerTest.java" />
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/example/yanyue/component/CorsFilter.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="325">
-          <caret line="20" column="62" lean-forward="true" selection-start-line="13" selection-start-column="7" selection-end-line="20" selection-end-column="62" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/example/yanyue/configuration/RedisSessionConfig.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="125">
-          <caret line="5" selection-start-line="5" selection-end-line="8" selection-end-column="1" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/example/yanyue/controller/AccountPowerController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="212">
-          <caret line="50" column="55" lean-forward="true" selection-start-line="44" selection-start-column="8" selection-end-line="50" selection-end-column="55" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/example/yanyue/controller/AccountController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-16">
-          <caret line="39" column="51" lean-forward="true" selection-start-line="39" selection-start-column="51" selection-end-line="39" selection-end-column="51" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/com/example/yanyue/controller/AccountControllerTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="337">
-          <caret line="41" column="54" selection-start-line="39" selection-start-column="7" selection-end-line="41" selection-end-column="54" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/com/example/yanyue/AccommodationApplicationTests.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="150">
-          <caret line="10" column="24" selection-start-line="10" selection-start-column="17" selection-end-line="10" selection-end-column="24" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/com/example/yanyue/service/AccountServerTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="650">
-          <caret line="35" selection-start-line="35" selection-end-line="35" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/com/example/yanyue/service/AccountPowerVOServiceTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="350">
-          <caret line="14" column="13" selection-start-line="14" selection-start-column="13" selection-end-line="14" selection-end-column="13" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/example/yanyue/service/AppartmentService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="309">
-          <caret line="22" column="47" selection-start-line="22" selection-start-column="47" selection-end-line="22" selection-end-column="47" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/com/example/yanyue/service/AppartmentServiceTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-14">
-          <caret line="33" column="47" lean-forward="true" selection-start-line="33" selection-start-column="47" selection-end-line="33" selection-end-column="47" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/example/yanyue/service/impl/AppartmentServiceImpl.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-506">
-          <caret line="20" column="13" selection-start-line="20" selection-start-column="13" selection-end-line="20" selection-end-column="13" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/example/yanyue/pojo/Appartment.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="294">
-          <caret line="17" column="32" selection-start-line="17" selection-start-column="19" selection-end-line="17" selection-end-column="32" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/com/example/yanyue/controller/AppartmentControllerTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="260">
-          <caret line="54" column="29" selection-start-line="54" selection-start-column="29" selection-end-line="54" selection-end-column="29" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/example/yanyue/controller/AppartmentController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1046">
-          <caret line="75" column="26" lean-forward="true" selection-start-line="75" selection-start-column="26" selection-end-line="75" selection-end-column="26" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/example/yanyue/dao/AccountDao.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-1600">
-          <caret line="16" column="17" selection-start-line="16" selection-start-column="17" selection-end-line="16" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/mybatis/mapper/AccountPowerVODao.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="134">
-          <caret line="16" column="48" lean-forward="true" selection-start-line="16" selection-start-column="48" selection-end-line="16" selection-end-column="48" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/com/example/yanyue/dao/AccountDaoTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="25">
-          <caret line="13" column="13" selection-start-line="13" selection-start-column="13" selection-end-line="13" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/mybatis/mapper/AppartmentDao.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="825">
-          <caret line="51" column="31" selection-start-line="51" selection-start-column="16" selection-end-line="51" selection-end-column="31" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/example/yanyue/pojo/ApartmentAttr.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="169">
@@ -1352,13 +1222,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/mybatis/mapper/ApartmentPicDao.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="385">
-          <caret line="21" column="32" selection-start-line="21" selection-start-column="32" selection-end-line="21" selection-end-column="32" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/com/example/yanyue/dao/ApartmentPicDaoTest.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="216">
@@ -1423,19 +1286,241 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/example/yanyue/pojo/Order.java">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/com/example/yanyue/dao/AppartmentTypeDaoTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="360">
+        <state relative-caret-position="588">
           <caret line="30" column="65" selection-start-line="30" selection-start-column="65" selection-end-line="30" selection-end-column="65" />
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="e#731#732#0" expanded="true" />
-            <element signature="e#767#768#0" expanded="true" />
+            <element signature="e#828#829#0" expanded="true" />
             <element signature="e#865#866#0" expanded="true" />
-            <element signature="e#901#902#0" expanded="true" />
+            <element signature="e#940#941#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/mybatis/mapper/ApartmentPicDao.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="375">
+          <caret line="15" column="24" selection-start-line="15" selection-start-column="14" selection-end-line="15" selection-end-column="24" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/example/yanyue/pojo/AttrVal.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="500">
+          <caret line="63" column="27" selection-start-line="63" selection-start-column="27" selection-end-line="63" selection-end-column="27" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/example/yanyue/dao/AttrValDao.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="489">
+          <caret line="20" column="42" selection-start-line="20" selection-start-column="42" selection-end-line="20" selection-end-column="42" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/com/example/yanyue/dao/AttrValDaoTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="409">
+          <caret line="34" column="58" selection-start-line="34" selection-start-column="58" selection-end-line="34" selection-end-column="58" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#652#653#0" expanded="true" />
+            <element signature="e#749#750#0" expanded="true" />
+            <element signature="e#786#787#0" expanded="true" />
+            <element signature="e#891#892#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/mybatis/mapper/InformationCheckInDao.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret line="45" column="40" lean-forward="true" selection-start-line="45" selection-start-column="40" selection-end-line="45" selection-end-column="40" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/mybatis/mapper/AttrValDao.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret line="9" column="27" selection-start-line="9" selection-start-column="27" selection-end-line="9" selection-end-column="27" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/example/yanyue/pojo/InformationCheckIn.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="25">
+          <caret line="19" column="7" selection-start-line="19" selection-start-column="7" selection-end-line="19" selection-end-column="7" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/com/example/yanyue/dao/InformationCheckInDaoTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="285">
+          <caret line="47" column="69" selection-start-line="47" selection-start-column="69" selection-end-line="47" selection-end-column="69" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#1591#1592#0" expanded="true" />
+            <element signature="e#1625#1626#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/example/yanyue/dao/InformationCheckInDao.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="310">
+          <caret line="19" column="73" selection-start-line="19" selection-start-column="55" selection-end-line="19" selection-end-column="73" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/example/yanyue/pojo/Message.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-725">
+          <caret line="12" column="9" selection-start-line="12" selection-start-column="9" selection-end-line="12" selection-end-column="9" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/com/example/yanyue/dao/MessageDaoTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret line="3" column="18" lean-forward="true" selection-start-line="3" selection-start-column="18" selection-end-line="3" selection-end-column="18" />
+          <folding>
+            <element signature="e#935#936#0" expanded="true" />
+            <element signature="e#1003#1004#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/example/yanyue/dao/MessageDao.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="110">
+          <caret line="11" column="33" selection-start-line="11" selection-start-column="33" selection-end-line="11" selection-end-column="33" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/com/example/yanyue/pojo/MessageTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="300">
+          <caret line="42" column="5" lean-forward="true" selection-start-line="13" selection-start-column="3" selection-end-line="42" selection-end-column="5" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#1100#1101#0" expanded="true" />
+            <element signature="e#1168#1169#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/example/yanyue/dao/ResourceDao.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="100">
+          <caret line="6" column="17" selection-start-line="6" selection-start-column="17" selection-end-line="6" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/example/yanyue/dao/RoleDao.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="100">
+          <caret line="4" column="17" selection-start-line="4" selection-start-column="17" selection-end-line="4" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/example/yanyue/dao/RoleResourceDao.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="100">
+          <caret line="4" column="17" selection-start-line="4" selection-start-column="17" selection-end-line="4" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/mybatis/mapper/MessageDao.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="175">
+          <caret line="21" column="24" selection-start-line="21" selection-start-column="14" selection-end-line="21" selection-end-column="24" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/example/yanyue/pojo/Order.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="194">
+          <caret line="15" column="9" selection-start-line="15" selection-start-column="9" selection-end-line="15" selection-end-column="9" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/mybatis/mapper/OrderDao.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="110">
+          <caret line="134" column="18" selection-start-line="134" selection-start-column="18" selection-end-line="134" selection-end-column="18" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/example/yanyue/dao/OrderDao.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="210">
+          <caret line="12" column="23" lean-forward="true" selection-start-line="12" selection-start-column="23" selection-end-line="12" selection-end-column="23" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/com/example/yanyue/dao/OrderDaoTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1150">
+          <caret line="46" column="1" lean-forward="true" selection-start-line="46" selection-start-column="1" selection-end-line="46" selection-end-column="1" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#1120#1121#0" expanded="true" />
+            <element signature="e#1156#1157#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/mybatis/mapper/PictureDao.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="510">
+          <caret line="21" column="53" selection-start-line="21" selection-start-column="53" selection-end-line="21" selection-end-column="53" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/example/yanyue/pojo/Picture.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="35">
+          <caret line="11" column="4" lean-forward="true" selection-start-line="11" selection-start-column="4" selection-end-line="11" selection-end-column="4" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/example/yanyue/dao/PictureDao.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="160">
+          <caret line="11" column="24" lean-forward="true" selection-start-line="11" selection-start-column="24" selection-end-line="11" selection-end-column="24" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/com/example/yanyue/dao/PictureDaoTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="411">
+          <caret line="36" column="52" selection-start-line="36" selection-start-column="52" selection-end-line="36" selection-end-column="52" />
+          <folding>
+            <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>

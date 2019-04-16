@@ -15,6 +15,37 @@
     message_id, account_id, replay_id, service_rank, customer_rank, living_rank, message, 
     type
   </sql>
+  <select id="getAll" resultMap="BaseResultMap">
+    select
+    <include refid="Base_Column_List"/>
+    from message
+    <if test="_parameter!=null">
+      <where>
+        <if test="accountId!=null">
+          account_id=#{accountId}
+        </if>
+        <if test="replayId!=null">
+          and replay_id=#{replayId}
+        </if>
+        <if test="serviceRank!=null">
+          and service_rank=#{serviceRank}
+        </if>
+        <if test="customerRank!=null">
+          and customer_rank=#{customerRank}
+        </if>
+        <if test="livingRank">
+          and living_rank=#{livingRank}
+        </if>
+        <if test="message!=null">
+          and message like concat('%',#{message},'%')
+        </if>
+        <if test="type!=null">
+            and type=#{type}
+        </if>
+
+      </where>
+    </if>
+  </select>
   <select id="selectByPrimaryKey" parameterType="java.lang.Integer" resultMap="BaseResultMap">
     select 
     <include refid="Base_Column_List" />

@@ -1,6 +1,9 @@
 package com.example.yanyue.dao;
 
 import com.example.yanyue.pojo.AttrVal;
+import org.w3c.dom.Attr;
+
+import java.util.List;
 
 public interface AttrValDao {
     int deleteByPrimaryKey(Integer attrValueId);
@@ -14,4 +17,6 @@ public interface AttrValDao {
     int updateByPrimaryKeySelective(AttrVal record);
 
     int updateByPrimaryKey(AttrVal record);
+
+    List<AttrVal> getAll(AttrVal attrVal);
 }

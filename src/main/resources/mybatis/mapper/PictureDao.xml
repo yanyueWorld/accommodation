@@ -9,6 +9,21 @@
   <sql id="Base_Column_List">
     pic_id, pic_name, pic_addr
   </sql>
+  <select id="getAll" resultMap="BaseResultMap">
+    select
+    <include refid="Base_Column_List"/>
+    from picture
+    <if test="_parameter!=null">
+      <where>
+        <if test="picName!=null">
+          pic_name like concat('%',#{picName},'%')
+        </if>
+        <if test="picAddr!=null">
+          and pic_addr like concat('%',#{pic_addr},'%')
+        </if>
+      </where>
+    </if>
+  </select>
   <select id="selectByPrimaryKey" parameterType="java.lang.Integer" resultMap="BaseResultMap">
     select 
     <include refid="Base_Column_List" />

@@ -1,5 +1,7 @@
 package com.example.yanyue.pojo;
 
+import lombok.ToString;
+
 import java.io.Serializable;
 /**
  * @className message
@@ -8,6 +10,7 @@ import java.io.Serializable;
  * @Date 9:59 2019/3/25
  * @Version 1.0
  **/
+@ToString
 public class Message implements Serializable {
 
     private Integer messageId;//评价id

@@ -1,111 +1,138 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
 <mapper namespace="com.example.yanyue.dao.OrderDao">
-  <resultMap id="BaseResultMap" type="com.example.yanyue.pojo.Order">
-    <id column="order_id" jdbcType="INTEGER" property="orderId" />
-    <result column="account_id" jdbcType="INTEGER" property="accountId" />
-    <result column="apartment_id" jdbcType="INTEGER" property="apartmentId" />
-    <result column="pre_pay" jdbcType="DECIMAL" property="prePay" />
-    <result column="status" jdbcType="INTEGER" property="status" />
-    <result column="check_in_date" jdbcType="TIMESTAMP" property="checkInDate" />
-    <result column="check_out_date" jdbcType="TIMESTAMP" property="checkOutDate" />
-  </resultMap>
-  <sql id="Base_Column_List">
+    <resultMap id="BaseResultMap" type="com.example.yanyue.pojo.Order">
+        <id column="order_id" jdbcType="INTEGER" property="orderId"/>
+        <result column="account_id" jdbcType="INTEGER" property="accountId"/>
+        <result column="apartment_id" jdbcType="INTEGER" property="apartmentId"/>
+        <result column="pre_pay" jdbcType="DECIMAL" property="prePay"/>
+        <result column="status" jdbcType="INTEGER" property="status"/>
+        <result column="check_in_date" jdbcType="TIMESTAMP" property="checkInDate"/>
+        <result column="check_out_date" jdbcType="TIMESTAMP" property="checkOutDate"/>
+    </resultMap>
+    <sql id="Base_Column_List">
     order_id, account_id, apartment_id, pre_pay, status, check_in_date, check_out_date
   </sql>
-  <select id="selectByPrimaryKey" parameterType="java.lang.Integer" resultMap="BaseResultMap">
-    select 
-    <include refid="Base_Column_List" />
-    from order
-    where order_id = #{orderId,jdbcType=INTEGER}
-  </select>
-  <delete id="deleteByPrimaryKey" parameterType="java.lang.Integer">
-    delete from order
+    <select id="getAll" resultMap="BaseResultMap">
+        select
+        <include refid="Base_Column_List"/>
+        from `order`
+        <if test="_parameter!=null">
+            <where>
+                <if test="accountId!=null">
+                    account_id=#{accountId}
+                </if>
+                <if test="apartmentId!=null">
+                    and apartment_id=#{apartmentId}
+                </if>
+                <if test="prePay!=null">
+                    and pre_pay=#{prePay}
+                </if>
+                <if test="status!=null">
+                    and status=#{status}
+                </if>
+                <if test="checkInDate!=null">
+                    and check_in_date=#{checkInDate}
+                </if>
+                <if test="checkOutDate!=null">
+                    and check_out_date=#{checkOutDate}
+                </if>
+            </where>
+        </if>
+    </select>
+    <select id="selectByPrimaryKey" parameterType="java.lang.Integer" resultMap="BaseResultMap">
+        select
+        <include refid="Base_Column_List"/>
+        from `order`
+        where order_id = #{orderId,jdbcType=INTEGER}
+    </select>
+    <delete id="deleteByPrimaryKey" parameterType="java.lang.Integer">
+    delete from `order`
     where order_id = #{orderId,jdbcType=INTEGER}
   </delete>
-  <insert id="insert" parameterType="com.example.yanyue.pojo.Order">
-    insert into order (order_id, account_id, apartment_id, 
+    <insert id="insert" parameterType="com.example.yanyue.pojo.Order">
+    insert into `order` (order_id, account_id, apartment_id,
       pre_pay, status, check_in_date, 
       check_out_date)
     values (#{orderId,jdbcType=INTEGER}, #{accountId,jdbcType=INTEGER}, #{apartmentId,jdbcType=INTEGER}, 
       #{prePay,jdbcType=DECIMAL}, #{status,jdbcType=INTEGER}, #{checkInDate,jdbcType=TIMESTAMP}, 
       #{checkOutDate,jdbcType=TIMESTAMP})
   </insert>
-  <insert id="insertSelective" parameterType="com.example.yanyue.pojo.Order">
-    insert into order
-    <trim prefix="(" suffix=")" suffixOverrides=",">
-      <if test="orderId != null">
-        order_id,
-      </if>
-      <if test="accountId != null">
-        account_id,
-      </if>
-      <if test="apartmentId != null">
-        apartment_id,
-      </if>
-      <if test="prePay != null">
-        pre_pay,
-      </if>
-      <if test="status != null">
-        status,
-      </if>
-      <if test="checkInDate != null">
-        check_in_date,
-      </if>
-      <if test="checkOutDate != null">
-        check_out_date,
-      </if>
-    </trim>
-    <trim prefix="values (" suffix=")" suffixOverrides=",">
-      <if test="orderId != null">
-        #{orderId,jdbcType=INTEGER},
-      </if>
-      <if test="accountId != null">
-        #{accountId,jdbcType=INTEGER},
-      </if>
-      <if test="apartmentId != null">
-        #{apartmentId,jdbcType=INTEGER},
-      </if>
-      <if test="prePay != null">
-        #{prePay,jdbcType=DECIMAL},
-      </if>
-      <if test="status != null">
-        #{status,jdbcType=INTEGER},
-      </if>
-      <if test="checkInDate != null">
-        #{checkInDate,jdbcType=TIMESTAMP},
-      </if>
-      <if test="checkOutDate != null">
-        #{checkOutDate,jdbcType=TIMESTAMP},
-      </if>
-    </trim>
-  </insert>
-  <update id="updateByPrimaryKeySelective" parameterType="com.example.yanyue.pojo.Order">
-    update order
-    <set>
-      <if test="accountId != null">
-        account_id = #{accountId,jdbcType=INTEGER},
-      </if>
-      <if test="apartmentId != null">
-        apartment_id = #{apartmentId,jdbcType=INTEGER},
-      </if>
-      <if test="prePay != null">
-        pre_pay = #{prePay,jdbcType=DECIMAL},
-      </if>
-      <if test="status != null">
-        status = #{status,jdbcType=INTEGER},
-      </if>
-      <if test="checkInDate != null">
-        check_in_date = #{checkInDate,jdbcType=TIMESTAMP},
-      </if>
-      <if test="checkOutDate != null">
-        check_out_date = #{checkOutDate,jdbcType=TIMESTAMP},
-      </if>
-    </set>
-    where order_id = #{orderId,jdbcType=INTEGER}
-  </update>
-  <update id="updateByPrimaryKey" parameterType="com.example.yanyue.pojo.Order">
-    update order
+    <insert id="insertSelective" parameterType="com.example.yanyue.pojo.Order">
+        insert into `order`
+        <trim prefix="(" suffix=")" suffixOverrides=",">
+            <if test="orderId != null">
+                order_id,
+            </if>
+            <if test="accountId != null">
+                account_id,
+            </if>
+            <if test="apartmentId != null">
+                apartment_id,
+            </if>
+            <if test="prePay != null">
+                pre_pay,
+            </if>
+            <if test="status != null">
+                status,
+            </if>
+            <if test="checkInDate != null">
+                check_in_date,
+            </if>
+            <if test="checkOutDate != null">
+                check_out_date,
+            </if>
+        </trim>
+        <trim prefix="values (" suffix=")" suffixOverrides=",">
+            <if test="orderId != null">
+                #{orderId,jdbcType=INTEGER},
+            </if>
+            <if test="accountId != null">
+                #{accountId,jdbcType=INTEGER},
+            </if>
+            <if test="apartmentId != null">
+                #{apartmentId,jdbcType=INTEGER},
+            </if>
+            <if test="prePay != null">
+                #{prePay,jdbcType=DECIMAL},
+            </if>
+            <if test="status != null">
+                #{status,jdbcType=INTEGER},
+            </if>
+            <if test="checkInDate != null">
+                #{checkInDate,jdbcType=TIMESTAMP},
+            </if>
+            <if test="checkOutDate != null">
+                #{checkOutDate,jdbcType=TIMESTAMP},
+            </if>
+        </trim>
+    </insert>
+    <update id="updateByPrimaryKeySelective" parameterType="com.example.yanyue.pojo.Order">
+        update `order`
+        <set>
+            <if test="accountId != null">
+                account_id = #{accountId,jdbcType=INTEGER},
+            </if>
+            <if test="apartmentId != null">
+                apartment_id = #{apartmentId,jdbcType=INTEGER},
+            </if>
+            <if test="prePay != null">
+                pre_pay = #{prePay,jdbcType=DECIMAL},
+            </if>
+            <if test="status != null">
+                status = #{status,jdbcType=INTEGER},
+            </if>
+            <if test="checkInDate != null">
+                check_in_date = #{checkInDate,jdbcType=TIMESTAMP},
+            </if>
+            <if test="checkOutDate != null">
+                check_out_date = #{checkOutDate,jdbcType=TIMESTAMP},
+            </if>
+        </set>
+        where order_id = #{orderId,jdbcType=INTEGER}
+    </update>
+    <update id="updateByPrimaryKey" parameterType="com.example.yanyue.pojo.Order">
+    update `order`
     set account_id = #{accountId,jdbcType=INTEGER},
       apartment_id = #{apartmentId,jdbcType=INTEGER},
       pre_pay = #{prePay,jdbcType=DECIMAL},

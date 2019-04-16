@@ -13,7 +13,7 @@ public class AttrVal implements Serializable {
 
     private Integer attrValueId;// 属性值id
     private Integer attrId;// 属性id
-    private String arrtValue;// 属性值
+    private String attrValue;// 属性值
     private Integer apartmentId;// 公寓id
 
     public Integer getAttrValueId() {
@@ -32,12 +32,12 @@ public class AttrVal implements Serializable {
         this.attrId = attrId;
     }
 
-    public String getArrtValue() {
-        return arrtValue;
+    public String getAttrValue() {
+        return attrValue;
     }
 
-    public void setArrtValue(String arrtValue) {
-        this.arrtValue = arrtValue;
+    public void setAttrValue(String arrtValue) {
+        this.attrValue = arrtValue;
     }
 
     public Integer getApartmentId() {
@@ -51,16 +51,16 @@ public class AttrVal implements Serializable {
     public AttrVal() {
     }
 
-    public AttrVal(Integer attrValueId, Integer attrId, String arrtValue, Integer apartmentId) {
+    public AttrVal(Integer attrValueId, Integer attrId, String attrValue, Integer apartmentId) {
         this.attrValueId = attrValueId;
         this.attrId = attrId;
-        this.arrtValue = arrtValue;
+        this.attrValue = attrValue;
         this.apartmentId = apartmentId;
     }
 
     @Override
     public String toString() {
         return "AttrVal{" + "attrValueId=" + attrValueId + ", attrId=" + attrId + ", arrtValue='"
-                + arrtValue + '\'' + ", apartmentId=" + apartmentId + '}';
+                + attrValue + '\'' + ", apartmentId=" + apartmentId + '}';
     }
 }

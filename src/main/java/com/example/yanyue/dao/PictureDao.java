@@ -2,6 +2,8 @@ package com.example.yanyue.dao;
 
 import com.example.yanyue.pojo.Picture;
 
+import java.util.List;
+
 public interface PictureDao {
     int deleteByPrimaryKey(Integer picId);
 
@@ -14,4 +16,6 @@ public interface PictureDao {
     int updateByPrimaryKeySelective(Picture record);
 
     int updateByPrimaryKey(Picture record);
+
+    List<Picture> getAll(Picture picture);
 }

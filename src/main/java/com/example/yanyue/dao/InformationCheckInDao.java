@@ -2,6 +2,8 @@ package com.example.yanyue.dao;
 
 import com.example.yanyue.pojo.InformationCheckIn;
 
+import java.util.List;
+
 public interface InformationCheckInDao {
     int deleteByPrimaryKey(Integer inforId);
 
@@ -14,4 +16,6 @@ public interface InformationCheckInDao {
     int updateByPrimaryKeySelective(InformationCheckIn record);
 
     int updateByPrimaryKey(InformationCheckIn record);
+
+    List<InformationCheckIn> getAll(InformationCheckIn informationCheckIn);
 }

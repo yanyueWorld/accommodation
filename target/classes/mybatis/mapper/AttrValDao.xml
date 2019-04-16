@@ -4,12 +4,30 @@
   <resultMap id="BaseResultMap" type="com.example.yanyue.pojo.AttrVal">
     <id column="attr_value_id" jdbcType="INTEGER" property="attrValueId" />
     <result column="attr_id" jdbcType="INTEGER" property="attrId" />
-    <result column="arrt_value" jdbcType="VARCHAR" property="arrtValue" />
+    <result column="attr_value" jdbcType="VARCHAR" property="attrValue" />
     <result column="apartment_id" jdbcType="INTEGER" property="apartmentId" />
   </resultMap>
   <sql id="Base_Column_List">
-    attr_value_id, attr_id, arrt_value, apartment_id
+    attr_value_id, attr_id, attr_value, apartment_id
   </sql>
+  <select id="getAll" resultMap="BaseResultMap">
+    select 
+    <include refid="Base_Column_List"/>
+    from attr_val
+    <if test="_parameter!=null">
+      <where>
+        <if test="attrId!=null">
+          attr_id = #{attrId}
+        </if>
+        <if test="attrValue!=null">
+          and attr_value like concat('%',#{attrValue},'%')
+        </if>
+        <if test="apartmentId!=null">
+          and apartment_id =#{apartmentId}
+        </if>
+      </where>
+    </if>
+  </select>
   <select id="selectByPrimaryKey" parameterType="java.lang.Integer" resultMap="BaseResultMap">
     select 
     <include refid="Base_Column_List" />
@@ -21,9 +39,9 @@
     where attr_value_id = #{attrValueId,jdbcType=INTEGER}
   </delete>
   <insert id="insert" parameterType="com.example.yanyue.pojo.AttrVal">
-    insert into attr_val (attr_value_id, attr_id, arrt_value, 
+    insert into attr_val (attr_value_id, attr_id, attr_value,
       apartment_id)
-    values (#{attrValueId,jdbcType=INTEGER}, #{attrId,jdbcType=INTEGER}, #{arrtValue,jdbcType=VARCHAR}, 
+    values (#{attrValueId,jdbcType=INTEGER}, #{attrId,jdbcType=INTEGER}, #{attrValue,jdbcType=VARCHAR},
       #{apartmentId,jdbcType=INTEGER})
   </insert>
   <insert id="insertSelective" parameterType="com.example.yanyue.pojo.AttrVal">
@@ -35,8 +53,8 @@
       <if test="attrId != null">
         attr_id,
       </if>
-      <if test="arrtValue != null">
-        arrt_value,
+      <if test="attrValue != null">
+        attr_value,
       </if>
       <if test="apartmentId != null">
         apartment_id,
@@ -49,8 +67,8 @@
       <if test="attrId != null">
         #{attrId,jdbcType=INTEGER},
       </if>
-      <if test="arrtValue != null">
-        #{arrtValue,jdbcType=VARCHAR},
+      <if test="attrValue != null">
+        #{attrValue,jdbcType=VARCHAR},
       </if>
       <if test="apartmentId != null">
         #{apartmentId,jdbcType=INTEGER},
@@ -63,8 +81,8 @@
       <if test="attrId != null">
         attr_id = #{attrId,jdbcType=INTEGER},
       </if>
-      <if test="arrtValue != null">
-        arrt_value = #{arrtValue,jdbcType=VARCHAR},
+      <if test="attrValue != null">
+        attr_value = #{attrValue,jdbcType=VARCHAR},
       </if>
       <if test="apartmentId != null">
         apartment_id = #{apartmentId,jdbcType=INTEGER},
@@ -75,7 +93,7 @@
   <update id="updateByPrimaryKey" parameterType="com.example.yanyue.pojo.AttrVal">
     update attr_val
     set attr_id = #{attrId,jdbcType=INTEGER},
-      arrt_value = #{arrtValue,jdbcType=VARCHAR},
+      attr_value = #{attrValue,jdbcType=VARCHAR},
       apartment_id = #{apartmentId,jdbcType=INTEGER}
     where attr_value_id = #{attrValueId,jdbcType=INTEGER}
   </update>

@@ -1,5 +1,7 @@
 package com.example.yanyue.pojo;
 
+import lombok.ToString;
+
 import java.io.Serializable;
 import java.math.BigDecimal;
 import java.util.Date;
@@ -10,6 +12,8 @@ import java.util.Date;
  * @Date 10:05 2019/3/25
  * @Version 1.0
  **/
+
+@ToString
 public class Order implements Serializable {
 
     private Integer orderId;//订单id

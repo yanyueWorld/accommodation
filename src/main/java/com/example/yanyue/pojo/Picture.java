@@ -1,5 +1,7 @@
 package com.example.yanyue.pojo;
 
+import lombok.ToString;
+
 import java.io.Serializable;
 /**
  * @Classname Picture
@@ -8,6 +10,7 @@ import java.io.Serializable;
  * @Date 10:11 2019/3/25
  * @Version 1.0
  **/
+@ToString
 public class Picture implements Serializable {
 
     private Integer picId;//图片id
