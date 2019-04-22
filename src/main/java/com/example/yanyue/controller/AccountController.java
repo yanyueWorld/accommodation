@@ -79,13 +79,14 @@ public class AccountController {
      * @Param Integer page当前页面,Integer limit每页大小, AccountVO accountVO 账户视图对象
      * @return List 账户对象
      **/
-    @RequestMapping("/getAccountsByExample")
+    @RequestMapping(value = "/getAccountsByExample")
     @ResponseBody
     @CrossOrigin
     public Result<List<Account>> fidndAllCustomers(@RequestParam(value = "page", defaultValue = "1", required = false) Integer currentPage,
-                                                   @RequestParam(value = "limit", defaultValue = "10", required = false) Integer pageSize,
-                                                   AccountVO accountVO) {
+                                                   @RequestParam(value = "limit", defaultValue = "5", required = false) Integer pageSize,
+                                                   @RequestBody  AccountVO accountVO) {
         accountVO.setStatus(0);
+        System.out.println(pageSize);
         List<Account> accounts = accountServer.getAccountsByExample(currentPage, pageSize,
                 accountVO);
         Result<List<Account>> result;

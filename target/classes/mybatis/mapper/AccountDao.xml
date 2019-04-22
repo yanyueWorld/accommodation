@@ -28,7 +28,7 @@
   <select id="login" resultMap="BaseResultMap" parameterType="com.example.yanyue.pojo.Account">
     select
     <include refid="Base_Column_List"/>
-    from account where account_name=#{accountName} and password=#{password}
+    from account where account_name=#{accountName} and password=#{password} and status=0;
   </select>
 
   <select id="getAccountByAccountId" resultType="com.example.yanyue.pojo.Account">

@@ -38,7 +38,7 @@ public class AccountControllerTest {
     @Test
     public void fidndAllCustomers() throws Exception {
         mockMvc.perform(MockMvcRequestBuilders.post("/getAccountsByExample").contentType(MediaType.APPLICATION_JSON_UTF8)
-        .param("page","1").param("limit","10").param("name","三").accept(MediaType.APPLICATION_JSON)).andExpect(MockMvcResultMatchers.status().isOk())
+        .param("page","1").param("limit","10").param("roleId","3").accept(MediaType.APPLICATION_JSON)).andExpect(MockMvcResultMatchers.status().isOk())
                 .andDo(MockMvcResultHandlers.print());
     }
 
