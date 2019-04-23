@@ -129,7 +129,7 @@ public class AccountController {
     @RequestMapping("/modify")
     @ResponseBody
     @CrossOrigin
-    public int updateByPrimaryKeySelective(Account account) {
+    public int updateByPrimaryKeySelective(@RequestBody Account account) {
         if (account == null) {
             return -1;
         }
