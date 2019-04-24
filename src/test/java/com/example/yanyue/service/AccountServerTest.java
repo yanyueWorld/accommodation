@@ -70,4 +70,12 @@ public class AccountServerTest {
         result=accountServer.updateByPrimaryKeySelective(account);
         System.out.println(result);
     }
+
+    @Test
+    public void insert(){
+        Account account=new Account();
+        account.setIdNumber("513513197612121233");
+        int result=accountServer.insertAccount(account);
+        System.out.println(result);
+    }
 }

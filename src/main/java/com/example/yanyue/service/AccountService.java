@@ -48,4 +48,6 @@ public interface AccountService {
      * @return int 是否成功 <0 失败
      **/
     int updateByPrimaryKeySelective(Account account);
+
+    int insertAccount(Account account);
 }

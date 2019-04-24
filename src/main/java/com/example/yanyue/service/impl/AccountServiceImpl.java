@@ -3,6 +3,8 @@ package com.example.yanyue.service.impl;
 import java.util.ArrayList;
 import java.util.List;
 
+import com.example.yanyue.dao.AccountRoleDao;
+import com.example.yanyue.pojo.AccountRole;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
@@ -23,6 +25,9 @@ import com.example.yanyue.service.AccountService;
 public class AccountServiceImpl implements AccountService {
     @Autowired
     private AccountDao accountDao;
+
+    @Autowired
+    private AccountRoleDao accountRoleDao;
 
     @Override
     public Account login(String accountName, String password) {
@@ -76,6 +81,30 @@ public class AccountServiceImpl implements AccountService {
         } else {
             result = accountDao.updateByPrimaryKeySelective(account);
             return result;
+        }
+    }
+
+    @Override
+    public int insertAccount(Account account) {
+        if(account==null||account.getIdNumber()==null||account.getIdNumber().length()==0){
+            return 0;
+        }else{
+            int first=accountDao.insertSelective(account);
+            if(first>1){
+                System.out.println(account.getIdNumber());
+                int accountId=accountDao.getAccountIdByIdNumber(account.getIdNumber());
+                AccountRole accountRole=new AccountRole();
+                accountRole.setAccountId(accountId);
+                accountRole.setRoleId(1);
+                int second=accountRoleDao.insertSelective(accountRole);
+                if(second>0){
+                    return second;
+                }else{
+                    return -1;
+                }
+            }else{
+                return -2;
+            }
         }
     }
 

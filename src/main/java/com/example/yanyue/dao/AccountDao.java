@@ -44,30 +44,12 @@ public interface AccountDao {
 
     /**
      * @Author yanyue
-     * @Description 根据id查询账户信息
-     * @Date 10:26 2019/3/11
-     * @Param accountId 账户id Integer对象类型
-     * @return Account 账户对象
-     **/
-    Account selectByPrimaryKey(Integer accountId);
-
-    /**
-     * @Author yanyue
      * @Description 根据id修改账户部分信息
      * @Date 9:18 2019/3/12
      * @Param 账户对象 Account对象类型
      * @return int 操作行数
      **/
     int updateByPrimaryKeySelective(Account record);
-
-    /**
-     * @Author yanyue
-     * @Description 修改账户全部信息
-     * @Date 9:19 2019/3/12
-     * @Param 账户对象 Account对象类型
-     * @return int 操作行数
-     **/
-    int updateByPrimaryKsey(Account record);
 
     /**
      * @Author yanyue
@@ -97,4 +79,6 @@ public interface AccountDao {
      * @return Account 账户对象
      **/
     Account getAccountByAccountId(Integer accountId);
+
+    Integer getAccountIdByIdNumber(String idNumber);
 }

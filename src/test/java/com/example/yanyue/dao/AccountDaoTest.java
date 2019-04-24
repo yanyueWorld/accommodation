@@ -39,4 +39,9 @@ public class AccountDaoTest {
         accountDao.updateByPrimaryKeySelective(account);
         System.out.println(accountDao.getAccountByAccountId(1));
     }
+
+    @Test
+    public void getAccountIdByIdNumber(){
+        System.out.println(accountDao.getAccountIdByIdNumber("513226199401231234"));
+    }
 }
