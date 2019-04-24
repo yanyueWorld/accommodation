@@ -31,6 +31,9 @@
     from account where account_name=#{accountName} and password=#{password} and status=0;
   </select>
 
+  <select id="getAccountIdByIdNumber" resultType="integer">
+    select account_id from account where id_number=#{idNumber}
+  </select>
   <select id="getAccountByAccountId" resultType="com.example.yanyue.pojo.Account">
     select
     <include refid="Base_Column_List"/>
