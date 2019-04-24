@@ -14,6 +14,7 @@ import org.springframework.mock.web.MockHttpServletRequest;
 import org.springframework.test.context.junit4.SpringRunner;
 import org.springframework.test.web.servlet.MockMvc;
 import org.springframework.test.web.servlet.MockMvcBuilder;
+import org.springframework.test.web.servlet.ResultMatcher;
 import org.springframework.test.web.servlet.request.MockMvcRequestBuilders;
 import org.springframework.test.web.servlet.result.MockMvcResultHandlers;
 import org.springframework.test.web.servlet.result.MockMvcResultMatchers;
@@ -37,14 +38,14 @@ public class AccountControllerTest {
 
     @Test
     public void fidndAllCustomers() throws Exception {
-        mockMvc.perform(MockMvcRequestBuilders.post("/getAccountsByExample").contentType(MediaType.APPLICATION_JSON_UTF8)
+        mockMvc.perform(MockMvcRequestBuilders.post("/account/getAccountsByExample").contentType(MediaType.APPLICATION_JSON_UTF8)
         .param("page","1").param("limit","10").param("roleId","3").accept(MediaType.APPLICATION_JSON)).andExpect(MockMvcResultMatchers.status().isOk())
                 .andDo(MockMvcResultHandlers.print());
     }
 
     @Test
     public void getAccountByAccountId() throws Exception {
-        mockMvc.perform(MockMvcRequestBuilders.post("/getAccountByAccountId").contentType(MediaType.APPLICATION_JSON_UTF8)
+        mockMvc.perform(MockMvcRequestBuilders.post("/account/getAccountByAccountId").contentType(MediaType.APPLICATION_JSON_UTF8)
         .param("accountId","1").accept(MediaType.APPLICATION_JSON)).andExpect(MockMvcResultMatchers.status().isOk()).
                 andDo(MockMvcResultHandlers.print());
     }
@@ -52,8 +53,10 @@ public class AccountControllerTest {
     @Test
     public void updateByPrimaryKeySelective() throws Exception{
 
-        mockMvc.perform(MockMvcRequestBuilders.post("/modify").contentType(MediaType.APPLICATION_JSON_UTF8)
-        .param("accountId","1").param("gender","男").accept(MediaType.APPLICATION_JSON)).andExpect(MockMvcResultMatchers.status().isOk())
+        mockMvc.perform(MockMvcRequestBuilders.post("/account/modify").contentType(MediaType.APPLICATION_JSON_UTF8)
+        .param("accountId","1").param("gender","男").accept(MediaType.APPLICATION_JSON))
+                .andExpect(MockMvcResultMatchers.status().isOk())
                 .andDo(MockMvcResultHandlers.print());
     }
+
 }

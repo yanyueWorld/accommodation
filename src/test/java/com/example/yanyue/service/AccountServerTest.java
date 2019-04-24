@@ -74,8 +74,8 @@ public class AccountServerTest {
     @Test
     public void insert(){
         Account account=new Account();
-        account.setIdNumber("513513197612121233");
-        int result=accountServer.insertAccount(account);
+        account.setIdNumber("4");
+        int result=accountServer.insertAccount(account,3);
         System.out.println(result);
     }
 }
