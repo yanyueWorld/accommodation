@@ -3,6 +3,8 @@ package com.example.yanyue.controller;
 import com.example.yanyue.pojo.Account;
 import com.example.yanyue.pojo.vo.AccountPowerVO;
 import com.example.yanyue.pojo.vo.AccountVO;
+import com.fasterxml.jackson.databind.ObjectMapper;
+import com.fasterxml.jackson.databind.ObjectWriter;
 import com.google.gson.Gson;
 import org.junit.Before;
 import org.junit.Test;
@@ -38,8 +40,13 @@ public class AccountControllerTest {
 
     @Test
     public void fidndAllCustomers() throws Exception {
+        AccountVO accountVO=new AccountVO();
+        accountVO.setAccountName("三");
+        Gson gson=new Gson();
+        String json=gson.toJson(accountVO);
+        System.out.println(json);
         mockMvc.perform(MockMvcRequestBuilders.post("/account/getAccountsByExample").contentType(MediaType.APPLICATION_JSON_UTF8)
-        .param("page","1").param("limit","10").param("roleId","3").accept(MediaType.APPLICATION_JSON)).andExpect(MockMvcResultMatchers.status().isOk())
+        .param("page","1").param("limit","10").content(json).accept(MediaType.APPLICATION_JSON)).andExpect(MockMvcResultMatchers.status().isOk())
                 .andDo(MockMvcResultHandlers.print());
     }
 
@@ -52,11 +59,16 @@ public class AccountControllerTest {
 
     @Test
     public void updateByPrimaryKeySelective() throws Exception{
-
+        Account account=new Account();
+        account.setAccountId(25);
+        account.setGender("男");
+        String json=new Gson().toJson(account);
         mockMvc.perform(MockMvcRequestBuilders.post("/account/modify").contentType(MediaType.APPLICATION_JSON_UTF8)
-        .param("accountId","1").param("gender","男").accept(MediaType.APPLICATION_JSON))
+        .content(json).accept(MediaType.APPLICATION_JSON))
                 .andExpect(MockMvcResultMatchers.status().isOk())
                 .andDo(MockMvcResultHandlers.print());
     }
+
+
 
 }
