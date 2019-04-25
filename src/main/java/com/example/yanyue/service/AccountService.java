@@ -49,5 +49,5 @@ public interface AccountService {
      **/
     int updateByPrimaryKeySelective(Account account);
 
-    int insertAccount(Account account);
+    int insertAccount(Account account,Integer roleId);
 }

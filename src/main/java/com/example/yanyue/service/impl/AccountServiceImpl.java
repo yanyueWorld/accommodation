@@ -85,17 +85,18 @@ public class AccountServiceImpl implements AccountService {
     }
 
     @Override
-    public int insertAccount(Account account) {
+    public int insertAccount(Account account,Integer roleId) {
         if(account==null||account.getIdNumber()==null||account.getIdNumber().length()==0){
             return 0;
         }else{
             int first=accountDao.insertSelective(account);
-            if(first>1){
+            if(first>0){
                 System.out.println(account.getIdNumber());
                 int accountId=accountDao.getAccountIdByIdNumber(account.getIdNumber());
                 AccountRole accountRole=new AccountRole();
                 accountRole.setAccountId(accountId);
-                accountRole.setRoleId(1);
+                accountRole.setRoleId(roleId);
+                System.out.println(accountRole);
                 int second=accountRoleDao.insertSelective(accountRole);
                 if(second>0){
                     return second;

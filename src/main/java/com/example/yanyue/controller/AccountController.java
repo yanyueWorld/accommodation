@@ -22,6 +22,7 @@ import com.github.pagehelper.PageInfo;
  * @Version 1.0
  **/
 @Controller
+@RequestMapping("/account")
 public class AccountController {
     @Autowired
     private AccountService accountServer;
@@ -136,4 +137,10 @@ public class AccountController {
         return accountServer.updateByPrimaryKeySelective(account);
     }
 
+    @RequestMapping("/insert")
+    @ResponseBody
+    @CrossOrigin
+    public int insertAccount(@RequestBody Account account,Integer roleId){
+        return accountServer.insertAccount(account,roleId);
+    }
 }
