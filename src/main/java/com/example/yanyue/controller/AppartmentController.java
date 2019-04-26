@@ -6,10 +6,7 @@ import com.example.yanyue.pojo.Appartment;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Component;
 import org.springframework.stereotype.Controller;
-import org.springframework.web.bind.annotation.CrossOrigin;
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RequestParam;
-import org.springframework.web.bind.annotation.ResponseBody;
+import org.springframework.web.bind.annotation.*;
 
 import com.example.yanyue.pojo.common.Result;
 import com.example.yanyue.pojo.vo.AppartmentVO;
@@ -25,6 +22,7 @@ import com.github.pagehelper.PageInfo;
  **/
 
 @Controller
+@RequestMapping("/appartment")
 public class AppartmentController {
 
     @Autowired
@@ -34,7 +32,7 @@ public class AppartmentController {
     @ResponseBody
     @CrossOrigin
     public Result<List<AppartmentVO>> getAppartmentByExample(@RequestParam(value = "page", defaultValue = "1", required = false) Integer currentPage,
-                                                             @RequestParam(value = "limit", defaultValue = "10", required = false) Integer pageSize,AppartmentVO appartmentVO) {
+                                                             @RequestParam(value = "limit", defaultValue = "5", required = false) Integer pageSize,@RequestBody AppartmentVO appartmentVO) {
         List<AppartmentVO> appartmentVOS = appartmentService.getAppartmentByExample(currentPage,
                 pageSize,appartmentVO);
         System.out.println(appartmentVO);

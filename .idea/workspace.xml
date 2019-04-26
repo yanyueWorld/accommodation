@@ -3,9 +3,12 @@
   <component name="ChangeListManager">
     <list default="true" id="972affcc-9252-498c-8756-440758abf2a1" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/static/login.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/login.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/example/yanyue/controller/AccountControllerTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/example/yanyue/controller/AccountControllerTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/static/login.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/static/login.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/yanyue/controller/AppartmentController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/yanyue/controller/AppartmentController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/yanyue/pojo/vo/AppartmentVO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/yanyue/pojo/vo/AppartmentVO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/mybatis/mapper/AppartmentDao.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/mybatis/mapper/AppartmentDao.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/example/yanyue/controller/AppartmentControllerTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/example/yanyue/controller/AppartmentControllerTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/example/yanyue/dao/AppartmentDaoTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/example/yanyue/dao/AppartmentDaoTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/mybatis/mapper/AppartmentDao.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/mybatis/mapper/AppartmentDao.xml" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -51,38 +54,54 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/pom.xml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="2150">
-              <caret line="86" column="41" selection-start-line="86" selection-start-column="37" selection-end-line="86" selection-end-column="41" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/example/yanyue/pojo/vo/AccountVO.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="225">
-              <caret line="14" column="4" selection-start-line="14" selection-start-column="4" selection-end-line="14" selection-end-column="4" />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/example/yanyue/controller/AccountController.java">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/example/yanyue/pojo/vo/AppartmentVO.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="2800">
-              <caret line="125" column="26" lean-forward="true" selection-start-line="125" selection-start-column="26" selection-end-line="125" selection-end-column="26" />
+            <state relative-caret-position="600">
+              <caret line="24" column="29" selection-start-line="24" selection-start-column="29" selection-end-line="24" selection-end-column="29" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/test/java/com/example/yanyue/controller/AccountControllerTest.java">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/example/yanyue/dao/AppartmentDao.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="825">
-              <caret line="54" column="25" selection-start-line="54" selection-start-column="25" selection-end-line="54" selection-end-column="25" />
+            <state relative-caret-position="275">
+              <caret line="15" column="17" selection-start-line="15" selection-start-column="17" selection-end-line="15" selection-end-column="17" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/resources/mybatis/mapper/AppartmentDao.xml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="1003">
+              <caret line="40" column="34" selection-start-line="40" selection-start-column="34" selection-end-line="40" selection-end-column="34" />
+              <folding>
+                <element signature="e#2376#2380#0" expanded="true" />
+                <element signature="e#2589#2593#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/test/java/com/example/yanyue/dao/AppartmentDaoTest.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="377">
+              <caret line="23" column="16" selection-start-line="23" selection-start-column="16" selection-end-line="23" selection-end-column="16" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/test/java/com/example/yanyue/controller/AppartmentControllerTest.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="575">
+              <caret line="37" column="67" selection-start-line="37" selection-start-column="67" selection-end-line="37" selection-end-column="67" />
             </state>
           </provider>
         </entry>
@@ -138,11 +157,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/src/main/java/com/example/yanyue/service/impl/AppartmentServiceImpl.java" />
-        <option value="$PROJECT_DIR$/src/test/java/com/example/yanyue/service/AppartmentServiceTest.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/example/yanyue/controller/AppartmentController.java" />
-        <option value="$PROJECT_DIR$/src/test/java/com/example/yanyue/controller/AppartmentControllerTest.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/example/yanyue/dao/ApartmentAttrDao.java" />
         <option value="$PROJECT_DIR$/src/main/resources/mybatis/mapper/ApartmentAttrDao.xml" />
         <option value="$PROJECT_DIR$/src/test/java/com/example/yanyue/dao/ApartmentAttrDaoTest.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/example/yanyue/dao/AccountRoleDao.java" />
@@ -189,6 +203,11 @@
         <option value="$PROJECT_DIR$/src/test/java/com/example/yanyue/service/AccountServerTest.java" />
         <option value="$PROJECT_DIR$/src/main/resources/static/login.html" />
         <option value="$PROJECT_DIR$/src/test/java/com/example/yanyue/controller/AccountControllerTest.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/example/yanyue/controller/AppartmentController.java" />
+        <option value="$PROJECT_DIR$/src/test/java/com/example/yanyue/controller/AppartmentControllerTest.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/example/yanyue/pojo/vo/AppartmentVO.java" />
+        <option value="$PROJECT_DIR$/src/test/java/com/example/yanyue/dao/AppartmentDaoTest.java" />
+        <option value="$PROJECT_DIR$/src/main/resources/mybatis/mapper/AppartmentDao.xml" />
       </list>
     </option>
   </component>
@@ -238,7 +257,7 @@
       <select />
     </treeState>
   </component>
-  <component name="ProjectFrameBounds" extendedState="6">
+  <component name="ProjectFrameBounds">
     <option name="x" value="-8" />
     <option name="y" value="-8" />
     <option name="width" value="1936" />
@@ -252,7 +271,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
@@ -445,6 +463,182 @@
           <select />
         </subPane>
       </pane>
+      <pane id="Scope">
+        <subPane subId="Scope 'Project Files'; set:Project Files; class com.intellij.psi.search.scope.ProjectFilesScope">
+          <expand>
+            <path>
+              <item name="accommodation" type="3d21c010:ScopeViewTreeModel$ProjectNode" />
+              <item name="accommodation" type="2674bda8:ScopeViewTreeModel$GroupNode" />
+            </path>
+            <path>
+              <item name="accommodation" type="3d21c010:ScopeViewTreeModel$ProjectNode" />
+              <item name="accommodation" type="2674bda8:ScopeViewTreeModel$GroupNode" />
+              <item name="src" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+            </path>
+            <path>
+              <item name="accommodation" type="3d21c010:ScopeViewTreeModel$ProjectNode" />
+              <item name="accommodation" type="2674bda8:ScopeViewTreeModel$GroupNode" />
+              <item name="src" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+              <item name="main" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+            </path>
+            <path>
+              <item name="accommodation" type="3d21c010:ScopeViewTreeModel$ProjectNode" />
+              <item name="accommodation" type="2674bda8:ScopeViewTreeModel$GroupNode" />
+              <item name="src" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+              <item name="main" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+              <item name="java" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+            </path>
+            <path>
+              <item name="accommodation" type="3d21c010:ScopeViewTreeModel$ProjectNode" />
+              <item name="accommodation" type="2674bda8:ScopeViewTreeModel$GroupNode" />
+              <item name="src" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+              <item name="main" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+              <item name="java" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+              <item name="com" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+            </path>
+            <path>
+              <item name="accommodation" type="3d21c010:ScopeViewTreeModel$ProjectNode" />
+              <item name="accommodation" type="2674bda8:ScopeViewTreeModel$GroupNode" />
+              <item name="src" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+              <item name="main" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+              <item name="java" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+              <item name="com" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+              <item name="example" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+            </path>
+            <path>
+              <item name="accommodation" type="3d21c010:ScopeViewTreeModel$ProjectNode" />
+              <item name="accommodation" type="2674bda8:ScopeViewTreeModel$GroupNode" />
+              <item name="src" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+              <item name="main" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+              <item name="java" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+              <item name="com" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+              <item name="example" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+              <item name="yanyue" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+            </path>
+            <path>
+              <item name="accommodation" type="3d21c010:ScopeViewTreeModel$ProjectNode" />
+              <item name="accommodation" type="2674bda8:ScopeViewTreeModel$GroupNode" />
+              <item name="src" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+              <item name="main" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+              <item name="java" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+              <item name="com" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+              <item name="example" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+              <item name="yanyue" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+              <item name="dao" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+            </path>
+            <path>
+              <item name="accommodation" type="3d21c010:ScopeViewTreeModel$ProjectNode" />
+              <item name="accommodation" type="2674bda8:ScopeViewTreeModel$GroupNode" />
+              <item name="src" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+              <item name="main" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+              <item name="java" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+              <item name="com" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+              <item name="example" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+              <item name="yanyue" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+              <item name="pojo" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+            </path>
+            <path>
+              <item name="accommodation" type="3d21c010:ScopeViewTreeModel$ProjectNode" />
+              <item name="accommodation" type="2674bda8:ScopeViewTreeModel$GroupNode" />
+              <item name="src" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+              <item name="main" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+              <item name="java" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+              <item name="com" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+              <item name="example" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+              <item name="yanyue" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+              <item name="pojo" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+              <item name="vo" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+            </path>
+            <path>
+              <item name="accommodation" type="3d21c010:ScopeViewTreeModel$ProjectNode" />
+              <item name="accommodation" type="2674bda8:ScopeViewTreeModel$GroupNode" />
+              <item name="src" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+              <item name="main" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+              <item name="resources" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+            </path>
+            <path>
+              <item name="accommodation" type="3d21c010:ScopeViewTreeModel$ProjectNode" />
+              <item name="accommodation" type="2674bda8:ScopeViewTreeModel$GroupNode" />
+              <item name="src" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+              <item name="main" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+              <item name="resources" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+              <item name="mybatis" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+            </path>
+            <path>
+              <item name="accommodation" type="3d21c010:ScopeViewTreeModel$ProjectNode" />
+              <item name="accommodation" type="2674bda8:ScopeViewTreeModel$GroupNode" />
+              <item name="src" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+              <item name="main" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+              <item name="resources" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+              <item name="mybatis" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+              <item name="mapper" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+            </path>
+            <path>
+              <item name="accommodation" type="3d21c010:ScopeViewTreeModel$ProjectNode" />
+              <item name="accommodation" type="2674bda8:ScopeViewTreeModel$GroupNode" />
+              <item name="src" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+              <item name="test" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+            </path>
+            <path>
+              <item name="accommodation" type="3d21c010:ScopeViewTreeModel$ProjectNode" />
+              <item name="accommodation" type="2674bda8:ScopeViewTreeModel$GroupNode" />
+              <item name="src" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+              <item name="test" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+              <item name="java" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+            </path>
+            <path>
+              <item name="accommodation" type="3d21c010:ScopeViewTreeModel$ProjectNode" />
+              <item name="accommodation" type="2674bda8:ScopeViewTreeModel$GroupNode" />
+              <item name="src" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+              <item name="test" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+              <item name="java" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+              <item name="com" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+            </path>
+            <path>
+              <item name="accommodation" type="3d21c010:ScopeViewTreeModel$ProjectNode" />
+              <item name="accommodation" type="2674bda8:ScopeViewTreeModel$GroupNode" />
+              <item name="src" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+              <item name="test" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+              <item name="java" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+              <item name="com" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+              <item name="example" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+            </path>
+            <path>
+              <item name="accommodation" type="3d21c010:ScopeViewTreeModel$ProjectNode" />
+              <item name="accommodation" type="2674bda8:ScopeViewTreeModel$GroupNode" />
+              <item name="src" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+              <item name="test" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+              <item name="java" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+              <item name="com" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+              <item name="example" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+              <item name="yanyue" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+            </path>
+            <path>
+              <item name="accommodation" type="3d21c010:ScopeViewTreeModel$ProjectNode" />
+              <item name="accommodation" type="2674bda8:ScopeViewTreeModel$GroupNode" />
+              <item name="src" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+              <item name="test" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+              <item name="java" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+              <item name="com" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+              <item name="example" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+              <item name="yanyue" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+              <item name="controller" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+            </path>
+            <path>
+              <item name="accommodation" type="3d21c010:ScopeViewTreeModel$ProjectNode" />
+              <item name="accommodation" type="2674bda8:ScopeViewTreeModel$GroupNode" />
+              <item name="src" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+              <item name="test" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+              <item name="java" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+              <item name="com" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+              <item name="example" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+              <item name="yanyue" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+              <item name="dao" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+            </path>
+          </expand>
+          <select />
+        </subPane>
+      </pane>
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -472,7 +666,7 @@
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.0" />
     <property name="project.structure.side.proportion" value="0.2" />
-    <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
+    <property name="settings.editor.selected.configurable" value="project.propCompiler" />
   </component>
   <component name="RecentsManager">
     <key name="CreateTestDialog.RecentsKey">
@@ -551,22 +745,6 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="AccountDaoTest.getAccountIdByIdNumber" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="accommodation" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.example.yanyue.dao.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="com.example.yanyue.dao" />
-      <option name="MAIN_CLASS_NAME" value="com.example.yanyue.dao.AccountDaoTest" />
-      <option name="METHOD_NAME" value="getAccountIdByIdNumber" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <configuration name="AccountServerTest.insert" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="accommodation" />
       <extension name="coverage">
@@ -583,17 +761,33 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="MessageTest.test" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="AppartmentControllerTest.getAppartmentByExample" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="accommodation" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.example.yanyue.pojo.*" />
+          <option name="PATTERN" value="com.example.yanyue.controller.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="com.example.yanyue.pojo" />
-      <option name="MAIN_CLASS_NAME" value="com.example.yanyue.pojo.MessageTest" />
-      <option name="METHOD_NAME" value="test" />
+      <option name="PACKAGE_NAME" value="com.example.yanyue.controller" />
+      <option name="MAIN_CLASS_NAME" value="com.example.yanyue.controller.AppartmentControllerTest" />
+      <option name="METHOD_NAME" value="getAppartmentByExample" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="AppartmentDaoTest.getAppartmentByExample" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="accommodation" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.example.yanyue.dao.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.example.yanyue.dao" />
+      <option name="MAIN_CLASS_NAME" value="com.example.yanyue.dao.AppartmentDaoTest" />
+      <option name="METHOD_NAME" value="getAppartmentByExample" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -608,11 +802,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.AppartmentControllerTest.getAppartmentByExample" />
+        <item itemvalue="JUnit.AppartmentDaoTest.getAppartmentByExample" />
         <item itemvalue="JUnit.AccountControllerTest.updateByPrimaryKeySelective" />
         <item itemvalue="JUnit.AccountControllerTest.fidndAllCustomers" />
         <item itemvalue="JUnit.AccountServerTest.insert" />
-        <item itemvalue="JUnit.AccountDaoTest.getAccountIdByIdNumber" />
-        <item itemvalue="JUnit.MessageTest.test" />
       </list>
     </recent_temporary>
   </component>
@@ -737,7 +931,9 @@
       <workItem from="1556066655829" duration="1486000" />
       <workItem from="1556082192940" duration="7588000" />
       <workItem from="1556153033068" duration="5486000" />
-      <workItem from="1556168704090" duration="4536000" />
+      <workItem from="1556168704090" duration="5828000" />
+      <workItem from="1556240399818" duration="7969000" />
+      <workItem from="1556255129831" duration="2065000" />
     </task>
     <task id="LOCAL-00001" summary="第一次提交">
       <created>1554188811697</created>
@@ -949,43 +1145,50 @@
       <option name="project" value="LOCAL" />
       <updated>1556096612373</updated>
     </task>
-    <option name="localTasksCounter" value="31" />
+    <task id="LOCAL-00031" summary="accountController modify last time">
+      <created>1556181817344</created>
+      <option name="number" value="00031" />
+      <option name="presentableId" value="LOCAL-00031" />
+      <option name="project" value="LOCAL" />
+      <updated>1556181817344</updated>
+    </task>
+    <option name="localTasksCounter" value="32" />
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="AccountControllerTest_fidndAllCustomers - 2019.04.25 at 09h 12m 51s.xml">
-      <configuration name="AccountControllerTest.fidndAllCustomers" configurationId="JUnit" />
+    <history-entry file="AppartmentDaoTest_getAppartmentByExample - 2019.04.26 at 09h 37m 20s.xml">
+      <configuration name="AppartmentDaoTest.getAppartmentByExample" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="AccountControllerTest_fidndAllCustomers - 2019.04.25 at 09h 16m 21s.xml">
-      <configuration name="AccountControllerTest.fidndAllCustomers" configurationId="JUnit" />
+    <history-entry file="AppartmentDaoTest_getAppartmentByExample - 2019.04.26 at 09h 39m 49s.xml">
+      <configuration name="AppartmentDaoTest.getAppartmentByExample" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="AccountControllerTest_fidndAllCustomers - 2019.04.25 at 09h 17m 09s.xml">
-      <configuration name="AccountControllerTest.fidndAllCustomers" configurationId="JUnit" />
+    <history-entry file="AppartmentDaoTest_getAppartmentByExample - 2019.04.26 at 09h 41m 24s.xml">
+      <configuration name="AppartmentDaoTest.getAppartmentByExample" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="AccountControllerTest_fidndAllCustomers - 2019.04.25 at 09h 18m 19s.xml">
-      <configuration name="AccountControllerTest.fidndAllCustomers" configurationId="JUnit" />
+    <history-entry file="AppartmentDaoTest_getAppartmentByExample - 2019.04.26 at 09h 42m 59s.xml">
+      <configuration name="AppartmentDaoTest.getAppartmentByExample" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="AccountControllerTest_fidndAllCustomers - 2019.04.25 at 09h 18m 45s.xml">
-      <configuration name="AccountControllerTest.fidndAllCustomers" configurationId="JUnit" />
+    <history-entry file="AppartmentDaoTest_getAppartmentByExample - 2019.04.26 at 09h 44m 12s.xml">
+      <configuration name="AppartmentDaoTest.getAppartmentByExample" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="AccountControllerTest_fidndAllCustomers - 2019.04.25 at 09h 19m 56s.xml">
-      <configuration name="AccountControllerTest.fidndAllCustomers" configurationId="JUnit" />
+    <history-entry file="AppartmentDaoTest_getAppartmentByExample - 2019.04.26 at 09h 46m 49s.xml">
+      <configuration name="AppartmentDaoTest.getAppartmentByExample" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="AccountControllerTest_fidndAllCustomers - 2019.04.25 at 09h 28m 54s.xml">
-      <configuration name="AccountControllerTest.fidndAllCustomers" configurationId="JUnit" />
+    <history-entry file="AppartmentDaoTest_getAppartmentByExample - 2019.04.26 at 09h 56m 16s.xml">
+      <configuration name="AppartmentDaoTest.getAppartmentByExample" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="AccountControllerTest_fidndAllCustomers - 2019.04.25 at 09h 29m 45s.xml">
-      <configuration name="AccountControllerTest.fidndAllCustomers" configurationId="JUnit" />
+    <history-entry file="AppartmentDaoTest_getAppartmentByExample - 2019.04.26 at 09h 57m 58s.xml">
+      <configuration name="AppartmentDaoTest.getAppartmentByExample" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="AccountControllerTest_fidndAllCustomers - 2019.04.25 at 09h 30m 39s.xml">
-      <configuration name="AccountControllerTest.fidndAllCustomers" configurationId="JUnit" />
+    <history-entry file="AppartmentDaoTest_getAppartmentByExample - 2019.04.26 at 10h 05m 42s.xml">
+      <configuration name="AppartmentDaoTest.getAppartmentByExample" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="AccountControllerTest_updateByPrimaryKeySelective - 2019.04.25 at 09h 34m 28s.xml">
-      <configuration name="AccountControllerTest.updateByPrimaryKeySelective" configurationId="JUnit" />
+    <history-entry file="AppartmentControllerTest_getAppartmentByExample - 2019.04.26 at 10h 06m 33s.xml">
+      <configuration name="AppartmentControllerTest.getAppartmentByExample" configurationId="JUnit" />
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="501606000" />
+    <option name="totallyTimeSpent" value="512932000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -997,9 +1200,10 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1936" height="1096" extended-state="6" />
+    <frame x="-8" y="-8" width="1936" height="1096" extended-state="0" />
+    <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.17910448" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.18070363" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Designer" order="2" />
       <window_info id="Image Layers" order="3" />
@@ -1009,7 +1213,53 @@
       <window_info id="Web" order="7" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.25779626" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" sideWeight="0.46162048" visible="true" weight="0.3991684" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" sideWeight="0.46162048" visible="true" weight="0.3773389" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.4116424" />
+      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
+      <window_info anchor="bottom" id="TODO" order="6" weight="0.32848233" />
+      <window_info anchor="bottom" id="Spring" order="7" weight="0.32917964" />
+      <window_info anchor="bottom" id="Terminal" order="8" weight="0.32917964" />
+      <window_info anchor="bottom" id="Docker" order="9" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Event Log" order="10" sideWeight="0.5191898" side_tool="true" weight="0.33056134" />
+      <window_info anchor="bottom" id="Messages" order="11" sideWeight="0.48081023" weight="0.33056134" />
+      <window_info anchor="bottom" id="Version Control" order="12" weight="0.32952183" />
+      <window_info anchor="bottom" id="Java Enterprise" order="13" weight="0.32917964" />
+      <window_info anchor="bottom" id="Database Changes" order="14" />
+      <window_info anchor="bottom" id="FindBugs-IDEA" order="15" weight="0.32917964" />
+      <window_info anchor="bottom" id="Problems" order="16" weight="0.33852544" />
+      <window_info anchor="bottom" id="Duplicate detector" order="17" weight="0.32917964" />
+      <window_info anchor="bottom" id="Inspection Results" order="18" weight="0.32917964" />
+      <window_info anchor="bottom" id="CheckStyle" order="19" weight="0.32917964" />
+      <window_info anchor="bottom" id="Statistic" order="20" weight="0.32848233" />
+      <window_info anchor="bottom" id="MyBatis Sql Log" order="21" />
+      <window_info anchor="bottom" id="Tail" order="22" />
+      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
+      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+      <window_info anchor="right" id="Maven" order="3" sideWeight="0.49603173" weight="0.2217484" />
+      <window_info anchor="right" id="Palette" order="4" />
+      <window_info anchor="right" id="Capture Analysis" order="5" />
+      <window_info anchor="right" id="Database" order="6" weight="0.32971245" />
+      <window_info anchor="right" id="Palette&#9;" order="7" />
+      <window_info anchor="right" id="Theme Preview" order="8" />
+      <window_info anchor="right" id="Bean Validation" order="9" />
+      <window_info anchor="right" id="Mybatis datasource" order="10" side_tool="true" />
+      <window_info anchor="right" id="Coverage" order="11" sideWeight="0.50396824" side_tool="true" weight="0.49946696" />
+      <window_info anchor="right" x="99" y="95" width="1736" height="896" id="Byte Code Viewer" order="12" type="FLOATING" />
+    </layout>
+    <layout-to-restore>
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.18070363" />
+      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
+      <window_info id="Designer" order="2" />
+      <window_info id="Image Layers" order="3" />
+      <window_info id="Capture Tool" order="4" />
+      <window_info id="UI Designer" order="5" />
+      <window_info id="Favorites" order="6" side_tool="true" />
+      <window_info id="Web" order="7" side_tool="true" />
+      <window_info anchor="bottom" id="Message" order="0" />
+      <window_info anchor="bottom" id="Find" order="1" weight="0.25779626" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" sideWeight="0.46162048" visible="true" weight="0.3773389" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4116424" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -1034,49 +1284,6 @@
       <window_info anchor="right" id="Ant Build" order="1" visible="true" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
       <window_info anchor="right" id="Maven" order="3" sideWeight="0.49603173" weight="0.2217484" />
-      <window_info anchor="right" id="Palette" order="4" />
-      <window_info anchor="right" id="Capture Analysis" order="5" />
-      <window_info anchor="right" id="Database" order="6" weight="0.32971245" />
-      <window_info anchor="right" id="Palette&#9;" order="7" />
-      <window_info anchor="right" id="Theme Preview" order="8" />
-      <window_info anchor="right" id="Bean Validation" order="9" />
-      <window_info anchor="right" id="Mybatis datasource" order="10" side_tool="true" />
-      <window_info anchor="right" id="Coverage" order="11" sideWeight="0.50396824" side_tool="true" weight="0.49946696" />
-      <window_info anchor="right" x="99" y="95" width="1736" height="896" id="Byte Code Viewer" order="12" type="FLOATING" />
-    </layout>
-    <layout-to-restore>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.2793177" />
-      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
-      <window_info id="Designer" order="2" />
-      <window_info id="Image Layers" order="3" />
-      <window_info id="Capture Tool" order="4" />
-      <window_info id="UI Designer" order="5" />
-      <window_info id="Favorites" order="6" side_tool="true" />
-      <window_info id="Web" order="7" side_tool="true" />
-      <window_info anchor="bottom" id="Message" order="0" />
-      <window_info anchor="bottom" id="Find" order="1" weight="0.25779626" />
-      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.46162048" visible="true" weight="0.44386694" />
-      <window_info anchor="bottom" id="Debug" order="3" weight="0.4116424" />
-      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
-      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
-      <window_info anchor="bottom" id="TODO" order="6" weight="0.32917964" />
-      <window_info anchor="bottom" id="Spring" order="7" weight="0.32917964" />
-      <window_info anchor="bottom" id="Terminal" order="8" weight="0.32917964" />
-      <window_info anchor="bottom" id="Docker" order="9" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Event Log" order="10" sideWeight="0.53837955" side_tool="true" weight="0.32328483" />
-      <window_info anchor="bottom" id="Messages" order="11" weight="0.33056134" />
-      <window_info anchor="bottom" id="Java Enterprise" order="12" weight="0.32917964" />
-      <window_info anchor="bottom" id="Database Changes" order="13" />
-      <window_info anchor="bottom" id="Version Control" order="14" weight="0.32952183" />
-      <window_info anchor="bottom" id="FindBugs-IDEA" order="15" weight="0.32917964" />
-      <window_info anchor="bottom" id="Problems" order="16" weight="0.33852544" />
-      <window_info anchor="bottom" id="Duplicate detector" order="17" weight="0.32917964" />
-      <window_info anchor="bottom" id="Inspection Results" order="18" weight="0.32917964" />
-      <window_info anchor="bottom" id="CheckStyle" order="19" weight="0.32917964" />
-      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
-      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
-      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
-      <window_info anchor="right" id="Maven" order="3" sideWeight="0.49603173" weight="0.2228145" />
       <window_info anchor="right" id="Palette" order="4" />
       <window_info anchor="right" id="Capture Analysis" order="5" />
       <window_info anchor="right" id="Database" order="6" weight="0.32971245" />
@@ -1155,51 +1362,14 @@
     <MESSAGE value="messagePojo test delete" />
     <MESSAGE value="modify" />
     <MESSAGE value="account modify" />
-    <option name="LAST_COMMIT_MESSAGE" value="account modify" />
+    <MESSAGE value="accountController modify last time" />
+    <option name="LAST_COMMIT_MESSAGE" value="accountController modify last time" />
   </component>
   <component name="antWorkspaceConfiguration">
     <option name="IS_AUTOSCROLL_TO_SOURCE" value="false" />
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/main/resources/mybatis/mapper/ApartmentPicDao.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="375">
-          <caret line="15" column="24" selection-start-line="15" selection-start-column="14" selection-end-line="15" selection-end-column="24" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/example/yanyue/pojo/AttrVal.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="500">
-          <caret line="63" column="27" selection-start-line="63" selection-start-column="27" selection-end-line="63" selection-end-column="27" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/example/yanyue/dao/AttrValDao.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="489">
-          <caret line="20" column="42" selection-start-line="20" selection-start-column="42" selection-end-line="20" selection-end-column="42" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/com/example/yanyue/dao/AttrValDaoTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="409">
-          <caret line="34" column="58" selection-start-line="34" selection-start-column="58" selection-end-line="34" selection-end-column="58" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#652#653#0" expanded="true" />
-            <element signature="e#749#750#0" expanded="true" />
-            <element signature="e#786#787#0" expanded="true" />
-            <element signature="e#891#892#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/resources/mybatis/mapper/InformationCheckInDao.xml">
       <provider selected="true" editor-type-id="text-editor">
         <state>
@@ -1406,13 +1576,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/application.yml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="307">
-          <caret line="27" column="6" lean-forward="true" selection-start-line="27" selection-start-column="6" selection-end-line="27" selection-end-column="6" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/example/yanyue/AccommodationApplication.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="275">
@@ -1427,24 +1590,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/mybatis/mapper/AppartmentDao.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-134">
-          <caret line="48" column="21" selection-start-line="48" selection-start-column="8" selection-end-line="48" selection-end-column="21" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/example/yanyue/pojo/vo/AccountPowerVO.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="452">
           <caret line="22" column="30" selection-start-line="22" selection-start-column="20" selection-end-line="22" selection-end-column="30" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/example/yanyue/pojo/vo/AppartmentVO.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="275">
-          <caret line="11" column="13" selection-start-line="11" selection-start-column="13" selection-end-line="11" selection-end-column="13" />
         </state>
       </provider>
     </entry>
@@ -1523,13 +1672,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/static/login.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="150">
-          <caret line="179" column="34" selection-start-line="179" selection-start-column="34" selection-end-line="179" selection-end-column="34" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/pom.xml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="2150">
@@ -1544,17 +1686,80 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/com/example/yanyue/controller/AccountControllerTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="825">
-          <caret line="54" column="25" selection-start-line="54" selection-start-column="25" selection-end-line="54" selection-end-column="25" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/example/yanyue/controller/AccountController.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="2800">
-          <caret line="125" column="26" lean-forward="true" selection-start-line="125" selection-start-column="26" selection-end-line="125" selection-end-column="26" />
+          <caret line="125" column="26" selection-start-line="125" selection-start-column="26" selection-end-line="125" selection-end-column="26" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/static/login.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="226">
+          <caret line="250" column="36" selection-start-line="250" selection-start-column="36" selection-end-line="250" selection-end-column="36" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/application.yml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="621">
+          <caret line="27" column="6" selection-start-line="27" selection-start-column="6" selection-end-line="27" selection-end-column="6" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/com/example/yanyue/controller/AccountControllerTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1">
+          <caret line="30" column="14" lean-forward="true" selection-start-line="30" selection-start-column="14" selection-end-line="30" selection-end-column="14" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/example/yanyue/controller/AppartmentController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1">
+          <caret line="23" column="11" lean-forward="true" selection-start-line="23" selection-start-column="11" selection-end-line="23" selection-end-column="11" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/example/yanyue/pojo/vo/AppartmentVO.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="600">
+          <caret line="24" column="29" selection-start-line="24" selection-start-column="29" selection-end-line="24" selection-end-column="29" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/example/yanyue/dao/AppartmentDao.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="275">
+          <caret line="15" column="17" selection-start-line="15" selection-start-column="17" selection-end-line="15" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/mybatis/mapper/AppartmentDao.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1003">
+          <caret line="40" column="34" selection-start-line="40" selection-start-column="34" selection-end-line="40" selection-end-column="34" />
+          <folding>
+            <element signature="e#2376#2380#0" expanded="true" />
+            <element signature="e#2589#2593#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/com/example/yanyue/dao/AppartmentDaoTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="377">
+          <caret line="23" column="16" selection-start-line="23" selection-start-column="16" selection-end-line="23" selection-end-column="16" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/com/example/yanyue/controller/AppartmentControllerTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="575">
+          <caret line="37" column="67" selection-start-line="37" selection-start-column="67" selection-end-line="37" selection-end-column="67" />
         </state>
       </provider>
     </entry>

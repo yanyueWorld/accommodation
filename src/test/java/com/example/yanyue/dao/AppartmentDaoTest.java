@@ -9,6 +9,8 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.context.SpringBootTest;
 import org.springframework.test.context.junit4.SpringRunner;
 
+import java.math.BigDecimal;
+
 
 @RunWith(SpringRunner.class)
 @SpringBootTest
@@ -21,8 +23,8 @@ public class AppartmentDaoTest {
     @Test
     public void getAppartmentByExample(){
         AppartmentVO appartmentVO=new AppartmentVO();
-        appartmentVO.setApartmentName("蛋");
-        System.out.println(appartmentDao.getAppartmentByExample(1,1,appartmentVO));
+        appartmentVO.setEndPrice(new BigDecimal(289));
+        System.out.println(appartmentDao.getAppartmentByExample(1,5,appartmentVO));
     }
 
     @Test

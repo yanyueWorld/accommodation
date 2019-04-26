@@ -33,6 +33,19 @@
             <if test="appartmentVO.address!=null">
                 and address like concat('%',#{appartmentVO.address},'%')
             </if>
+            <if test="appartmentVO.beginPrice!=null">
+                <if test="appartmentVO.endPrice!=null">
+                    and price between #{appartmentVO.beginPrice} and #{appartmentVO.endPrice}
+                </if>
+                <if test="appartmentVO.endPrice==null">
+                    and price &gt;= #{appartmentVO.beginPrice}
+                </if>
+            </if>
+            <if test="appartmentVO.beginPrice==null">
+                <if test="appartmentVO.endPrice!=null">
+                    and price &lt;= #{appartmentVO.endPrice}
+                </if>
+            </if>
         </if>
     </select>
     <delete id="deleteByPrimaryKey" parameterType="java.lang.Integer">
