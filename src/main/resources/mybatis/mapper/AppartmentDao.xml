@@ -9,6 +9,7 @@
         <result column="price" jdbcType="DECIMAL" property="price"/>
         <result column="address" jdbcType="VARCHAR" property="address"/>
         <result column="owner" jdbcType="INTEGER" property="owner"/>
+        <result column="status" jdbcType="INTEGER" property="status" />
         <association property="typeId" resultMap="typeMap"/>
         <association property="owner" resultMap="accountMap"/>
     </resultMap>
@@ -26,6 +27,7 @@
         from appartment,appartment_type,account
         where appartment.type_id=appartment_type.type_id
         and appartment.owner=account.account_id
+        and appartment.status=0
         <if test="appartmentVO!=null">
             <if test="appartmentVO.appartmentName!=null">
                 and apartment_name like concat('%',#{appartmentVO.appartmentName},'%')
@@ -67,12 +69,9 @@
             GROUP BY appartment.apartment_id
     </select>
 
-    <delete id="deleteByPrimaryKey" parameterType="java.lang.Integer">
-    delete apartment_pic,picture,appartment from appartment
-        left join apartment_pic on appartment.apartment_id=apartment_pic.apartment_id
-        left join picture on apartment_pic.pic_id=picture.pic_id
-        where appartment.apartment_id = #{apartmentId,jdbcType=INTEGER}
-  </delete>
+    <update id="deleteByPrimaryKey" parameterType="java.lang.Integer">
+        update appartment set status=1 where apartment_id=#{appartmentId}
+    </update>
     <insert id="insert" parameterType="com.example.yanyue.pojo.Appartment">
     insert into appartment (apartment_id, type_id, attr_id, 
       apartment_name, price, address, 

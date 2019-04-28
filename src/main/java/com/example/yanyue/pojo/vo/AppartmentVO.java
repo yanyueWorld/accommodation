@@ -28,5 +28,6 @@ public class AppartmentVO {
     private String className;//类别
     private BigDecimal beginPrice;//起始价格
     private BigDecimal endPrice;//终止价格
+    private Integer status;//房间状态
 
 }
