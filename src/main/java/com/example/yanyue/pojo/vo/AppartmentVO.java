@@ -8,7 +8,7 @@ import java.math.BigDecimal;
 
 /**
  * @ClassName AppartmentVO
- * @Description 公寓视图对象2
+ * @Description 公寓视图对象
  * @Author yanyue
  * @Date 2019/3/27 10:56
  * @Version 1.0
