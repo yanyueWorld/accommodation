@@ -17,12 +17,15 @@ import java.math.BigDecimal;
 @Getter
 @ToString
 public class AppartmentVO {
-    private Integer apartmentId;//公寓id
-    private String typeName;//类型id
-    private String apartmentName;//公寓名
+    private Integer appartmentId;//公寓id
+    private String appartmentName;//公寓名
     private BigDecimal price;//单价
     private String address;//地址
-    private String name;//所有者
+    private String  valueName;//属性值
+    private String name;//房主
+    private String typeName;//类型
+    private String attrName;//属性
+    private String className;//类别
     private BigDecimal beginPrice;//起始价格
     private BigDecimal endPrice;//终止价格
 

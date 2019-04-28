@@ -58,5 +58,14 @@ public class AppartmentServiceImpl implements AppartmentService {
         }
     }
 
+    @Override
+    public AppartmentVO getInfoByAppartmentId(Integer appartmentId) {
+        if(appartmentId==null||appartmentId==0){
+            return new AppartmentVO();
+        }else {
+            return appartmentDao.getInfoByAppartmentId(appartmentId);
+        }
+    }
+
 
 }

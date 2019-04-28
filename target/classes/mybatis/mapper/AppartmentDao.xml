@@ -2,10 +2,10 @@
 <!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
 <mapper namespace="com.example.yanyue.dao.AppartmentDao">
     <resultMap id="BaseResultMap" type="com.example.yanyue.pojo.Appartment">
-        <id column="apartment_id" jdbcType="INTEGER" property="apartmentId"/>
+        <id column="appartment_id" jdbcType="INTEGER" property="apartmentId"/>
         <result column="type_id" jdbcType="INTEGER" property="typeId"/>
         <result column="attr_id" jdbcType="INTEGER" property="attrId"/>
-        <result column="apartment_name" jdbcType="VARCHAR" property="apartmentName"/>
+        <result column="appartment_name" jdbcType="VARCHAR" property="apartmentName"/>
         <result column="price" jdbcType="DECIMAL" property="price"/>
         <result column="address" jdbcType="VARCHAR" property="address"/>
         <result column="owner" jdbcType="INTEGER" property="owner"/>
@@ -22,13 +22,13 @@
     apartment_id, type_id, attr_id, apartment_name, price, address, owner
   </sql>
     <select id="getAppartmentByExample" resultType="com.example.yanyue.pojo.vo.AppartmentVO">
-        select appartment.apartment_id apartment_id,apartment_name,price,address,name,type_name
+        select appartment.apartment_id appartment_id,appartment.apartment_name appartment_name,price,address,name,type_name
         from appartment,appartment_type,account
         where appartment.type_id=appartment_type.type_id
         and appartment.owner=account.account_id
         <if test="appartmentVO!=null">
-            <if test="appartmentVO.apartmentName!=null">
-                and apartment_name like concat('%',#{appartmentVO.apartmentName},'%')
+            <if test="appartmentVO.appartmentName!=null">
+                and apartment_name like concat('%',#{appartmentVO.appartmentName},'%')
             </if>
             <if test="appartmentVO.address!=null">
                 and address like concat('%',#{appartmentVO.address},'%')
@@ -48,6 +48,25 @@
             </if>
         </if>
     </select>
+
+    <select id="getInfoByAppartmentId" resultType="com.example.yanyue.pojo.vo.AppartmentVO">
+        select appartment.apartment_id appartment_id,any_value(apartment_name) appartment_name,any_value(price) price,any_value(address) address,
+            GROUP_CONCAT(value_name) value_name,any_value(account.name) name,
+            any_value(appartment_type.type_name) type_name,
+            any_value(apartment_attr.attr_name) attr_name,
+            any_value(apartment_class.class_name) class_name
+            from appartment
+            LEFT JOIN appartment_type on any_value(appartment_type.type_id)=any_value(appartment.type_id)
+            left join apartment_attr on any_value(apartment_attr.attr_id)=any_value(appartment.attr_id)
+            left join `attr-val-appartment` on any_value(appartment.apartment_id)=any_value(`attr-val-appartment`.appartment_id)
+            left join attr_val on any_value(`attr-val-appartment`.attr_val_id)=any_value(attr_val.attr_val_id)
+            left join `value` on any_value(attr_val.val_id)=any_value(`value`.value_id)
+            left JOIN apartment_class on any_value(apartment_class.class_id)=any_value(apartment_attr.class_id)
+            left join account on any_value(account.account_id)=any_value(appartment.`owner`)
+            where appartment_id=#{appartmentId}
+            GROUP BY appartment.apartment_id
+    </select>
+
     <delete id="deleteByPrimaryKey" parameterType="java.lang.Integer">
     delete apartment_pic,picture,appartment from appartment
         left join apartment_pic on appartment.apartment_id=apartment_pic.apartment_id

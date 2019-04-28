@@ -23,8 +23,13 @@ public class AppartmentDaoTest {
     @Test
     public void getAppartmentByExample(){
         AppartmentVO appartmentVO=new AppartmentVO();
-        appartmentVO.setEndPrice(new BigDecimal(289));
+       // appartmentVO.setEndPrice(new BigDecimal(289));
         System.out.println(appartmentDao.getAppartmentByExample(1,5,appartmentVO));
+    }
+
+    @Test
+    public void getInfoByAppartmentId(){
+        System.out.println(appartmentDao.getInfoByAppartmentId(1));
     }
 
     @Test

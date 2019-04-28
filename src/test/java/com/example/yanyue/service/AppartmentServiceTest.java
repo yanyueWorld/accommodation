@@ -52,4 +52,10 @@ public class AppartmentServiceTest {
         System.out.println(appartmentService.insertSelective(appartment));
     }
 
+    @Test
+    public void getInfoByAppartmentId(){
+        System.out.println(appartmentService.getInfoByAppartmentId(null));
+        System.out.println(appartmentService.getInfoByAppartmentId(1));
+    }
+
 }

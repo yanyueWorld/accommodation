@@ -3,6 +3,7 @@ package com.example.yanyue.controller;
 
 import com.example.yanyue.pojo.vo.AppartmentVO;
 import com.google.gson.Gson;
+import com.sun.java.swing.plaf.motif.MotifEditorPaneUI;
 import org.junit.Before;
 import org.junit.Test;
 import org.junit.runner.RunWith;
@@ -57,6 +58,16 @@ public class AppartmentControllerTest {
     public void insert() throws Exception{
         mockMvc.perform(MockMvcRequestBuilders.post("/appartment/insert").contentType(MediaType.APPLICATION_JSON_UTF8)
         .param("apartmentName","4").accept(MediaType.APPLICATION_JSON)).andExpect(MockMvcResultMatchers.status().isOk())
+                .andDo(MockMvcResultHandlers.print());
+    }
+
+    @Test
+    public void getInfoByAppartmentId() throws Exception{
+        mockMvc.perform(MockMvcRequestBuilders.post("/appartment/getInfoByAppartmentId").contentType(MediaType.APPLICATION_JSON_UTF8)
+        .param("appartmentId",new String()).accept(MediaType.APPLICATION_JSON)).andExpect(MockMvcResultMatchers.status().isOk())
+                .andDo(MockMvcResultHandlers.print());
+        mockMvc.perform(MockMvcRequestBuilders.post("/appartment/getInfoByAppartmentId").contentType(MediaType.APPLICATION_JSON_UTF8)
+                .param("appartmentId","1").accept(MediaType.APPLICATION_JSON)).andExpect(MockMvcResultMatchers.status().isOk())
                 .andDo(MockMvcResultHandlers.print());
     }
 }

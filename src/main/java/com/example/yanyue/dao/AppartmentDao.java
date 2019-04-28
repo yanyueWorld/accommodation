@@ -52,4 +52,12 @@ public interface AppartmentDao {
      **/
     List<AppartmentVO> getAppartmentByExample(@Param("page") Integer currentPage,
                                               @Param("limit") Integer pageSize,AppartmentVO appartmentVO);
+
+    /**
+     * @Author yanyue
+     * @Description 获取公寓详细信息
+     * @param appartmentId 公寓id
+     * @return
+     */
+    AppartmentVO getInfoByAppartmentId(Integer appartmentId);
 }

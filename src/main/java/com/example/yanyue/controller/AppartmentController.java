@@ -35,7 +35,6 @@ public class AppartmentController {
                                                              @RequestParam(value = "limit", defaultValue = "5", required = false) Integer pageSize,@RequestBody AppartmentVO appartmentVO) {
         List<AppartmentVO> appartmentVOS = appartmentService.getAppartmentByExample(currentPage,
                 pageSize,appartmentVO);
-        System.out.println(appartmentVO);
         Result<List<AppartmentVO>> result = Result.success(appartmentVOS);
         PageInfo<AppartmentVO> pageInfo = new PageInfo<>(appartmentVOS);
         result.setCount(pageInfo.getTotal());
@@ -73,5 +72,18 @@ public class AppartmentController {
         }else{
             return appartmentService.insertSelective(appartment);
         }
+    }
+
+    @RequestMapping("/getInfoByAppartmentId")
+    @ResponseBody
+    @CrossOrigin
+    public AppartmentVO getInfoByAppartmentId(Integer appartmentId){
+        System.out.println(appartmentId);
+        if(appartmentId==null||appartmentId==0){
+            return new AppartmentVO();
+        }else{
+            return appartmentService.getInfoByAppartmentId(appartmentId);
+        }
+
     }
 }
