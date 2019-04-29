@@ -40,7 +40,7 @@ public interface AppartmentDao {
      * @param record
      * @return
      */
-    int updateByPrimaryKeySelective(Appartment record);
+    int updateByPrimaryKeySelective(AppartmentVO record);
 
 
     /**

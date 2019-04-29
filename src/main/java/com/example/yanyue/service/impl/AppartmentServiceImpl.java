@@ -41,8 +41,8 @@ public class AppartmentServiceImpl implements AppartmentService {
     }
 
     @Override
-    public int updateByPrimaryKeySelective(Appartment appartment) {
-        if(appartment.getApartmentId()==null||appartment.getApartmentId()==0){
+    public int updateByPrimaryKeySelective(AppartmentVO appartment) {
+        if(appartment.getAppartmentId()==null||appartment.getAppartmentId()==0){
             return -1;
         }else{
             return appartmentDao.updateByPrimaryKeySelective(appartment);

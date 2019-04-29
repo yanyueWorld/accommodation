@@ -39,9 +39,9 @@ public class AppartmentDaoTest {
 
     @Test
     public void updateByPrimaryKeySelective(){
-        Appartment appartment=new Appartment();
-        appartment.setApartmentId(1);
-        appartment.setTypeId(2);
+        AppartmentVO appartment=new AppartmentVO();
+        appartment.setAppartmentId(1);
+        appartment.setAppartmentName("躯壳 ");
         System.out.println(appartmentDao.updateByPrimaryKeySelective(appartment));
     }
 

@@ -129,7 +129,7 @@
             </if>
         </trim>
     </insert>
-    <update id="updateByPrimaryKeySelective" parameterType="com.example.yanyue.pojo.Appartment">
+    <update id="updateByPrimaryKeySelective" parameterType="com.example.yanyue.pojo.vo.AppartmentVO">
         update appartment
         <set>
             <if test="typeId != null">
@@ -138,8 +138,8 @@
             <if test="attrId != null">
                 attr_id = #{attrId,jdbcType=INTEGER},
             </if>
-            <if test="apartmentName != null">
-                apartment_name = #{apartmentName,jdbcType=VARCHAR},
+            <if test="appartmentName != null">
+                apartment_name = #{appartmentName,jdbcType=VARCHAR},
             </if>
             <if test="price != null">
                 price = #{price,jdbcType=DECIMAL},
@@ -151,16 +151,7 @@
                 owner = #{owner,jdbcType=INTEGER},
             </if>
         </set>
-        where apartment_id = #{apartmentId,jdbcType=INTEGER}
+        where apartment_id = #{appartmentId,jdbcType=INTEGER}
     </update>
-    <update id="updateByPrimaryKey" parameterType="com.example.yanyue.pojo.Appartment">
-    update appartment
-    set type_id = #{typeId,jdbcType=INTEGER},
-      attr_id = #{attrId,jdbcType=INTEGER},
-      apartment_name = #{apartmentName,jdbcType=VARCHAR},
-      price = #{price,jdbcType=DECIMAL},
-      address = #{address,jdbcType=VARCHAR},
-      owner = #{owner,jdbcType=INTEGER}
-    where apartment_id = #{apartmentId,jdbcType=INTEGER}
-  </update>
+
 </mapper>

@@ -55,8 +55,9 @@ public class AppartmentController {
     @RequestMapping("/update")
     @ResponseBody
     @CrossOrigin
-    public int updateByPrimaryKeySelective(Appartment appartment){
-        if(appartment.getApartmentId()==null||appartment.getApartmentId()==0){
+    public int updateByPrimaryKeySelective(@RequestBody AppartmentVO appartment){
+        System.out.println(appartment);
+        if(appartment==null||appartment.getAppartmentId()==null||appartment.getAppartmentId()==0){
             return -1;
         }else{
             return appartmentService.updateByPrimaryKeySelective(appartment);
@@ -81,9 +82,8 @@ public class AppartmentController {
         System.out.println(appartmentId);
         if(appartmentId==null||appartmentId==0){
             return new AppartmentVO();
-        }else{
+        }else {
             return appartmentService.getInfoByAppartmentId(appartmentId);
         }
-
     }
 }

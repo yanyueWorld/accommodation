@@ -1,6 +1,7 @@
 package com.example.yanyue.service;
 
 import com.example.yanyue.pojo.Appartment;
+import com.example.yanyue.pojo.vo.AppartmentVO;
 import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -31,12 +32,12 @@ public class AppartmentServiceTest {
 
     @Test
     public void updateByPrimaryKeySelective(){
-        Appartment appartment=new Appartment();
+        AppartmentVO appartment=new AppartmentVO();
         System.out.println(appartmentService.updateByPrimaryKeySelective(appartment));
-        appartment.setApartmentId(0);
+        appartment.setAppartmentId(0);
         System.out.println(appartmentService.updateByPrimaryKeySelective(appartment));
-        appartment.setApartmentId(1);
-        appartment.setTypeId(2);
+        appartment.setAppartmentId(1);
+        appartment.setAppartmentName("蛋壳");
         System.out.println(appartmentService.updateByPrimaryKeySelective(appartment));
     }
 

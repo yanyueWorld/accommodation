@@ -18,7 +18,7 @@ public interface AppartmentService {
 
     int deleteByPrimaryKey(Integer appartmentId);
 
-    int updateByPrimaryKeySelective(Appartment appartment);
+    int updateByPrimaryKeySelective(AppartmentVO appartment);
 
     int insertSelective(Appartment appartment);
 

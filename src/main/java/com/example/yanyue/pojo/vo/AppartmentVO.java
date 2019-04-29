@@ -29,5 +29,8 @@ public class AppartmentVO {
     private BigDecimal beginPrice;//起始价格
     private BigDecimal endPrice;//终止价格
     private Integer status;//房间状态
+    private Integer typeId;//类型id
+    private Integer attrId;//属性id
+    private Integer owner;//房主账户id
 
 }

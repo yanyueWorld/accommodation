@@ -1,6 +1,7 @@
 package com.example.yanyue.controller;
 
 
+import com.example.yanyue.pojo.Appartment;
 import com.example.yanyue.pojo.vo.AppartmentVO;
 import com.google.gson.Gson;
 import com.sun.java.swing.plaf.motif.MotifEditorPaneUI;
@@ -17,6 +18,9 @@ import org.springframework.test.web.servlet.result.MockMvcResultHandlers;
 import org.springframework.test.web.servlet.result.MockMvcResultMatchers;
 import org.springframework.test.web.servlet.setup.MockMvcBuilders;
 import org.springframework.web.context.WebApplicationContext;
+
+import java.math.BigDecimal;
+import java.util.Map;
 
 @RunWith(SpringRunner.class)
 @SpringBootTest
@@ -42,15 +46,19 @@ public class AppartmentControllerTest {
 
     @Test
     public void updateByPrimaryKeySelective() throws Exception{
+        AppartmentVO appartmentVO=new AppartmentVO();
+        appartmentVO.setAppartmentId(1);
+        appartmentVO.setPrice(new BigDecimal(2));
+        String json=new Gson().toJson(appartmentVO);
         mockMvc.perform(MockMvcRequestBuilders.post("/appartment/update").contentType(MediaType.APPLICATION_JSON_UTF8)
-        .param("apartmentId","1").param("typeId","2")
+        .content(json)
         .accept(MediaType.APPLICATION_JSON)).andExpect(MockMvcResultMatchers.status().isOk()).andDo(MockMvcResultHandlers.print());
     }
 
     @Test
     public void deleteByPrimaryKey() throws Exception{
         mockMvc.perform(MockMvcRequestBuilders.post("/appartment/deleteByPrimaryKey").contentType(MediaType.APPLICATION_JSON_UTF8)
-        .param("appartmentId","4").accept(MediaType.APPLICATION_JSON)).andExpect(MockMvcResultMatchers.status().isOk())
+        .param("appartmentId","3").accept(MediaType.APPLICATION_JSON)).andExpect(MockMvcResultMatchers.status().isOk())
         .andDo(MockMvcResultHandlers.print());
     }
 
