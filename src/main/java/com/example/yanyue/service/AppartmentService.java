@@ -23,4 +23,6 @@ public interface AppartmentService {
     int insertSelective(Appartment appartment);
 
     AppartmentVO getInfoByAppartmentId(Integer appartmentId);
+
+
 }

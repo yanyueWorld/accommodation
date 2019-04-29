@@ -12,7 +12,6 @@ import java.io.Serializable;
 public class AppartmentType implements Serializable {
 
     private Integer typeId;// 类别id
-    private Integer typePid;// 类别父id
     private String typeName;// 类别名
 
     public Integer getTypeId() {
@@ -23,13 +22,7 @@ public class AppartmentType implements Serializable {
         this.typeId = typeId;
     }
 
-    public Integer getTypePid() {
-        return typePid;
-    }
 
-    public void setTypePid(Integer typePid) {
-        this.typePid = typePid;
-    }
 
     public String getTypeName() {
         return typeName;
@@ -42,15 +35,16 @@ public class AppartmentType implements Serializable {
     public AppartmentType() {
     }
 
-    public AppartmentType(Integer typeId, Integer typePid, String typeName) {
+    public AppartmentType(Integer typeId, String typeName) {
         this.typeId = typeId;
-        this.typePid = typePid;
         this.typeName = typeName;
     }
 
     @Override
     public String toString() {
-        return "AppartmentType{" + "typeId=" + typeId + ", typePid=" + typePid + ", typeName='"
-                + typeName + '\'' + '}';
+        return "AppartmentType{" +
+                "typeId=" + typeId +
+                ", typeName='" + typeName + '\'' +
+                '}';
     }
 }
