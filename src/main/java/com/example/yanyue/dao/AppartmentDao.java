@@ -62,4 +62,5 @@ public interface AppartmentDao {
      */
     AppartmentVO getInfoByAppartmentId(Integer appartmentId);
 
+
 }

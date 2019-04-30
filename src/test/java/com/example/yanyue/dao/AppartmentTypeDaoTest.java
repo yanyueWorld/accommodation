@@ -18,12 +18,13 @@ public class AppartmentTypeDaoTest {
     @Test
     public void getAll(){
         System.out.println(appartmentTypeDao.getAll(null));
-        System.out.println(appartmentTypeDao.getAll(new AppartmentType(null,null,"小")));
+        System.out.println(appartmentTypeDao.getAll(new AppartmentType(null,"小")));
+
     }
 
     @Test
     public void insert(){
-        System.out.println(appartmentTypeDao.insert(new AppartmentType(null,null,"aaa")));
+        System.out.println(appartmentTypeDao.insert(new AppartmentType(null,"aaa")));
     }
 
     @Test
@@ -33,6 +34,6 @@ public class AppartmentTypeDaoTest {
 
     @Test
     public void update(){
-        System.out.println(appartmentTypeDao.updateByPrimaryKeySelective(new AppartmentType(1,null,"小户型")));
+        System.out.println(appartmentTypeDao.updateByPrimaryKeySelective(new AppartmentType(1,"小户型")));
     }
 }
