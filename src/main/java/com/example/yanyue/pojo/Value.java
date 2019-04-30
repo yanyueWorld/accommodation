@@ -11,5 +11,5 @@ import java.io.Serializable;
 @ToString
 public class Value implements Serializable {
     private Integer valueId;
-    private Integer value;
+    private String valueName;
 }
