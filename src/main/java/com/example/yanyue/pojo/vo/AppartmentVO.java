@@ -1,10 +1,12 @@
 package com.example.yanyue.pojo.vo;
 
+import com.example.yanyue.pojo.Value;
 import lombok.Getter;
 import lombok.Setter;
 import lombok.ToString;
 
 import java.math.BigDecimal;
+import java.util.List;
 
 /**
  * @ClassName AppartmentVO
@@ -32,7 +34,8 @@ public class AppartmentVO {
     private Integer classId;//类别id
     private Integer typeId;//类型id
     private Integer attrId;//属性id
-    private Integer valId;//属性值id
+    private Integer[] valId;//属性值id
     private Integer owner;//房主账户id
+
 
 }

@@ -60,8 +60,8 @@
             from appartment
             LEFT JOIN appartment_type on any_value(appartment_type.type_id)=any_value(appartment.type_id)
             left join apartment_attr on any_value(apartment_attr.attr_id)=any_value(appartment.attr_id)
-            left join `attr-val-appartment` on any_value(appartment.apartment_id)=any_value(`attr-val-appartment`.appartment_id)
-            left join attr_val on any_value(`attr-val-appartment`.attr_val_id)=any_value(attr_val.attr_val_id)
+            left join `attr_val_appartment` on any_value(appartment.apartment_id)=any_value(`attr_val_appartment`.appartment_id)
+            left join attr_val on any_value(`attr_val_appartment`.attr_val_id)=any_value(attr_val.attr_val_id)
             left join `value` on any_value(attr_val.val_id)=any_value(`value`.value_id)
             left JOIN apartment_class on any_value(apartment_class.class_id)=any_value(apartment_attr.class_id)
             left join account on any_value(account.account_id)=any_value(appartment.`owner`)

@@ -14,4 +14,6 @@ public interface AttrValDao {
     int updateByPrimaryKeySelective(AttrVal record);
 
     int updateByPrimaryKey(AttrVal record);
+
+    Integer getAttrValId(AttrVal attrVal);
 }

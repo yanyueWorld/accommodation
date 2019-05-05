@@ -14,4 +14,6 @@ public interface AttrValAppartmentDao {
     int updateByPrimaryKeySelective(AttrValAppartment record);
 
     int updateByPrimaryKey(AttrValAppartment record);
+
+    int add(AttrValAppartment attrValAppartment);
 }

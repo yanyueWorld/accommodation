@@ -12,21 +12,21 @@
   <select id="selectByPrimaryKey" parameterType="java.lang.Integer" resultMap="BaseResultMap">
     select 
     <include refid="Base_Column_List" />
-    from attr-val-appartment
+    from attr_val_appartment
     where attr_val_appartment_id = #{attrValAppartmentId,jdbcType=INTEGER}
   </select>
   <delete id="deleteByPrimaryKey" parameterType="java.lang.Integer">
-    delete from attr-val-appartment
+    delete from attr_val_appartment
     where attr_val_appartment_id = #{attrValAppartmentId,jdbcType=INTEGER}
   </delete>
   <insert id="insert" parameterType="com.example.yanyue.pojo.AttrValAppartment">
-    insert into attr-val-appartment (attr_val_appartment_id, attr_val_id, appartment_id
+    insert into attr_val_appartment (attr_val_appartment_id, attr_val_id, appartment_id
       )
     values (#{attrValAppartmentId,jdbcType=INTEGER}, #{attrValId,jdbcType=INTEGER}, #{appartmentId,jdbcType=INTEGER}
       )
   </insert>
   <insert id="insertSelective" parameterType="com.example.yanyue.pojo.AttrValAppartment">
-    insert into attr-val-appartment
+    insert into attr_val_appartment
     <trim prefix="(" suffix=")" suffixOverrides=",">
       <if test="attrValAppartmentId != null">
         attr_val_appartment_id,
@@ -51,7 +51,7 @@
     </trim>
   </insert>
   <update id="updateByPrimaryKeySelective" parameterType="com.example.yanyue.pojo.AttrValAppartment">
-    update attr-val-appartment
+    update attr_val_appartment
     <set>
       <if test="attrValId != null">
         attr_val_id = #{attrValId,jdbcType=INTEGER},
@@ -63,9 +63,13 @@
     where attr_val_appartment_id = #{attrValAppartmentId,jdbcType=INTEGER}
   </update>
   <update id="updateByPrimaryKey" parameterType="com.example.yanyue.pojo.AttrValAppartment">
-    update attr-val-appartment
+    update attr_val_appartment
     set attr_val_id = #{attrValId,jdbcType=INTEGER},
       appartment_id = #{appartmentId,jdbcType=INTEGER}
     where attr_val_appartment_id = #{attrValAppartmentId,jdbcType=INTEGER}
   </update>
+
+  <insert id="add" parameterType="com.example.yanyue.pojo.AttrValAppartment">
+    insert into attr_val_appartment(attr_val_id,appartment_id) values (#{attrValId},#{appartmentId})
+  </insert>
 </mapper>

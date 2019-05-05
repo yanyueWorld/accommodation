@@ -20,7 +20,7 @@ public interface AppartmentService {
 
     int updateByPrimaryKeySelective(AppartmentVO appartment);
 
-    int insertSelective(Appartment appartment);
+    int insertSelective(AppartmentVO appartmentVO);
 
     AppartmentVO getInfoByAppartmentId(Integer appartmentId);
 

@@ -40,7 +40,6 @@ public class AccountController {
     public Account login(String accountName, String password, HttpServletRequest request) {
         HttpSession session = request.getSession();
         Account account = accountServer.login(accountName, password);
-
         if (account != null) {
             if (session.getAttribute("accountName") == null) {
                 session.setAttribute("accountName", account.getAccountName());
@@ -142,5 +141,6 @@ public class AccountController {
     @CrossOrigin
     public int insertAccount(@RequestBody Account account,Integer roleId){
         return accountServer.insertAccount(account,roleId);
+
     }
 }

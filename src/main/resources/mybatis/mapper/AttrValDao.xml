@@ -68,4 +68,8 @@
       val_id = #{valId,jdbcType=INTEGER}
     where attr_val_id = #{attrValId,jdbcType=INTEGER}
   </update>
+
+  <select id="getAttrValId" resultType="integer">
+    select attr_val_id from attr_val where attr_id=#{attrId} and val_id=#{valId}
+  </select>
 </mapper>

@@ -62,12 +62,7 @@ public class AppartmentControllerTest {
         .andDo(MockMvcResultHandlers.print());
     }
 
-    @Test
-    public void insert() throws Exception{
-        mockMvc.perform(MockMvcRequestBuilders.post("/appartment/insert").contentType(MediaType.APPLICATION_JSON_UTF8)
-        .param("apartmentName","4").accept(MediaType.APPLICATION_JSON)).andExpect(MockMvcResultMatchers.status().isOk())
-                .andDo(MockMvcResultHandlers.print());
-    }
+  
 
     @Test
     public void getInfoByAppartmentId() throws Exception{

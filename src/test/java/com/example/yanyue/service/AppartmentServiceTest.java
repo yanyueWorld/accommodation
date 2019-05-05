@@ -43,13 +43,13 @@ public class AppartmentServiceTest {
 
     @Test
     public void insertSelective(){
-        Appartment appartment=null;
+        AppartmentVO appartment=null;
         System.out.println(appartmentService.insertSelective(appartment));
-        appartment=new Appartment();
+        appartment=new AppartmentVO();
         System.out.println(appartmentService.insertSelective(appartment));
-        appartment.setApartmentName("");
+        appartment.setAppartmentName("");
         System.out.println(appartmentService.insertSelective(appartment));
-        appartment.setApartmentName("你好");
+        appartment.setAppartmentName("你好");
         System.out.println(appartmentService.insertSelective(appartment));
     }
 

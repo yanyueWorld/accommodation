@@ -67,12 +67,10 @@ public class AppartmentController {
     @RequestMapping("/insert")
     @ResponseBody
     @CrossOrigin
-    public int insert(Appartment appartment){
-        if(appartment==null||(appartment.getApartmentName()==null||appartment.getApartmentName().length()==0)) {
-            return -1;
-        }else{
-            return appartmentService.insertSelective(appartment);
-        }
+    public int insert(@RequestBody AppartmentVO appartmentVO){
+
+        return appartmentService.insertSelective(appartmentVO);
+
     }
 
     @RequestMapping("/getInfoByAppartmentId")
@@ -86,4 +84,6 @@ public class AppartmentController {
             return appartmentService.getInfoByAppartmentId(appartmentId);
         }
     }
+
+
 }
