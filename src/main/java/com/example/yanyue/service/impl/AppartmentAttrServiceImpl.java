@@ -15,11 +15,6 @@ public class AppartmentAttrServiceImpl implements AppartmentAttrService {
     private ApartmentAttrDao apartmentAttrDao;
     @Override
     public List<ApartmentAttr> getAll(ApartmentAttr apartmentAttr) {
-        List<ApartmentAttr> apartmentAttrs=apartmentAttrDao.getAll(apartmentAttr);
-        if(apartmentAttrs==null||apartmentAttrs.size()==0){
-            return new ArrayList<>();
-        }else{
-            return  apartmentAttrs;
-        }
+        return apartmentAttrDao.getAll(apartmentAttr);
     }
 }

@@ -32,4 +32,11 @@ public class ValueController {
             }
         }
     }
+
+    @CrossOrigin
+    @ResponseBody
+    @RequestMapping("/getAll")
+    public List<Value> getAll(){
+        return valueService.getAll();
+    }
 }

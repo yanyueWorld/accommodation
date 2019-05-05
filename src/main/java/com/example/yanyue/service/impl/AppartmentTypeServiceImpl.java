@@ -16,11 +16,7 @@ public class AppartmentTypeServiceImpl implements AppartmentTypeService {
     AppartmentTypeDao appartmentTypeDao;
     @Override
     public List<AppartmentType> getAll(AppartmentType appartmentType) {
-        List<AppartmentType> appartmentTypes=appartmentTypeDao.getAll(appartmentType);
-        if(appartmentTypes==null||appartmentTypes.size()==0){
-            return new ArrayList<>();
-        }else{
-            return appartmentTypes;
-        }
+        return appartmentTypeDao.getAll(appartmentType);
+
     }
 }

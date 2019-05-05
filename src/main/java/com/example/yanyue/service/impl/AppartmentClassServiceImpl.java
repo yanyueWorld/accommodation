@@ -16,11 +16,6 @@ public class AppartmentClassServiceImpl implements AppartmentClassService {
     ApartmentClassDao apartmentClassDao;
     @Override
     public List<ApartmentClass> getAll(ApartmentClass apartmentClass) {
-        List<ApartmentClass> apartmentClasses=apartmentClassDao.getAll(apartmentClass);
-        if(apartmentClasses==null||apartmentClasses.size()==0){
-            return new ArrayList<>();
-        }else{
-            return apartmentClasses;
-        }
+        return apartmentClassDao.getAll(apartmentClass);
     }
 }

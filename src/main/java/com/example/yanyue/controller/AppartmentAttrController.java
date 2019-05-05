@@ -21,12 +21,7 @@ public class AppartmentAttrController {
     @ResponseBody
     @CrossOrigin
     public List<ApartmentAttr> getAll(ApartmentAttr apartmentAttr){
-        List<ApartmentAttr> apartmentAttrs=appartmentAttrService.getAll(apartmentAttr);
-        if(apartmentAttrs==null||apartmentAttrs.size()==0){
-            return new ArrayList<>();
-        }else{
-            return apartmentAttrs;
-        }
+        return appartmentAttrService.getAll(apartmentAttr);
     }
 
 }

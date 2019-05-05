@@ -6,4 +6,6 @@ import java.util.List;
 
 public interface ValueService {
     List<Value> getValuesByAttrId(Integer attrId);
+
+    List<Value> getAll();
 }

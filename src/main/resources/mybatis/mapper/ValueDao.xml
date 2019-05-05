@@ -8,6 +8,12 @@
     <sql id="Base_Column_List">
     value_id, value_name
   </sql>
+
+    <select id="getAll" resultMap="BaseResultMap">
+        select
+        <include refid="Base_Column_List"/>
+        from value
+    </select>
     <select id="getValuesByAttrId" resultType="com.example.yanyue.pojo.Value">
         select value.value_id,value.value_name from value
         left join attr_val on

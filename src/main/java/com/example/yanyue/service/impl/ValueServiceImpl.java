@@ -30,4 +30,11 @@ public class ValueServiceImpl implements ValueService {
             }
         }
     }
+
+    @Override
+    public List<Value> getAll() {
+        return valueDao.getAll();
+    }
+
+
 }
