@@ -6,36 +6,43 @@
         <result column="account_id" jdbcType="INTEGER" property="accountId"/>
         <result column="apartment_id" jdbcType="INTEGER" property="apartmentId"/>
         <result column="pre_pay" jdbcType="DECIMAL" property="prePay"/>
-        <result column="status" jdbcType="INTEGER" property="status"/>
+            <result column="status" jdbcType="VARCHAR" property="status"/>
         <result column="check_in_date" jdbcType="TIMESTAMP" property="checkInDate"/>
         <result column="check_out_date" jdbcType="TIMESTAMP" property="checkOutDate"/>
     </resultMap>
     <sql id="Base_Column_List">
     order_id, account_id, apartment_id, pre_pay, status, check_in_date, check_out_date
   </sql>
-    <select id="getAll" resultMap="BaseResultMap">
-        select
-        <include refid="Base_Column_List"/>
-        from `order`
-        <if test="_parameter!=null">
+    <select id="getAll" resultType="com.example.yanyue.pojo.vo.OrderVO" parameterType="com.example.yanyue.pojo.Order">
+        select order_id, account_name,apartment_name,pre_pay,
+        `order`.status status,check_in_date,check_out_date,price,
+        DATEDIFF(check_out_date,check_in_date)*price total
+        from
+        `order`
+        left join account on account.account_id=`order`.account_id
+        left join appartment on appartment.apartment_id=`order`.apartment_id
+        <if test="order!=null">
             <where>
-                <if test="accountId!=null">
-                    account_id=#{accountId}
+                <if test="order.orderId!=null">
+                    order_id like concat('%',#{order.orderId},'%')
                 </if>
-                <if test="apartmentId!=null">
-                    and apartment_id=#{apartmentId}
+                <if test="order.accountId!=null">
+                    and account_id=#{order.accountId}
                 </if>
-                <if test="prePay!=null">
-                    and pre_pay=#{prePay}
+                <if test="order.apartmentId!=null">
+                    and apartment_id=#{order.apartmentId}
                 </if>
-                <if test="status!=null">
-                    and status=#{status}
+                <if test="order.prePay!=null">
+                    and pre_pay=#{order.prePay}
                 </if>
-                <if test="checkInDate!=null">
-                    and check_in_date=#{checkInDate}
+                <if test="order.status!=null">
+                    and `order`.status=#{order.status}
                 </if>
-                <if test="checkOutDate!=null">
-                    and check_out_date=#{checkOutDate}
+                <if test="order.checkInDate!=null">
+                    and check_in_date=#{order.checkInDate}
+                </if>
+                <if test="order.checkOutDate!=null">
+                    and check_out_date=#{order.checkOutDate}
                 </if>
             </where>
         </if>

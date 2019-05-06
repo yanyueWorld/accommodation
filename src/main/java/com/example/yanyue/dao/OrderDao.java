@@ -1,7 +1,9 @@
 package com.example.yanyue.dao;
 
 import com.example.yanyue.pojo.Order;
+import com.example.yanyue.pojo.vo.OrderVO;
 import com.sun.org.apache.xpath.internal.operations.Or;
+import org.apache.ibatis.annotations.Param;
 
 import java.util.List;
 
@@ -18,5 +20,6 @@ public interface OrderDao {
 
     int updateByPrimaryKey(Order record);
 
-    List<Order> getAll(Order order);
+    List<OrderVO> getAll(@Param("page") Integer currentPage,
+                         @Param("limit") Integer pageSize,@Param("order") Order order);
 }
