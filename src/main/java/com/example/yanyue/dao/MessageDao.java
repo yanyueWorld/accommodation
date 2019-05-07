@@ -1,6 +1,8 @@
 package com.example.yanyue.dao;
 
 import com.example.yanyue.pojo.Message;
+import com.example.yanyue.pojo.vo.MessageVO;
+import org.apache.ibatis.annotations.Param;
 
 import java.util.List;
 
@@ -17,5 +19,6 @@ public interface MessageDao {
 
     int updateByPrimaryKey(Message record);
 
-    List<Message> getAll(Message message);
+    List<MessageVO> getAll(@Param("page") Integer currentPage,
+                           @Param("limit") Integer pageSize, @Param("messageVO") MessageVO messageVO);
 }

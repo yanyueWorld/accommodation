@@ -4,7 +4,7 @@
   <resultMap id="BaseResultMap" type="com.example.yanyue.pojo.Message">
     <id column="message_id" jdbcType="INTEGER" property="messageId" />
     <result column="account_id" jdbcType="INTEGER" property="accountId" />
-    <result column="replay_id" jdbcType="INTEGER" property="replayId" />
+
     <result column="service_rank" jdbcType="VARCHAR" property="serviceRank" />
     <result column="customer_rank" jdbcType="VARCHAR" property="customerRank" />
     <result column="living_rank" jdbcType="VARCHAR" property="livingRank" />
@@ -12,35 +12,36 @@
     <result column="type" jdbcType="VARCHAR" property="type" />
   </resultMap>
   <sql id="Base_Column_List">
-    message_id, account_id, replay_id, service_rank, customer_rank, living_rank, message, 
+    message_id,message.account_id, service_rank, customer_rank, living_rank, message,
     type
   </sql>
-  <select id="getAll" resultMap="BaseResultMap">
+  <select id="getAll" resultType="com.example.yanyue.pojo.vo.MessageVO" parameterType="com.example.yanyue.pojo.vo.MessageVO">
     select
-    <include refid="Base_Column_List"/>
+    <include refid="Base_Column_List"/>,account_name
     from message
-    <if test="_parameter!=null">
+    left join account on account.account_id=message.account_id
+    <if test="messageVO!=null">
       <where>
-        <if test="accountId!=null">
-          account_id=#{accountId}
+        <if test="messageVO.accountId!=null">
+          message.account_id=#{messageVO.accountId}
         </if>
-        <if test="replayId!=null">
-          and replay_id=#{replayId}
+        <if test="messageVO.accountName!=null">
+          and account_name like concat('%',#{messageVO.accountName},'%')
         </if>
-        <if test="serviceRank!=null">
-          and service_rank=#{serviceRank}
+        <if test="messageVO.serviceRank!=null">
+          and service_rank=#{messageVO.serviceRank}
         </if>
-        <if test="customerRank!=null">
-          and customer_rank=#{customerRank}
+        <if test="messageVO.customerRank!=null">
+          and customer_rank=#{messageVO.customerRank}
         </if>
-        <if test="livingRank">
-          and living_rank=#{livingRank}
+        <if test="messageVO.livingRank">
+          and living_rank=#{messageVO.livingRank}
         </if>
-        <if test="message!=null">
-          and message like concat('%',#{message},'%')
+        <if test="messageVO.message!=null">
+          and message like concat('%',#{messageVO.message},'%')
         </if>
-        <if test="type!=null">
-            and type=#{type}
+        <if test="messageVO.type!=null">
+            and type=#{messageVO.type}
         </if>
 
       </where>
@@ -57,10 +58,10 @@
     where message_id = #{messageId,jdbcType=INTEGER}
   </delete>
   <insert id="insert" parameterType="com.example.yanyue.pojo.Message">
-    insert into message (message_id, account_id, replay_id, 
+    insert into message (message_id, account_id,
       service_rank, customer_rank, living_rank, 
       message, type)
-    values (#{messageId,jdbcType=INTEGER}, #{accountId,jdbcType=INTEGER}, #{replayId,jdbcType=INTEGER}, 
+    values (#{messageId,jdbcType=INTEGER}, #{accountId,jdbcType=INTEGER},
       #{serviceRank,jdbcType=VARCHAR}, #{customerRank,jdbcType=VARCHAR}, #{livingRank,jdbcType=VARCHAR}, 
       #{message,jdbcType=VARCHAR}, #{type,jdbcType=VARCHAR})
   </insert>
@@ -73,9 +74,7 @@
       <if test="accountId != null">
         account_id,
       </if>
-      <if test="replayId != null">
-        replay_id,
-      </if>
+
       <if test="serviceRank != null">
         service_rank,
       </if>
@@ -89,7 +88,7 @@
         message,
       </if>
       <if test="type != null">
-        type,
+        type
       </if>
     </trim>
     <trim prefix="values (" suffix=")" suffixOverrides=",">
@@ -99,9 +98,7 @@
       <if test="accountId != null">
         #{accountId,jdbcType=INTEGER},
       </if>
-      <if test="replayId != null">
-        #{replayId,jdbcType=INTEGER},
-      </if>
+
       <if test="serviceRank != null">
         #{serviceRank,jdbcType=VARCHAR},
       </if>
@@ -125,9 +122,7 @@
       <if test="accountId != null">
         account_id = #{accountId,jdbcType=INTEGER},
       </if>
-      <if test="replayId != null">
-        replay_id = #{replayId,jdbcType=INTEGER},
-      </if>
+
       <if test="serviceRank != null">
         service_rank = #{serviceRank,jdbcType=VARCHAR},
       </if>
@@ -149,7 +144,7 @@
   <update id="updateByPrimaryKey" parameterType="com.example.yanyue.pojo.Message">
     update message
     set account_id = #{accountId,jdbcType=INTEGER},
-      replay_id = #{replayId,jdbcType=INTEGER},
+
       service_rank = #{serviceRank,jdbcType=VARCHAR},
       customer_rank = #{customerRank,jdbcType=VARCHAR},
       living_rank = #{livingRank,jdbcType=VARCHAR},
