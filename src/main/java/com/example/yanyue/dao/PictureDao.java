@@ -1,6 +1,7 @@
 package com.example.yanyue.dao;
 
 import com.example.yanyue.pojo.Picture;
+import org.apache.ibatis.annotations.Param;
 
 import java.util.List;
 
@@ -9,7 +10,7 @@ public interface PictureDao {
 
     int insert(Picture record);
 
-    int insertSelective(Picture record);
+    int insertSelective(Picture picture);
 
     Picture selectByPrimaryKey(Integer picId);
 
@@ -17,5 +18,5 @@ public interface PictureDao {
 
     int updateByPrimaryKey(Picture record);
 
-    List<Picture> getAll(Picture picture);
+    List<Picture> getAll(@Param("picture") Picture picture);
 }

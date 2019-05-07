@@ -13,13 +13,13 @@
     select
     <include refid="Base_Column_List"/>
     from picture
-    <if test="_parameter!=null">
+    <if test="picture!=null">
       <where>
-        <if test="picName!=null">
-          pic_name like concat('%',#{picName},'%')
+        <if test="picture.picName!=null">
+          pic_name like concat('%',#{picture.picName},'%')
         </if>
-        <if test="picAddr!=null">
-          and pic_addr like concat('%',#{pic_addr},'%')
+        <if test="picture.picAddr!=null">
+          and pic_addr like concat('%',#{picture.picAddr},'%')
         </if>
       </where>
     </if>

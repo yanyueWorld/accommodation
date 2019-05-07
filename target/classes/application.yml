@@ -45,3 +45,4 @@ mybatis:
 logging:
   level:
     com.example.yanyue.dao: debug
+
