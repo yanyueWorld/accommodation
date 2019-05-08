@@ -12,7 +12,7 @@ public class UploadFileConfig {
     @Bean
     MultipartConfigElement multipartConfigElement(){
         MultipartConfigFactory factory=new MultipartConfigFactory();
-        factory.setLocation("D://idea-workspace//accommodation//pitcure");
+        factory.setLocation("/usr/picture");
         return factory.createMultipartConfig();
     }
 }

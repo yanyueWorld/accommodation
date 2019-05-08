@@ -18,6 +18,14 @@ public class AppartmentTypeController {
 
     @Autowired
     AppartmentTypeService appartmentTypeService;
+
+    /**
+     * @Author yanyue
+     * @Description 获取所有的房间类别
+     * @url /appartmentType/url
+     * @Param [appartmentType] 公寓类别 可以不用参数传递
+     * @return java.util.List<com.example.yanyue.pojo.AppartmentType> 公寓类别对象json数组
+     **/
     @RequestMapping("/getAll")
     @ResponseBody
     @CrossOrigin

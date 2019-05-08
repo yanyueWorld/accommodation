@@ -19,13 +19,6 @@ import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.ResponseBody;
 
-/**
- * @ClassName AccountPowerController
- * @Author yanyue
- * @Description 账户权限操作控制类
- * @Date 14:58 2019/3/25
- * @Version 1.0
- **/
 @Controller
 public class AccountPowerController {
     @Autowired
@@ -34,8 +27,8 @@ public class AccountPowerController {
     /**
      * @Author yanyue
      * @Description 获取账户权限
-     * @Date 14:59 2019/3/25
-     * @Param HttpServletRequest request
+     * @url /getAccountPower
+     * @Param HttpServletRequest request 不需要参数传递
      * @return List
      **/
     @RequestMapping("/getAccountPower")

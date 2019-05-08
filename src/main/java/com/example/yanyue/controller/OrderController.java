@@ -19,6 +19,13 @@ public class OrderController {
     @Autowired
     private OrderService orderService;
 
+    /**
+     * @Author yanyue
+     * @Description 获取所有订单
+     * @url /order/getAll
+     * @Param [currentPage, pageSize, order] int 当前页，int 页面大小,订单对象 json数据 可以不用参数传递
+     * @return com.example.yanyue.pojo.common.Result<java.util.List < com.example.yanyue.pojo.vo.OrderVO>> 封装的订单视图结果json对象
+     **/
     @RequestMapping("/getAll")
     @ResponseBody
     @CrossOrigin
@@ -34,6 +41,13 @@ public class OrderController {
         return result;
     }
 
+    /**
+     * @Author yanyue
+     * @Description 新增订单
+     * @url /order/insert
+     * @Param [order] 订单对象 json格式
+     * @return int 新增数据结果 <=0为失败
+     **/
     @RequestMapping("/insert")
     @ResponseBody
     @CrossOrigin
@@ -45,6 +59,13 @@ public class OrderController {
         }
     }
 
+    /**
+     * @Author yanyue
+     * @Description 订单修改
+     * @url /order/insert
+     * @Param [order] 订单对象的json数据
+     * @return int
+     **/
     @RequestMapping("/update")
     @ResponseBody
     @CrossOrigin
@@ -56,6 +77,12 @@ public class OrderController {
         }
     }
 
+    /**
+     * @Author yanyue
+     * @Description 订单关闭
+     * @Param [order] 订单对象 json数据
+     * @return int 关闭订单操作结果 <=0为失败
+     **/
     @RequestMapping("/delete")
     @ResponseBody
     @CrossOrigin

@@ -14,34 +14,44 @@ import java.io.IOException;
 @Controller
 @RequestMapping("/picture")
 public class PictureController {
-   private String staticAccessPath="/picture";
-   @Autowired
-   private PictureService pictureService;
+    private String staticAccessPath = "/picture";
+    @Autowired
+    private PictureService pictureService;
+
+    /**
+     * @Author yanyue
+     * @Description 上传图片
+     * @Param [file, appartmentId, type]上传的文件，int 公寓id ，String 上传图片的类型
+     * @return int 上传返回结果 <=0 失败
+     **/
     @RequestMapping("/upload")
     @ResponseBody
-    public int upload(MultipartFile file,Integer appartmentId,String type){
+    public int upload(MultipartFile file, Integer appartmentId, String type) {
         System.out.println(file);
         System.out.println(appartmentId);
         System.out.println(type);
-        if(file.isEmpty()){
+        if (file.isEmpty()) {
             System.out.println("文件获取失败");
         }
-        String originalFileName=file.getOriginalFilename();
+        if (appartmentId == null || appartmentId == 0) {
+            return -1;
+        }
+        String originalFileName = file.getOriginalFilename();
         System.out.println(originalFileName);
-        String saveFileName=appartmentId+type+originalFileName;
-        String path=staticAccessPath+"/"+saveFileName;
-        File dest=new File(staticAccessPath+saveFileName);
+        String saveFileName = appartmentId + type + originalFileName;
+        String path = staticAccessPath + "/" + saveFileName;
+        File dest = new File(staticAccessPath + saveFileName);
         System.out.println(saveFileName);
         System.out.println(path);
-        try{
+        try {
             file.transferTo(dest);
             System.out.println("上传成功");
-        }catch (IOException e){
+        } catch (IOException e) {
             System.out.println(e.toString());
         }
-        Picture picture=new Picture();
+        Picture picture = new Picture();
         picture.setPicName(saveFileName);
         picture.setPicAddr(path);
-        return pictureService.insert(picture,appartmentId);
+        return pictureService.insert(picture, appartmentId);
     }
 }

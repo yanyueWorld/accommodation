@@ -7,6 +7,6 @@ public class UploadFilePathConfig extends WebMvcConfigurationSupport {
 
     @Override
     public void addResourceHandlers(ResourceHandlerRegistry resourceHandlerRegistry){
-        resourceHandlerRegistry.addResourceHandler("/picture").addResourceLocations("file:"+"D://idea-workspace//accommodation//pitcure");
+        resourceHandlerRegistry.addResourceHandler("/picture").addResourceLocations("file:"+"/usr/picture");
     }
 }

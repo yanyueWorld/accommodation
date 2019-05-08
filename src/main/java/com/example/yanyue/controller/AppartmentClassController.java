@@ -16,6 +16,13 @@ public class AppartmentClassController {
 
     @Autowired
     private AppartmentClassService appartmentClassService;
+    /**
+     * @Author yanyue
+     * @Description 查询房间类型
+     * @url /appartment/Class
+     * @Param [apartmentClass] 房间属性 前端可以不用参数传递
+     * @return java.util.List<com.example.yanyue.pojo.ApartmentClass> 房间属性json数组
+     **/
     @RequestMapping("/getAll")
     @ResponseBody
     @CrossOrigin
