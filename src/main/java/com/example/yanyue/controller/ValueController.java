@@ -19,9 +19,9 @@ public class ValueController {
 
     /**
      * @Author yanyue
-     * @Description 根据属性id获取属性值
-     * @url /value/getValues
-     * @Param [attrId] int 属性id
+     * 根据属性id获取属性值
+     * 路径: /value/getValues
+     * @Param attrId 属性id
      * @return java.util.List<com.example.yanyue.pojo.Value> 房间属性
      **/
     @CrossOrigin
@@ -42,8 +42,8 @@ public class ValueController {
 
     /**
      * @Author yanyue
-     * @Description 获取所有房间属性
-     * @url /value/getAll
+     * 获取所有房间属性
+     * 路径: /value/getAll
      * @return java.util.List<com.example.yanyue.pojo.Value>
      **/
     @CrossOrigin

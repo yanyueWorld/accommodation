@@ -24,9 +24,11 @@ public class AccountController {
 
     /**
      * @Author yanyue
-     * @Description 登录
-     * @url /account/login
-     * @Param accountName 账户名，password 密码，request HttpServletRequest请求
+     * 登录
+     * 路径： /account/login
+     * @Param accountName 账户名
+     * @Param password 密码
+     * @Param request HttpServletRequest请求
      * @return Account 账户信息
      **/
     @ResponseBody
@@ -46,8 +48,8 @@ public class AccountController {
 
     /**
      * @Author yanyue
-     * @Description 退出
-     * @url /account/logout
+     * 退出
+     * 路径： /account/logout
      * @Param HttpServletRequest request请求,前端不需要参数传递
      * @return String 页面跳转
      **/
@@ -60,6 +62,8 @@ public class AccountController {
         session.removeAttribute("accountName");
         session.removeAttribute("accountId");
         session.invalidate();
+
+        //FIXME
         msg = "注销成功,马上跳转为登录界面！！";
         String content = "<script>"
                 + "setTimeout(function(){window.location.href='login.html'},2000)" + "</script>";
@@ -69,9 +73,11 @@ public class AccountController {
 
     /**
      * @Author yanyue
-     * @Description 获取账户信息
-     * @url /account/getAccountsByExample
-     * @Param Integer page当前页面,Integer limit每页大小, AccountVO accountVO 账户视图对象 json数据，前端可以不用参数传递
+     * 获取账户信息
+     * 路径： /account/getAccountsByExample
+     * @Param page 当前页面
+     * @Param limit 每页大小
+     * @Param accountVO 账户视图对象,json数据，前端可以不用参数传递
      * @return List 账户对象
      **/
     @RequestMapping(value = "/getAccountsByExample")
@@ -92,9 +98,9 @@ public class AccountController {
     }
     /**
      * @Author yanyue
-     * @Description 从session中获取账户id，查询出账户信息
-     * @url /account/getAccountName
-     * @Param [request] request请求，前端不用参数传递
+     * 从session中获取账户id，查询出账户信息
+     * 路径： /account/getAccountName
+     * @Param request request请求，前端不用参数传递
      * @return Account 账户信息
      **/
     @RequestMapping("/getAccountName")
@@ -110,9 +116,9 @@ public class AccountController {
     }
     /**
      * @Author yanyue
-     * @Description 根据Id寻找账户id
-     * @url /account/getAccountByAccountId
-     * @Param Integer accountId 账户id 需要参数传递
+     * 根据Id寻找账户id
+     * 路径： /account/getAccountByAccountId
+     * @Param  accountId 账户id 需要参数传递
      * @return Account 账户对象
      **/
     @RequestMapping("/getAccountByAccountId")
@@ -133,10 +139,10 @@ public class AccountController {
 
     /**
      * @Author yanyue
-     * @Description 部分修改账户信息
-     * @url /account/modify
-     * @Param Account 账户对象 json数据对象
-     * @return int 操作结果 小于等于0的为失败
+     * 部分修改账户信息
+     * 路径： /account/modify
+     * @Param Account 账户对象,json数据对象
+     * @return int 操作结果，小于等于0的为失败
      **/
     @RequestMapping("/modify")
     @ResponseBody
@@ -150,10 +156,11 @@ public class AccountController {
 
     /**
      * @Author yanyue
-     * @Description  新增用户信息
-     * @url /account/insert
-     * @Param [account, roleId] account json对象数据，roleId,角色权限，管理员:1,商家:2,用户:3
-     * @return int 新增行数，操作结果 小于等于0的为失败
+     * 新增用户信息
+     * 路径： /account/insert
+     * @Param account account json对象数据
+     * @Param roleId,角色权限，管理员:1,商家:2,用户:3
+     * @return int 新增行数，操作结果，小于等于0的为失败
      **/
     @RequestMapping("/insert")
     @ResponseBody

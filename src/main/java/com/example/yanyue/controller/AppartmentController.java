@@ -21,9 +21,11 @@ public class AppartmentController {
     private AppartmentService appartmentService;
     /**
      * @Author yanyue
-     * @Description 获取房间
-     * @url /appartment/getAppartmentByExample
-     * @Param [currentPage, pageSize, appartmentVO] currentPage 当前页，pageSize 每页大小，appartmentVO 公寓视图对象 json数据  前端可以不用参数传递
+     * 获取房间
+     * 路径： /appartment/getAppartmentByExample
+     * @Param page 当前页
+     * @Param limit 每页大小
+     * @Param appartmentVO 公寓视图对象,json数据,查询所有时不用传递数据
      * @return com.example.yanyue.pojo.common.Result<java.util.List < com.example.yanyue.pojo.vo.AppartmentVO>> 公寓视图结果封装 json数据
      **/
     @RequestMapping("/getAppartmentByExample")
@@ -41,9 +43,9 @@ public class AppartmentController {
 
     /**
      * @Author yanyue
-     * @Description 根据主键删除公寓信息
-     * @url /appartment/deleteByPrimaryKey
-     * @Param [appartmentId] int 公寓id
+     * 根据主键删除公寓信息
+     * 路径： /appartment/deleteByPrimaryKey
+     * @Param appartmentId 公寓id
      * @return int
      **/
     @RequestMapping("/deleteByPrimaryKey")
@@ -59,9 +61,9 @@ public class AppartmentController {
 
     /**
      * @Author yanyue
-     * @Description 更新公寓信息
-     * @Url /appartment/update
-     * @Param [appartment] 公寓对象 json数据
+     * 更新公寓信息
+     * 路径： /appartment/update
+     * @Param appartment 公寓对象，json数据
      * @return int 更新操作结果 <=0为失败
      **/
     @RequestMapping("/update")
@@ -78,9 +80,9 @@ public class AppartmentController {
 
     /**
      * @Author yanyue
-     * @Description 新增房间信息
-     * @url /appartment/insert
-     * @Param [appartmentVO]  json对象
+     * 新增房间信息
+     * 路径： /appartment/insert
+     * @Param appartmentVO json对象
      * @return int 新增数据返回结果 <=0为失败
      **/
     @RequestMapping("/insert")
@@ -94,9 +96,9 @@ public class AppartmentController {
 
     /**
      * @Author yanyue
-     * @Description 获取公寓信息根据公寓id
-     * @url /appartment/getInfoByAppartmentId
-     * @Param [appartmentId] int公寓id 需要参数传递
+     * 获取公寓信息根据公寓id
+     * 路径： /appartment/getInfoByAppartmentId
+     * @Param appartmentId int公寓id，需要参数传递
      * @return com.example.yanyue.pojo.vo.AppartmentVO 公寓视图对象
      **/
     @RequestMapping("/getInfoByAppartmentId")

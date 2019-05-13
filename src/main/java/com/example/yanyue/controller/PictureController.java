@@ -20,9 +20,12 @@ public class PictureController {
 
     /**
      * @Author yanyue
-     * @Description 上传图片
-     * @Param [file, appartmentId, type]上传的文件，int 公寓id ，String 上传图片的类型
-     * @return int 上传返回结果 <=0 失败
+     * 上传图片
+     * 路径: /picture/upload
+     * @Param file 上传的文件
+     * @Param appartmentId 公寓id
+     * @Param type 上传图片的类型
+     * @return int 上传返回结果,<=0 失败
      **/
     @RequestMapping("/upload")
     @ResponseBody

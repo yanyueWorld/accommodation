@@ -19,10 +19,10 @@ public class AppartmentAttrController {
 
     /**
      * @Author yanyue
-     * @Description 获取房间属性
-     * @Url /appartmentAttr/getAll
-     * @Param [apartmentAttr] 房间属性参数 前端可以不用参数传递
-     * @return java.util.List<com.example.yanyue.pojo.ApartmentAttr> 房间属性 json数组
+     * 获取房间属性
+     * 路径： /appartmentAttr/getAll
+     * @Param apartmentAttr 房间属性参数,前端可以不用参数传递
+     * @return java.util.List<com.example.yanyue.pojo.ApartmentAttr> 房间属性,json数组
      **/
     @RequestMapping("/getAll")
     @ResponseBody

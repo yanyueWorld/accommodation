@@ -26,10 +26,10 @@ public class AccountPowerController {
 
     /**
      * @Author yanyue
-     * @Description 获取账户权限
-     * @url /getAccountPower
-     * @Param HttpServletRequest request 不需要参数传递
-     * @return List
+     * 获取账户权限
+     * 路径： /getAccountPower
+     * @Param  request 请求参数,不需要参数传递
+     * @return List 后台菜单列表
      **/
     @RequestMapping("/getAccountPower")
     @ResponseBody

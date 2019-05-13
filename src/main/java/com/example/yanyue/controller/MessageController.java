@@ -21,10 +21,12 @@ public class MessageController {
 
     /**
      * @Author yanyue
-     * @Description 获取所有的留言信息
-     * @url /message/getAll
-     * @Param [currentPage, pageSize, messageVO] int 当前页，int 页面大小，messageVO 留言对象
-     * @return com.example.yanyue.pojo.common.Result<java.util.List < com.example.yanyue.pojo.vo.MessageVO>> 留言视图的结果封装处理对象，json数据 可以不用参数传递
+     * 获取所有的留言信息
+     * 路径： /message/getAll
+     * @Param  page 当前页
+     * @Param limit 页面大小
+     * @Param messageVO 留言对象，json数据对象，查询所有时不用传参
+     * @return com.example.yanyue.pojo.common.Result<java.util.List < com.example.yanyue.pojo.vo.MessageVO>> 留言视图的结果封装处理对象，json数据
      **/
     @RequestMapping("/getAll")
     @ResponseBody
@@ -48,10 +50,10 @@ public class MessageController {
 
     /**
      * @Author yanyue
-     * @Description 新增留言信息
-     * @url /message/insert
-     * @Param [message] 留言对象 json对象
-     * @return int 新增留言的操作结果 <=0为失败
+     * 新增留言信息
+     * 路径： /message/insert
+     * @Param message 留言对象，json对象
+     * @return int 新增留言的操作结果，<=0为失败
      **/
     @ResponseBody
     @RequestMapping("/insert")
