@@ -42,8 +42,10 @@ public class AccountController {
                 session.setAttribute("accountName", account.getAccountName());
                 session.setAttribute("accountId", account.getAccountId());
             }
+            return account;
+        }else{
+            return new Account();
         }
-        return account;
     }
 
     /**
@@ -62,8 +64,6 @@ public class AccountController {
         session.removeAttribute("accountName");
         session.removeAttribute("accountId");
         session.invalidate();
-
-        //FIXME
         msg = "注销成功,马上跳转为登录界面！！";
         String content = "<script>"
                 + "setTimeout(function(){window.location.href='login.html'},2000)" + "</script>";
