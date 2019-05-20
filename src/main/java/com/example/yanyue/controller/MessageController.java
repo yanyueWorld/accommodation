@@ -34,15 +34,13 @@ public class MessageController {
     public Result<List<MessageVO>> getAll(@RequestParam(value = "page", defaultValue = "1", required = false) Integer currentPage,
                                           @RequestParam(value = "limit", defaultValue = "5", required = false) Integer pageSize, @RequestBody MessageVO messageVO) {
         List<MessageVO> messageVOS = messageService.getAll(currentPage, pageSize, messageVO);
-        System.out.println("currentPage==>"+currentPage);
-        System.out.println("pageSize==>"+pageSize);
-        System.out.println("messageVO==>"+messageVO);
+
 
         if (messageVOS == null || messageVOS.size() == 0) {
             messageVOS = new ArrayList<>();
         }
         Result<List<MessageVO>> result = Result.success(messageVOS);
-        PageInfo<MessageVO> pageInfo = new PageInfo<>();
+        PageInfo<MessageVO> pageInfo = new PageInfo<>(messageVOS);
         result.setCount(pageInfo.getTotal());
         System.out.println(result);
         return result;

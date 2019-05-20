@@ -2,6 +2,7 @@ package com.example.yanyue.dao;
 
 import com.example.yanyue.pojo.Order;
 import com.example.yanyue.pojo.vo.OrderVO;
+import com.google.gson.Gson;
 import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.mockito.internal.matchers.Or;
@@ -24,6 +25,11 @@ public class OrderDaoTest {
     public void getAll(){
         System.out.println(orderDao.getAll(1,5,null));
         System.out.println(orderDao.getAll(1,5,new Order()));
+        Gson gson=new Gson();
+        Order order=new Order();
+        order.setAccountId(51);
+
+        System.out.println(orderDao.getAll(1,5,order));
     }
 
     @Test

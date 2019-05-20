@@ -36,6 +36,13 @@ public class AppartmentVO {
     private Integer attrId;//属性id
     private Integer[] valId;//属性值id
     private Integer owner;//房主账户id
+    private Integer picId;//图片id
+    private String picAddr;//图片地址
+    private String picName;//图片名
+    private List<Integer> valueIds;//属性值id
+    private List<Integer> classIds;//类型id
+    private List<Integer> typeIds;//类别id
+    private List<Integer> attrIds;// 属性id
 
 
 }

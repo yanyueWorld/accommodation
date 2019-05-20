@@ -27,10 +27,10 @@
                     order_id like concat('%',#{order.orderId},'%')
                 </if>
                 <if test="order.accountId!=null">
-                    and account_id=#{order.accountId}
+                    and account.account_id=#{order.accountId}
                 </if>
                 <if test="order.apartmentId!=null">
-                    and apartment_id=#{order.apartmentId}
+                    and appartment.apartment_id=#{order.apartmentId}
                 </if>
                 <if test="order.prePay!=null">
                     and pre_pay=#{order.prePay}

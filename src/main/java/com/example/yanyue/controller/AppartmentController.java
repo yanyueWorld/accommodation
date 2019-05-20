@@ -1,5 +1,6 @@
 package com.example.yanyue.controller;
 
+import java.util.ArrayList;
 import java.util.List;
 
 import com.example.yanyue.pojo.Appartment;
@@ -40,7 +41,19 @@ public class AppartmentController {
         result.setCount(pageInfo.getTotal());
         return result;
     }
+    @RequestMapping("/search")
+    @ResponseBody
+    @CrossOrigin
+    public Result<List<AppartmentVO>>  search(@RequestParam(value = "page", defaultValue = "1", required = false) Integer currentPage,
+                                              @RequestParam(value = "limit", defaultValue = "5", required = false) Integer pageSize,@RequestBody AppartmentVO appartmentVO){
+        System.out.println("valueId:"+appartmentVO.getValueIds());
+        System.out.println("clasId:"+appartmentVO.getClassIds());
+        System.out.println("attrId:"+appartmentVO.getAttrIds());
+        System.out.println("typeId:"+appartmentVO.getTypeIds());
+        List<AppartmentVO> appartmentVOS=new ArrayList<>();
 
+        return null;
+    }
     /**
      * @Author yanyue
      * 根据主键删除公寓信息

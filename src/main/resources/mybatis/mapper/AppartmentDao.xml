@@ -23,10 +23,13 @@
     apartment_id, type_id, attr_id, apartment_name, price, address, owner
   </sql>
     <select id="getAppartmentByExample" resultType="com.example.yanyue.pojo.vo.AppartmentVO">
-        select appartment.apartment_id appartment_id,appartment.apartment_name appartment_name,price,address,name,type_name
-        from appartment,appartment_type,account
+        select appartment.apartment_id appartment_id,appartment.apartment_name appartment_name,price,address,name,type_name,
+        picture.pic_id,pic_addr,pic_name
+        from appartment,appartment_type,account,apartment_pic,picture
         where appartment.type_id=appartment_type.type_id
         and appartment.owner=account.account_id
+        and appartment.apartment_id=apartment_pic.apartment_id
+        and apartment_pic.pic_id=picture.pic_id
         and appartment.status=0
         <if test="appartmentVO!=null">
             <if test="appartmentVO.appartmentName!=null">
