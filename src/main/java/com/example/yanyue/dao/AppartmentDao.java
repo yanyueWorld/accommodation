@@ -1,7 +1,6 @@
 package com.example.yanyue.dao;
 
 import com.example.yanyue.pojo.Appartment;
-import com.example.yanyue.pojo.dto.AppartmentDTO;
 import com.example.yanyue.pojo.vo.AppartmentVO;
 import org.apache.ibatis.annotations.Param;
 

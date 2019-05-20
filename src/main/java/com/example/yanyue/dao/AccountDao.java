@@ -80,5 +80,6 @@ public interface AccountDao {
      **/
     Account getAccountByAccountId(Integer accountId);
 
+
     Integer getAccountIdByIdNumber(String idNumber);
 }

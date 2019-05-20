@@ -151,6 +151,9 @@ public class AccountController {
         if (account == null) {
             return -1;
         }
+        if(account.getAccountId()==null||account.getAccountId()==0){
+            return -2;
+        }
         return accountServer.updateByPrimaryKeySelective(account);
     }
 

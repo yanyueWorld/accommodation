@@ -21,6 +21,6 @@
             and resource.resource_id=role_resource.resource_id
             and role.role_id=role_resource.role_id
             and account.account_id=#{accountId}
-</select>
+    </select>
 
 </mapper>
