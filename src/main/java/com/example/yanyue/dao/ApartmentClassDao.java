@@ -18,4 +18,6 @@ public interface ApartmentClassDao {
     int updateByPrimaryKey(ApartmentClass record);
 
     List<ApartmentClass> getAll(ApartmentClass apartmentClass);
+
+    ApartmentClass getClassByClassId(Integer classId);
 }

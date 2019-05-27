@@ -5,11 +5,17 @@
     <id column="attr_id" jdbcType="INTEGER" property="attrId" />
     <result column="attr_name" jdbcType="VARCHAR" property="attrName" />
     <result column="class_id" jdbcType="INTEGER" property="classId" />
+    <association property="apartmentClass" column="class_id" select="com.example.yanyue.dao.ApartmentClassDao.getClassByClassId"/>
   </resultMap>
   <sql id="Base_Column_List">
     attr_id, attr_name, class_id
   </sql>
-
+  <select id="getAttrByAttrId" resultMap="BaseResultMap">
+    select
+    <include refid="Base_Column_List"/>
+    from apartment_attr
+    where attr_id=#{attrId}
+  </select>
   <select id="getAll" resultMap="BaseResultMap">
     select
     <include refid="Base_Column_List"/>

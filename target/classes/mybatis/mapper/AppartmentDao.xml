@@ -1,13 +1,27 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
 <mapper namespace="com.example.yanyue.dao.AppartmentDao">
-    <resultMap id="BaseResultMap" type="com.example.yanyue.pojo.vo.AppartmentVO">
-        <id property="appartmentId" column="appartment_id"/>
-        <collection property="pictures" column="appartment_id" select="com.example.yanyue.dao.PictureDao.getPicturesByAppartmentId"/>
+    <resultMap id="BaseResultMap" type="com.example.yanyue.pojo.Appartment">
+        <id property="apartmentId" column="apartment_id"/>
+        <result property="typeId" column="type_id"/>
+        <result property="attrId" column="attr_id"/>
+        <result property="apartmentName" column="apartment_name"/>
+        <result property="typeId" column="price"/>
+        <result property="address" column="address"/>
+        <result property="owner" column="owner"/>
+        <association property="appartmentType" column="type_id" select="com.example.yanyue.dao.AppartmentTypeDao.getTypeByTypeId"/>
+        <association property="apartmentAttr" column="attr_id" select="com.example.yanyue.dao.ApartmentAttrDao.getAttrByAttrId"/>
+        <collection property="values" column="apartment_id" select="com.example.yanyue.dao.ValueDao.getValuesByApartmentId"/>
+        <collection property="pictures" column="apartment_id" select="com.example.yanyue.dao.PictureDao.getPicturesByApartmentId"/>
     </resultMap>
     <sql id="Base_Column_List">
     apartment_id, type_id, attr_id, apartment_name, price, address, owner
   </sql>
+    <select id="getAll" resultMap="BaseResultMap">
+        select 
+        <include refid="Base_Column_List"></include>
+        from appartment
+    </select>
     <select id="getAppartmentByExample" resultType="com.example.yanyue.pojo.vo.AppartmentVO">
         select appartment.apartment_id appartment_id,appartment.apartment_name appartment_name,price,address,name,type_name
         from appartment,appartment_type,account,apartment_pic,picture

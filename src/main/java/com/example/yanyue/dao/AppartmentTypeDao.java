@@ -19,4 +19,6 @@ public interface AppartmentTypeDao {
     int updateByPrimaryKey(AppartmentType record);
 
     List<AppartmentType> getAll(AppartmentType appartmentType);
+
+    AppartmentType getTypeByTypeId(Integer TypeId);
 }

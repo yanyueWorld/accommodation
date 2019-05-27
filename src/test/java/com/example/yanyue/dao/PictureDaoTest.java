@@ -33,6 +33,6 @@ public class PictureDaoTest {
 
     @Test
     public void getPicturesByAppartmentId(){
-        System.out.println(pictureDao.getPicturesByAppartmentId(1));
+        System.out.println(pictureDao.getPicturesByApartmentId(1));
     }
 }

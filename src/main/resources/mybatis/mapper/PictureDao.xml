@@ -24,7 +24,7 @@
             </where>
         </if>
     </select>
-    <select id="getPicturesByAppartmentId" resultMap="BaseResultMap">
+    <select id="getPicturesByApartmentId" resultMap="BaseResultMap">
     select picture.pic_id pic_id,pic_addr,pic_name from picture
         LEFT JOIN apartment_pic on apartment_pic.pic_id=picture.pic_id
         where appartment_id=#{appartmentId}

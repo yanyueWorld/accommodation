@@ -8,13 +8,17 @@
   <sql id="Base_Column_List">
     type_id, type_name
   </sql>
+  <select id="getTypeByTypeId" resultMap="BaseResultMap">
+    select
+    <include refid="Base_Column_List"/>
+    from appartment_type where type_id=#{typeId}
+  </select>
   <select id="getAll" resultMap="BaseResultMap">
     select
     <include refid="Base_Column_List"/>
     from appartment_type
     <if test="_parameter!=null">
       <where>
-
         <if test="typeName!=null">
          and type_name like concat('%',#{typeName},'%')
         </if>

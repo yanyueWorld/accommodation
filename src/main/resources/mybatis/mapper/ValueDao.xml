@@ -14,6 +14,12 @@
         <include refid="Base_Column_List"/>
         from value
     </select>
+    <select id="getValuesByApartmentId" resultMap="BaseResultMap">
+        SELECT `value`.value_id,value_name FROM `value`
+        RIGHT JOIN attr_val on attr_val.val_id=`value`.value_id
+        left join attr_val_appartment on attr_val_appartment.attr_val_id=attr_val.attr_val_id
+        where attr_val_appartment.appartment_id=#{apartmentId};
+    </select>
     <select id="getValuesByAttrId" resultType="com.example.yanyue.pojo.Value">
         select value.value_id,value.value_name from value
         left join attr_val on

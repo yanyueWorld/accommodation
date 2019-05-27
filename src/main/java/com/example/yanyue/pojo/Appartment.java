@@ -6,6 +6,7 @@ import lombok.ToString;
 
 import java.io.Serializable;
 import java.math.BigDecimal;
+import java.util.List;
 
 /**
  * @ClassName Appartment
@@ -28,8 +29,10 @@ public class Appartment implements Serializable {
     private String address;// 地址
     private Integer owner;// 所有者
     private Integer status;//状态
-
     private AppartmentType appartmentType;// 公寓类型对象
+    private ApartmentAttr apartmentAttr;//公寓属性对象
+    private List<Value> values;//属性值链表
+    private List<Picture> pictures;//图片列表
     private Account account;// 账户对象
 
 

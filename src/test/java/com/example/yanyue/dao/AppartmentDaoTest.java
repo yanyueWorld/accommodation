@@ -14,7 +14,7 @@ public class AppartmentDaoTest {
 
     @Test
     public void getAll(){
-        System.out.println(appartmentDao.getAppartmentByExample(1,5,null));
+        System.out.println(appartmentDao.getAll());
     }
 
 }

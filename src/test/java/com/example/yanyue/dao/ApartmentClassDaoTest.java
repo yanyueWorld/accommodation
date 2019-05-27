@@ -8,14 +8,20 @@ import org.springframework.test.context.junit4.SpringRunner;
 
 import static org.junit.Assert.*;
 
+/**
+ * //TODO description end with .
+ *
+ * @author yanyue, 2019/5/27
+ * @version Araf v1.0
+ */
+
 @RunWith(SpringRunner.class)
 @SpringBootTest
-public class ApartmentAttrDaoTest {
-
+public class ApartmentClassDaoTest {
     @Autowired
-    private ApartmentAttrDao apartmentAttrDao;
+    private ApartmentClassDao apartmentClassDao;
     @Test
-    public void getAttrByAttrId() {
-        System.out.println(apartmentAttrDao.getAttrByAttrId(1));
+    public void getClassByClassId() {
+        System.out.println(apartmentClassDao.getClassByClassId(1));
     }
 }

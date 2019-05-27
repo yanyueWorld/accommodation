@@ -20,4 +20,6 @@ public interface ValueDao {
     List<Value> getValuesByAttrId(Integer attrId);
 
     List<Value> getAll();
+
+    List<Value> getValuesByApartmentId(Integer apartmentId);
 }

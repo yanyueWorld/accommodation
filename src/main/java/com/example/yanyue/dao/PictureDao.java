@@ -20,5 +20,5 @@ public interface PictureDao {
 
     List<Picture> getAll(@Param("picture") Picture picture);
 
-    List<Picture> getPicturesByAppartmentId(Integer appartmentId);
+    List<Picture> getPicturesByApartmentId(Integer appartmentId);
 }

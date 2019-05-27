@@ -1,6 +1,7 @@
 package com.example.yanyue.dao;
 
 import com.example.yanyue.pojo.ApartmentAttr;
+import com.example.yanyue.pojo.AttrVal;
 
 import java.util.List;
 
@@ -19,6 +20,8 @@ public interface ApartmentAttrDao {
     int updateByPrimaryKey(ApartmentAttr record);
 
     List<ApartmentAttr> getAll(ApartmentAttr apartmentAttr);
+
+    ApartmentAttr getAttrByAttrId(Integer attrId);
 
 
 }

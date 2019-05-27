@@ -8,6 +8,11 @@
   <sql id="Base_Column_List">
     class_id, class_name
   </sql>
+  <select id="getClassByClassId" resultMap="BaseResultMap">
+    select
+    <include refid="Base_Column_List"/>
+    from apartment_class where class_id=#{classId}
+  </select>
   <select id="getAll" resultMap="BaseResultMap">
     select
     <include refid="Base_Column_List"/>
