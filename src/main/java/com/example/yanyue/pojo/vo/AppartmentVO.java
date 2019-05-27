@@ -1,5 +1,6 @@
 package com.example.yanyue.pojo.vo;
 
+import com.example.yanyue.pojo.Picture;
 import com.example.yanyue.pojo.Value;
 import lombok.Getter;
 import lombok.Setter;
@@ -39,6 +40,7 @@ public class AppartmentVO {
     private Integer picId;//图片id
     private String picAddr;//图片地址
     private String picName;//图片名
+    private List<Picture> pictures;//图片
     private List<Integer> valueIds;//属性值id
     private List<Integer> classIds;//类型id
     private List<Integer> typeIds;//类别id

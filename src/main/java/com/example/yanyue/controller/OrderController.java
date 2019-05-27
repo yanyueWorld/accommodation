@@ -54,7 +54,7 @@ public class OrderController {
     @ResponseBody
     @CrossOrigin
     public int add(@RequestBody Order order){
-        if(order==null) {
+        if(order==null||order.getAccountId()==null||order.getAccountId()==0||order.getApartmentId()==null||order.getAccountId()==0) {
             return -2;
         }else{
             return orderService.insert(order);

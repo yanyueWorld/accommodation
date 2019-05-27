@@ -1,83 +1,88 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
 <mapper namespace="com.example.yanyue.dao.PictureDao">
-  <resultMap id="BaseResultMap" type="com.example.yanyue.pojo.Picture">
-    <id column="pic_id" jdbcType="INTEGER" property="picId" />
-    <result column="pic_name" jdbcType="VARCHAR" property="picName" />
-    <result column="pic_addr" jdbcType="VARCHAR" property="picAddr" />
-  </resultMap>
-  <sql id="Base_Column_List">
+    <resultMap id="BaseResultMap" type="com.example.yanyue.pojo.Picture">
+        <id column="pic_id" jdbcType="INTEGER" property="picId"/>
+        <result column="pic_name" jdbcType="VARCHAR" property="picName"/>
+        <result column="pic_addr" jdbcType="VARCHAR" property="picAddr"/>
+    </resultMap>
+    <sql id="Base_Column_List">
     pic_id, pic_name, pic_addr
   </sql>
-  <select id="getAll" resultMap="BaseResultMap">
-    select
-    <include refid="Base_Column_List"/>
-    from picture
-    <if test="picture!=null">
-      <where>
-        <if test="picture.picName!=null">
-          pic_name like concat('%',#{picture.picName},'%')
+    <select id="getAll" resultMap="BaseResultMap">
+        select
+        <include refid="Base_Column_List"/>
+        from picture
+        <if test="picture!=null">
+            <where>
+                <if test="picture.picName!=null">
+                    pic_name like concat('%',#{picture.picName},'%')
+                </if>
+                <if test="picture.picAddr!=null">
+                    and pic_addr like concat('%',#{picture.picAddr},'%')
+                </if>
+            </where>
         </if>
-        <if test="picture.picAddr!=null">
-          and pic_addr like concat('%',#{picture.picAddr},'%')
-        </if>
-      </where>
-    </if>
+    </select>
+    <select id="getPicturesByAppartmentId" resultMap="BaseResultMap">
+    select picture.pic_id pic_id,pic_addr,pic_name from picture
+        LEFT JOIN apartment_pic on apartment_pic.pic_id=picture.pic_id
+        where appartment_id=#{appartmentId}
   </select>
-  <select id="selectByPrimaryKey" parameterType="java.lang.Integer" resultMap="BaseResultMap">
-    select 
-    <include refid="Base_Column_List" />
-    from picture
-    where pic_id = #{picId,jdbcType=INTEGER}
-  </select>
-  <delete id="deleteByPrimaryKey" parameterType="java.lang.Integer">
+    <select id="selectByPrimaryKey" parameterType="java.lang.Integer" resultMap="BaseResultMap">
+        select
+        <include refid="Base_Column_List"/>
+        from picture
+        where pic_id = #{picId,jdbcType=INTEGER}
+    </select>
+    <delete id="deleteByPrimaryKey" parameterType="java.lang.Integer">
     delete from picture
     where pic_id = #{picId,jdbcType=INTEGER}
   </delete>
-  <insert id="insert" parameterType="com.example.yanyue.pojo.Picture">
+    <insert id="insert" parameterType="com.example.yanyue.pojo.Picture">
     insert into picture (pic_id, pic_name, pic_addr
       )
     values (#{picId,jdbcType=INTEGER}, #{picName,jdbcType=VARCHAR}, #{picAddr,jdbcType=VARCHAR}
       )
   </insert>
-  <insert id="insertSelective" parameterType="com.example.yanyue.pojo.Picture">
-    insert into picture
-    <trim prefix="(" suffix=")" suffixOverrides=",">
-      <if test="picId != null">
-        pic_id,
-      </if>
-      <if test="picName != null">
-        pic_name,
-      </if>
-      <if test="picAddr != null">
-        pic_addr,
-      </if>
-    </trim>
-    <trim prefix="values (" suffix=")" suffixOverrides=",">
-      <if test="picId != null">
-        #{picId,jdbcType=INTEGER},
-      </if>
-      <if test="picName != null">
-        #{picName,jdbcType=VARCHAR},
-      </if>
-      <if test="picAddr != null">
-        #{picAddr,jdbcType=VARCHAR},
-      </if>
-    </trim>
-  </insert>
-  <update id="updateByPrimaryKeySelective" parameterType="com.example.yanyue.pojo.Picture">
-    update picture
-    <set>
-      <if test="picName != null">
-        pic_name = #{picName,jdbcType=VARCHAR},
-      </if>
-      <if test="picAddr != null">
-        pic_addr = #{picAddr,jdbcType=VARCHAR},
-      </if>
-    </set>
-    where pic_id = #{picId,jdbcType=INTEGER}
-  </update>
-  <update id="updateByPrimaryKey" parameterType="com.example.yanyue.pojo.Picture">
+    <insert id="insertSelective" parameterType="com.example.yanyue.pojo.Picture">
+        insert into picture
+        <trim prefix="(" suffix=")" suffixOverrides=",">
+            <if test="picId != null">
+                pic_id,
+            </if>
+            <if test="picName != null">
+                pic_name,
+            </if>
+            <if test="picAddr != null">
+                pic_addr,
+            </if>
+        </trim>
+        <trim prefix="values (" suffix=")" suffixOverrides=",">
+            <if test="picId != null">
+                #{picId,jdbcType=INTEGER},
+            </if>
+            <if test="picName != null">
+                #{picName,jdbcType=VARCHAR},
+            </if>
+            <if test="picAddr != null">
+                #{picAddr,jdbcType=VARCHAR},
+            </if>
+        </trim>
+    </insert>
+    <update id="updateByPrimaryKeySelective" parameterType="com.example.yanyue.pojo.Picture">
+        update picture
+        <set>
+            <if test="picName != null">
+                pic_name = #{picName,jdbcType=VARCHAR},
+            </if>
+            <if test="picAddr != null">
+                pic_addr = #{picAddr,jdbcType=VARCHAR},
+            </if>
+        </set>
+        where pic_id = #{picId,jdbcType=INTEGER}
+    </update>
+    <update id="updateByPrimaryKey" parameterType="com.example.yanyue.pojo.Picture">
     update picture
     set pic_name = #{picName,jdbcType=VARCHAR},
       pic_addr = #{picAddr,jdbcType=VARCHAR}

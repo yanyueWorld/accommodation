@@ -30,4 +30,9 @@ public class PictureDaoTest {
         picture.setPicAddr("ss");
         System.out.println(pictureDao.getAll(picture));
     }
+
+    @Test
+    public void getPicturesByAppartmentId(){
+        System.out.println(pictureDao.getPicturesByAppartmentId(1));
+    }
 }

@@ -102,9 +102,11 @@ public class AppartmentController {
     @ResponseBody
     @CrossOrigin
     public int insert(@RequestBody AppartmentVO appartmentVO){
-
-        return appartmentService.insertSelective(appartmentVO);
-
+        if(appartmentVO==null||appartmentVO.getAppartmentName()==null||appartmentVO.getAppartmentName().length()==0){
+            return -2;
+        }else{
+            return appartmentService.insertSelective(appartmentVO);
+        }
     }
 
     /**

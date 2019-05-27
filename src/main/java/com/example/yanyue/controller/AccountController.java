@@ -55,20 +55,16 @@ public class AccountController {
      * @Param HttpServletRequest request请求,前端不需要参数传递
      * @return String 页面跳转
      **/
-    @RequestMapping("/logout")
+    @RequestMapping("logout")
     @ResponseBody
     @CrossOrigin
     public String logout(HttpServletRequest request) {
-        String msg;
+        System.out.println("hello");
         HttpSession session = request.getSession();
         session.removeAttribute("accountName");
         session.removeAttribute("accountId");
         session.invalidate();
-        msg = "注销成功,马上跳转为登录界面！！";
-        String content = "<script>"
-                + "setTimeout(function(){window.location.href='login.html'},2000)" + "</script>";
-        // System.out.println(msg);
-        return msg + content;
+        return "退出成功";
     }
 
     /**

@@ -19,4 +19,6 @@ public interface PictureDao {
     int updateByPrimaryKey(Picture record);
 
     List<Picture> getAll(@Param("picture") Picture picture);
+
+    List<Picture> getPicturesByAppartmentId(Integer appartmentId);
 }

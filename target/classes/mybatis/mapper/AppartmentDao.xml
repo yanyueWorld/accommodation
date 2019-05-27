@@ -1,35 +1,18 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
 <mapper namespace="com.example.yanyue.dao.AppartmentDao">
-    <resultMap id="BaseResultMap" type="com.example.yanyue.pojo.Appartment">
-        <id column="appartment_id" jdbcType="INTEGER" property="apartmentId"/>
-        <result column="type_id" jdbcType="INTEGER" property="typeId"/>
-        <result column="attr_id" jdbcType="INTEGER" property="attrId"/>
-        <result column="appartment_name" jdbcType="VARCHAR" property="apartmentName"/>
-        <result column="price" jdbcType="DECIMAL" property="price"/>
-        <result column="address" jdbcType="VARCHAR" property="address"/>
-        <result column="owner" jdbcType="INTEGER" property="owner"/>
-        <result column="status" jdbcType="INTEGER" property="status" />
-        <association property="typeId" resultMap="typeMap"/>
-        <association property="owner" resultMap="accountMap"/>
-    </resultMap>
-    <resultMap id="typeMap" type="com.example.yanyue.pojo.AppartmentType">
-        <id column="type_id" jdbcType="INTEGER" property="typeId"/>
-    </resultMap>
-    <resultMap id="accountMap" type="com.example.yanyue.pojo.Account">
-        <id column="account_id" jdbcType="INTEGER" property="accountId"/>
+    <resultMap id="BaseResultMap" type="com.example.yanyue.pojo.vo.AppartmentVO">
+        <id property="appartmentId" column="appartment_id"/>
+        <collection property="pictures" column="appartment_id" select="com.example.yanyue.dao.PictureDao.getPicturesByAppartmentId"/>
     </resultMap>
     <sql id="Base_Column_List">
     apartment_id, type_id, attr_id, apartment_name, price, address, owner
   </sql>
     <select id="getAppartmentByExample" resultType="com.example.yanyue.pojo.vo.AppartmentVO">
-        select appartment.apartment_id appartment_id,appartment.apartment_name appartment_name,price,address,name,type_name,
-        picture.pic_id,pic_addr,pic_name
+        select appartment.apartment_id appartment_id,appartment.apartment_name appartment_name,price,address,name,type_name
         from appartment,appartment_type,account,apartment_pic,picture
         where appartment.type_id=appartment_type.type_id
         and appartment.owner=account.account_id
-        and appartment.apartment_id=apartment_pic.apartment_id
-        and apartment_pic.pic_id=picture.pic_id
         and appartment.status=0
         <if test="appartmentVO!=null">
             <if test="appartmentVO.appartmentName!=null">
