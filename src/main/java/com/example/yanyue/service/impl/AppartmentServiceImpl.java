@@ -1,5 +1,6 @@
 package com.example.yanyue.service.impl;
 
+import java.math.BigDecimal;
 import java.util.ArrayList;
 import java.util.List;
 
@@ -9,12 +10,15 @@ import com.example.yanyue.pojo.Appartment;
 import com.example.yanyue.pojo.AttrVal;
 import com.example.yanyue.pojo.AttrValAppartment;
 import com.example.yanyue.pojo.Value;
+import com.github.pagehelper.PageInfo;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
 import com.example.yanyue.dao.AppartmentDao;
 import com.example.yanyue.pojo.vo.AppartmentVO;
 import com.example.yanyue.service.AppartmentService;
+
+import javax.swing.*;
 
 /**
  * @ClassName AppartmentServiceImpl
@@ -34,11 +38,34 @@ public class AppartmentServiceImpl implements AppartmentService {
     private AttrValDao attrValDao;
 
     @Override
-    public List<AppartmentVO> getAppartmentByExample(Integer currentPage, Integer pageSize,AppartmentVO appartmentVO) {
-        List<AppartmentVO> appartmentVOS = appartmentDao.getAppartmentByExample(currentPage,
-                pageSize,appartmentVO);
-
-        return appartmentVOS;
+    public List<Appartment> getAll(Integer currentPage, Integer pageSize,AppartmentVO appartmentVO) {
+        List<Appartment> appartments=new ArrayList<>();
+        List<Integer> typeIds=appartmentVO.getTypeIds();
+        List<Integer> attrIds=appartmentVO.getAttrIds();
+        if(appartmentVO.getTypeIds().size()!=0){
+            for(Integer typeId:typeIds){
+                appartmentVO.setTypeId(typeId);
+                for(Appartment appartment:appartmentDao.getAll(currentPage,pageSize,appartmentVO)){
+                    appartments.add(appartment);
+                }
+            }
+        }
+        if(appartmentVO.getAttrIds().size()!=0){
+            for(Integer attrId:attrIds){
+                appartmentVO.setAttrId(attrId);
+                for(Appartment appartment:appartmentDao.getAll(currentPage,pageSize,appartmentVO)){
+                    appartments.add(appartment);
+                }
+            }
+        }
+        if(appartmentVO.getAttrIds().size()==0&&appartmentVO.getTypeIds().size()==0){
+            appartments=appartmentDao.getAll(currentPage,pageSize,appartmentVO);
+        }
+        if(appartments==null||appartments.size()==0){
+            return new ArrayList<>();
+        }else{
+            return appartments;
+        }
     }
 
     @Override

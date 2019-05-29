@@ -61,6 +61,6 @@ public interface AppartmentDao {
      */
     AppartmentVO getInfoByAppartmentId(Integer appartmentId);
 
-    List<Appartment> getAll();
+    List<Appartment> getAll(@Param("page") Integer currentPage,@Param("limit") Integer pageSize,AppartmentVO appartmentVO);
 
 }

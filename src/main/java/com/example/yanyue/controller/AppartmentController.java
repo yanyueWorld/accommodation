@@ -4,6 +4,8 @@ import java.util.ArrayList;
 import java.util.List;
 
 import com.example.yanyue.pojo.Appartment;
+import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
+import com.fasterxml.jackson.annotation.JsonIgnoreType;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Component;
 import org.springframework.stereotype.Controller;
@@ -29,15 +31,16 @@ public class AppartmentController {
      * @Param appartmentVO 公寓视图对象,json数据,查询所有时不用传递数据
      * @return com.example.yanyue.pojo.common.Result<java.util.List < com.example.yanyue.pojo.vo.AppartmentVO>> 公寓视图结果封装 json数据
      **/
-    @RequestMapping("/getAppartmentByExample")
+    @RequestMapping("/getAll")
     @ResponseBody
     @CrossOrigin
-    public Result<List<AppartmentVO>> getAppartmentByExample(@RequestParam(value = "page", defaultValue = "1", required = false) Integer currentPage,
-                                                             @RequestParam(value = "limit", defaultValue = "5", required = false) Integer pageSize,@RequestBody AppartmentVO appartmentVO) {
-        List<AppartmentVO> appartmentVOS = appartmentService.getAppartmentByExample(currentPage,
+    public Result<List<Appartment>> getAll(@RequestParam(value = "page", defaultValue = "1", required = false) Integer currentPage,
+                                   @RequestParam(value = "limit", defaultValue = "5", required = false) Integer pageSize,
+                                   @RequestBody AppartmentVO appartmentVO) {
+        List<Appartment> appartments = appartmentService.getAll(currentPage,
                 pageSize,appartmentVO);
-        Result<List<AppartmentVO>> result = Result.success(appartmentVOS);
-        PageInfo<AppartmentVO> pageInfo = new PageInfo<>(appartmentVOS);
+        Result<List<Appartment>> result = Result.success(appartments);
+        PageInfo<Appartment> pageInfo = new PageInfo<>(appartments);
         result.setCount(pageInfo.getTotal());
         return result;
     }

@@ -3,16 +3,12 @@
 <mapper namespace="com.example.yanyue.dao.AppartmentDao">
     <resultMap id="BaseResultMap" type="com.example.yanyue.pojo.Appartment">
         <id property="apartmentId" column="apartment_id"/>
-        <result property="typeId" column="type_id"/>
         <result property="attrId" column="attr_id"/>
-        <result property="apartmentName" column="apartment_name"/>
-        <result property="typeId" column="price"/>
-        <result property="address" column="address"/>
-        <result property="owner" column="owner"/>
-        <association property="appartmentType" column="type_id" select="com.example.yanyue.dao.AppartmentTypeDao.getTypeByTypeId"/>
-        <association property="apartmentAttr" column="attr_id" select="com.example.yanyue.dao.ApartmentAttrDao.getAttrByAttrId"/>
-        <collection property="values" column="apartment_id" select="com.example.yanyue.dao.ValueDao.getValuesByApartmentId"/>
-        <collection property="pictures" column="apartment_id" select="com.example.yanyue.dao.PictureDao.getPicturesByApartmentId"/>
+        <result property="typeId" column="type_id"/>
+        <association property="appartmentType" column="type_id" fetchType="eager" select="com.example.yanyue.dao.AppartmentTypeDao.getTypeByTypeId"/>
+        <association property="apartmentAttr" column="attr_id" fetchType="eager" select="com.example.yanyue.dao.ApartmentAttrDao.getAttrByAttrId"/>
+        <collection property="values" column="apartment_id" fetchType="eager" select="com.example.yanyue.dao.ValueDao.getValuesByApartmentId"/>
+        <collection property="pictures" column="apartment_id" fetchType="eager" select="com.example.yanyue.dao.PictureDao.getPicturesByApartmentId"/>
     </resultMap>
     <sql id="Base_Column_List">
     apartment_id, type_id, attr_id, apartment_name, price, address, owner
@@ -20,7 +16,34 @@
     <select id="getAll" resultMap="BaseResultMap">
         select 
         <include refid="Base_Column_List"></include>
-        from appartment
+        from appartment where status=0
+        <if test="appartmentVO!=null">
+            <if test="appartmentVO.appartmentName!=null">
+                and apartment_name like concat('%',#{appartmentVO.appartmentName},'%')
+            </if>
+            <if test="appartmentVO.address!=null">
+                and address like concat('%',#{appartmentVO.address},'%')
+            </if>
+            <if test="appartmentVO.beginPrice!=null">
+                <if test="appartmentVO.endPrice!=null">
+                    and price between #{appartmentVO.beginPrice} and #{appartmentVO.endPrice}
+                </if>
+                <if test="appartmentVO.endPrice==null">
+                    and price &gt;= #{appartmentVO.beginPrice}
+                </if>
+            </if>
+            <if test="appartmentVO.beginPrice==null">
+                <if test="appartmentVO.endPrice!=null">
+                    and price &lt;= #{appartmentVO.endPrice}
+                </if>
+            </if>
+            <if test="appartmentVO.attrId!=null">
+                and attr_id=#{appartmentVO.attrId}
+            </if>
+            <if test="appartmentVO.typeId!=null">
+                and type_id=#{appartmentVO.typeId}
+            </if>
+        </if>
     </select>
     <select id="getAppartmentByExample" resultType="com.example.yanyue.pojo.vo.AppartmentVO">
         select appartment.apartment_id appartment_id,appartment.apartment_name appartment_name,price,address,name,type_name

@@ -25,6 +25,8 @@ spring:
   jackson:
     date-format: yyyy-MM-dd
     time-zone: GMT+8
+    serialization:
+      FAIL_ON_EMPTY_BEANS: false
   jpa:
     database: MYSQL
     show-sql: true
@@ -45,4 +47,3 @@ mybatis:
 logging:
   level:
     com.example.yanyue.dao: debug
-

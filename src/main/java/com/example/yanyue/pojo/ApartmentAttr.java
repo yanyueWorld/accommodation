@@ -22,5 +22,4 @@ public class ApartmentAttr implements Serializable {
     private Integer classId;// 类别id
     private ApartmentClass apartmentClass;
 
-
 }

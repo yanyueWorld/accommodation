@@ -22,4 +22,6 @@ public class Picture implements Serializable {
     private String picName;//图片名
     private String picAddr;//图片路径
 
+    public Picture() {
+    }
 }

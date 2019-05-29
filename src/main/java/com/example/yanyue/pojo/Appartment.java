@@ -1,5 +1,6 @@
 package com.example.yanyue.pojo;
 
+import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
 import lombok.Getter;
 import lombok.Setter;
 import lombok.ToString;
@@ -35,5 +36,6 @@ public class Appartment implements Serializable {
     private List<Picture> pictures;//图片列表
     private Account account;// 账户对象
 
-
+    public Appartment() {
+    }
 }

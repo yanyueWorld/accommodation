@@ -1,5 +1,7 @@
 package com.example.yanyue.dao;
 
+import com.example.yanyue.pojo.vo.AppartmentVO;
+import com.google.gson.Gson;
 import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -14,7 +16,12 @@ public class AppartmentDaoTest {
 
     @Test
     public void getAll(){
-        System.out.println(appartmentDao.getAll());
+        AppartmentVO appartmentVO=new AppartmentVO();
+        appartmentVO.setTypeId(1);
+        Gson gson=new Gson();
+        System.out.println(gson.toJson(appartmentVO));
+        System.out.println(appartmentDao.getAll(1,5,appartmentVO
+        ).size());
     }
 
 }

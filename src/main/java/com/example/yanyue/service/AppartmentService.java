@@ -14,7 +14,7 @@ import java.util.List;
  **/
 public interface AppartmentService {
 
-    List<AppartmentVO> getAppartmentByExample(Integer currentPage, Integer pageSize,AppartmentVO appartmentVO);
+    List<Appartment> getAll(Integer currentPage, Integer pageSize,AppartmentVO appartmentVO);
 
     int deleteByPrimaryKey(Integer appartmentId);
 
