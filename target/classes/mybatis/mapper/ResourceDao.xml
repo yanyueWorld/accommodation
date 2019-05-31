@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.example.yanyue.dao.ResourceDao">
+  <resultMap id="BaseResultMap" type="com.example.yanyue.pojo.Resource">
+    <id column="resource_id" jdbcType="INTEGER" property="resourceId" />
+    <result column="resource_name" jdbcType="VARCHAR" property="resourceName" />
+    <result column="url" jdbcType="VARCHAR" property="url" />
+    <result column="resource_pid" jdbcType="INTEGER" property="resourcePid" />
+    <result column="icon" jdbcType="VARCHAR" property="icon" />
+  </resultMap>
+  <sql id="Base_Column_List">
+    resource_id, resource_name, url, resource_pid, icon
+  </sql>
+  <select id="selectByPrimaryKey" parameterType="java.lang.Integer" resultMap="BaseResultMap">
+    select 
+    <include refid="Base_Column_List" />
+    from resource
+    where resource_id = #{resourceId,jdbcType=INTEGER}
+  </select>
+  <delete id="deleteByPrimaryKey" parameterType="java.lang.Integer">
+    delete from resource
+    where resource_id = #{resourceId,jdbcType=INTEGER}
+  </delete>
+  <insert id="insert" parameterType="com.example.yanyue.pojo.Resource">
+    insert into resource (resource_id, resource_name, url, 
+      resource_pid, icon)
+    values (#{resourceId,jdbcType=INTEGER}, #{resourceName,jdbcType=VARCHAR}, #{url,jdbcType=VARCHAR}, 
+      #{resourcePid,jdbcType=INTEGER}, #{icon,jdbcType=VARCHAR})
+  </insert>
+  <insert id="insertSelective" parameterType="com.example.yanyue.pojo.Resource">
+    insert into resource
+    <trim prefix="(" suffix=")" suffixOverrides=",">
+      <if test="resourceId != null">
+        resource_id,
+      </if>
+      <if test="resourceName != null">
+        resource_name,
+      </if>
+      <if test="url != null">
+        url,
+      </if>
+      <if test="resourcePid != null">
+        resource_pid,
+      </if>
+      <if test="icon != null">
+        icon,
+      </if>
+    </trim>
+    <trim prefix="values (" suffix=")" suffixOverrides=",">
+      <if test="resourceId != null">
+        #{resourceId,jdbcType=INTEGER},
+      </if>
+      <if test="resourceName != null">
+        #{resourceName,jdbcType=VARCHAR},
+      </if>
+      <if test="url != null">
+        #{url,jdbcType=VARCHAR},
+      </if>
+      <if test="resourcePid != null">
+        #{resourcePid,jdbcType=INTEGER},
+      </if>
+      <if test="icon != null">
+        #{icon,jdbcType=VARCHAR},
+      </if>
+    </trim>
+  </insert>
+  <update id="updateByPrimaryKeySelective" parameterType="com.example.yanyue.pojo.Resource">
+    update resource
+    <set>
+      <if test="resourceName != null">
+        resource_name = #{resourceName,jdbcType=VARCHAR},
+      </if>
+      <if test="url != null">
+        url = #{url,jdbcType=VARCHAR},
+      </if>
+      <if test="resourcePid != null">
+        resource_pid = #{resourcePid,jdbcType=INTEGER},
+      </if>
+      <if test="icon != null">
+        icon = #{icon,jdbcType=VARCHAR},
+      </if>
+    </set>
+    where resource_id = #{resourceId,jdbcType=INTEGER}
+  </update>
+  <update id="updateByPrimaryKey" parameterType="com.example.yanyue.pojo.Resource">
+    update resource
+    set resource_name = #{resourceName,jdbcType=VARCHAR},
+      url = #{url,jdbcType=VARCHAR},
+      resource_pid = #{resourcePid,jdbcType=INTEGER},
+      icon = #{icon,jdbcType=VARCHAR}
+    where resource_id = #{resourceId,jdbcType=INTEGER}
+  </update>
+</mapper>

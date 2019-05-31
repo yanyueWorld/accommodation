@@ -1,0 +1,12 @@
+com\example\yanyue\dao\MessageDaoTest.class
+com\example\yanyue\dao\AccountDaoTest.class
+com\example\yanyue\dao\AppartmentTypeDaoTest.class
+com\example\yanyue\service\OrderServiceTest.class
+com\example\yanyue\dao\OrderDaoTest.class
+com\example\yanyue\dao\ApartmentClassDaoTest.class
+com\example\yanyue\dao\PictureDaoTest.class
+com\example\yanyue\service\MessageServiceTest.class
+com\example\yanyue\AccommodationApplicationTests.class
+com\example\yanyue\dao\AppartmentDaoTest.class
+com\example\yanyue\dao\ApartmentAttrDaoTest.class
+com\example\yanyue\service\AppartmentServiceTest.class

@@ -131,5 +131,17 @@ public class AppartmentController {
         }
     }
 
+    @RequestMapping("/getTheMostInLastMonth")
+    @ResponseBody
+    @CrossOrigin
+    public Appartment getTheMostInLastMonth(){
+        return appartmentService.getTheMostInLastMonth();
+    }
+    @RequestMapping("/getTheMostInThisMonth")
+    @ResponseBody
+    @CrossOrigin
+    public Appartment getTheMostInThisMonth(){
+        return appartmentService.getTheMostInTheMonth();
+    }
 
 }

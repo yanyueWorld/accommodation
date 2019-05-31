@@ -6,13 +6,31 @@
         <result column="account_id" jdbcType="INTEGER" property="accountId"/>
         <result column="apartment_id" jdbcType="INTEGER" property="apartmentId"/>
         <result column="pre_pay" jdbcType="DECIMAL" property="prePay"/>
-            <result column="status" jdbcType="VARCHAR" property="status"/>
+        <result column="status" jdbcType="VARCHAR" property="status"/>
         <result column="check_in_date" jdbcType="TIMESTAMP" property="checkInDate"/>
         <result column="check_out_date" jdbcType="TIMESTAMP" property="checkOutDate"/>
+        <association property="appartment" column="apartment_id"
+                     select="com.example.yanyue.dao.AppartmentDao.getInfo"/>
     </resultMap>
     <sql id="Base_Column_List">
     order_id, account_id, apartment_id, pre_pay, status, check_in_date, check_out_date
   </sql>
+    <select id="getTheMostInTheMonth" resultMap="BaseResultMap">
+       select apartment_id,count(apartment_id) count from `order`
+        where
+        DATE_FORMAT(check_in_date,"%Y%m")=DATE_FORMAT(CURDATE(),"%Y%m")
+        GROUP BY apartment_id
+        order by count DESC
+        limit 1
+    </select>
+    <select id="getTheMostInLastMonth" resultMap="BaseResultMap">
+        select apartment_id,count(apartment_id) count from `order`
+        where
+        DATE_FORMAT(check_in_date,"%Y%m")=DATE_FORMAT(CURDATE(),"%Y%m")-1
+        GROUP BY apartment_id
+        order by count DESC
+        limit 1
+    </select>
     <select id="getAll" resultType="com.example.yanyue.pojo.vo.OrderVO" parameterType="com.example.yanyue.pojo.Order">
         select order_id, account_name,apartment_name,pre_pay,
         `order`.status status,check_in_date,check_out_date,price,

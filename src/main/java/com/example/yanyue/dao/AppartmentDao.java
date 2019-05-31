@@ -63,4 +63,6 @@ public interface AppartmentDao {
 
     List<Appartment> getAll(@Param("page") Integer currentPage,@Param("limit") Integer pageSize,AppartmentVO appartmentVO);
 
+    List<Appartment> getInfo(Integer apartmentId);
+
 }

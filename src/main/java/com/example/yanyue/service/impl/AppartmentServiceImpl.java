@@ -6,6 +6,7 @@ import java.util.List;
 
 import com.example.yanyue.dao.AttrValAppartmentDao;
 import com.example.yanyue.dao.AttrValDao;
+import com.example.yanyue.dao.OrderDao;
 import com.example.yanyue.pojo.Appartment;
 import com.example.yanyue.pojo.AttrVal;
 import com.example.yanyue.pojo.AttrValAppartment;
@@ -36,6 +37,8 @@ public class AppartmentServiceImpl implements AppartmentService {
     private AttrValAppartmentDao attrValAppartmentDao;
     @Autowired
     private AttrValDao attrValDao;
+    @Autowired
+    private OrderDao orderDao;
 
     @Override
     public List<Appartment> getAll(Integer currentPage, Integer pageSize,AppartmentVO appartmentVO) {
@@ -143,5 +146,16 @@ public class AppartmentServiceImpl implements AppartmentService {
         }
     }
 
+    @Override
+    public Appartment getTheMostInTheMonth() {
+        Appartment appartment=orderDao.getTheMostInTheMonth().getAppartment();
+        return  appartment;
+    }
+
+    @Override
+    public Appartment getTheMostInLastMonth() {
+        Appartment appartment=orderDao.getTheMostInLastMonth().getAppartment();
+        return appartment;
+    }
 
 }

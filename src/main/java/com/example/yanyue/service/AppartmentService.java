@@ -24,5 +24,8 @@ public interface AppartmentService {
 
     AppartmentVO getInfoByAppartmentId(Integer appartmentId);
 
+    Appartment getTheMostInTheMonth();
+    Appartment getTheMostInLastMonth();
+
 
 }

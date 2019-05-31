@@ -28,4 +28,14 @@ public class AppartmentServiceTest {
         System.out.println(appartmentService.getAll(1,5,appartmentVO));
     }
 
+
+    @Test
+    public void getTheMostInTheMonth(){
+        System.out.println(appartmentService.getTheMostInLastMonth());
+    }
+
+    @Test
+    public  void getTheMostInLastMonth(){
+        System.out.println(appartmentService.getTheMostInLastMonth());
+    }
 }

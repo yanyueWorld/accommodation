@@ -7,6 +7,8 @@ import lombok.ToString;
 import java.io.Serializable;
 import java.math.BigDecimal;
 import java.util.Date;
+import java.util.List;
+
 /**
  * @className Order
  * @Author yanyue
@@ -27,6 +29,7 @@ public class Order implements Serializable {
     private String status;//订单状态
     private Date checkInDate;//预计入住时间
     private Date checkOutDate;//预计签退时间
+    Appartment appartment;//公寓对象
 
 
 }

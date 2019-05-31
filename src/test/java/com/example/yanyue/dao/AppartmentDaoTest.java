@@ -24,4 +24,9 @@ public class AppartmentDaoTest {
         ).size());
     }
 
+    @Test
+    public void getInfo(){
+        System.out.println(appartmentDao.getInfo(1));
+    }
+
 }

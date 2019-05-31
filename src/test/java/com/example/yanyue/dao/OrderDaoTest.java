@@ -22,6 +22,10 @@ public class OrderDaoTest {
     private OrderDao orderDao;
 
     @Test
+    public void getTheMostInTheMonth(){
+        System.out.println(orderDao.getTheMostInTheMonth());
+    }
+    @Test
     public void getAll(){
         System.out.println(orderDao.getAll(1,5,null));
         System.out.println(orderDao.getAll(1,5,new Order()));
@@ -63,4 +67,8 @@ public class OrderDaoTest {
         System.out.println(orderDao.updateByPrimaryKeySelective(order));
     }
 
+    @Test
+    public void getTheMostInLastMonth(){
+        System.out.println(orderDao.getTheMostInLastMonth());
+    }
 }

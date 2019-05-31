@@ -22,4 +22,7 @@ public interface OrderDao {
 
     List<OrderVO> getAll(@Param("page") Integer currentPage,
                          @Param("limit") Integer pageSize,@Param("order") Order order);
+
+    Order getTheMostInTheMonth();
+    Order getTheMostInLastMonth();
 }
