@@ -166,4 +166,20 @@
       check_out_date = #{checkOutDate,jdbcType=TIMESTAMP}
     where order_id = #{orderId,jdbcType=INTEGER}
   </update>
+
+    <select id="getSumByYear" resultType="com.example.yanyue.pojo.vo.ReportVO">
+                select year,sum(total) sum from
+(select year(check_out_date) year,DATEDIFF(check_out_date,check_in_date)*price total from appartment,`order`
+where `order`.apartment_id=appartment.apartment_id and `order`.`status`='已完成') as A GROUP BY year
+    </select>
+
+    <select id="getSumByMonth" resultType="com.example.yanyue.pojo.vo.ReportVO">
+        select month,sum(total) sum from
+(select month(check_out_date) month,DATEDIFF(check_out_date,check_in_date)*price total from appartment,`order`
+where `order`.apartment_id=appartment.apartment_id and `order`.`status`='已完成' and year(check_out_date)=#{year}) as A GROUP BY month
+    </select>
+
+    <select id="getYears" resultType="integer">
+        select YEAR(check_out_date) from `order` group by year(check_out_date)
+    </select>
 </mapper>

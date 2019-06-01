@@ -43,4 +43,19 @@ public class OrderServiceTest {
         order.setAccountId(3);
         System.out.println(orderService.update(order));
     }
+
+    @Test
+    public void getSumByYear(){
+        System.out.println(orderService.getYears());
+    }
+
+    @Test
+    public void getSumByMonth(){
+        System.out.println(orderService.getSumByMonth(2019));
+    }
+
+    @Test
+    public void getYear(){
+        System.out.println(orderService.getYears());
+    }
 }

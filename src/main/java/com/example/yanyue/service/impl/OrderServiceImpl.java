@@ -3,6 +3,7 @@ package com.example.yanyue.service.impl;
 import com.example.yanyue.dao.OrderDao;
 import com.example.yanyue.pojo.Order;
 import com.example.yanyue.pojo.vo.OrderVO;
+import com.example.yanyue.pojo.vo.ReportVO;
 import com.example.yanyue.service.OrderService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
@@ -50,5 +51,20 @@ public class OrderServiceImpl implements OrderService {
         }else{
             return orderDao.insertSelective(order);
         }
+    }
+
+    @Override
+    public List<ReportVO> getSumByYear() {
+        return orderDao.getSumByYear();
+    }
+
+    @Override
+    public List<ReportVO> getSumByMonth(Integer year) {
+        return orderDao.getSumByMonth(year);
+    }
+
+    @Override
+    public List<Integer> getYears() {
+        return orderDao.getYears();
     }
 }

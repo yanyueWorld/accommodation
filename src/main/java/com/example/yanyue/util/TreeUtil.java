@@ -1,7 +1,3 @@
-/*
- * Copyright (c) .
- * All Rights Reserved.
- */
 package com.example.yanyue.util;
 
 import com.example.yanyue.pojo.common.MenuTreeVO;
@@ -9,12 +5,6 @@ import com.example.yanyue.pojo.common.MenuTreeVO;
 import java.util.ArrayList;
 import java.util.List;
 
-/**
- * TreeUtil.
- *
- * @author yanyue, 2019/4/7
- * @version ORAS v1.0
- */
 public class TreeUtil {
 
     /**

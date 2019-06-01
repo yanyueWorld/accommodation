@@ -36,7 +36,7 @@
     where apic_id = #{apicId,jdbcType=INTEGER}
   </delete>
   <insert id="insert" parameterType="com.example.yanyue.pojo.ApartmentPic">
-    insert into apartment_pic (apic_id, apartment_id, pic_id
+    insert into apartment_pic (apic_id, appartment_id, pic_id
       )
     values (#{apicId,jdbcType=INTEGER}, #{apartmentId,jdbcType=INTEGER}, #{picId,jdbcType=INTEGER}
       )
@@ -58,7 +58,7 @@
       <if test="apicId != null">
         #{apicId,jdbcType=INTEGER},
       </if>
-      <if test="apartmentId != null">
+      <if test="appartmentId != null">
         #{apartmentId,jdbcType=INTEGER},
       </if>
       <if test="picId != null">

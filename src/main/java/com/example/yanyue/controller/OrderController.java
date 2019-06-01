@@ -3,6 +3,7 @@ package com.example.yanyue.controller;
 import com.example.yanyue.pojo.Order;
 import com.example.yanyue.pojo.common.Result;
 import com.example.yanyue.pojo.vo.OrderVO;
+import com.example.yanyue.pojo.vo.ReportVO;
 import com.example.yanyue.service.OrderService;
 import com.github.pagehelper.PageInfo;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -95,5 +96,27 @@ public class OrderController {
         }else{
             return orderService.delete(order);
         }
+    }
+
+    @RequestMapping("/getSumByMonth")
+    @ResponseBody
+    @CrossOrigin
+    public List<ReportVO> getSumByMonth(Integer year){
+        if(year==null||year==0){
+            year=2019;
+        }
+        return orderService.getSumByMonth(year);
+    }
+    @RequestMapping("/getSumByYear")
+    @ResponseBody
+    @CrossOrigin
+    public List<ReportVO> getSumByYear(){
+        return orderService.getSumByYear();
+    }
+    @RequestMapping("/getYears")
+    @ResponseBody
+    @CrossOrigin
+    public  List<Integer> getYears(){
+        return orderService.getYears();
     }
 }

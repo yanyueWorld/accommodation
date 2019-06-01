@@ -2,6 +2,7 @@ package com.example.yanyue.dao;
 
 import com.example.yanyue.pojo.Order;
 import com.example.yanyue.pojo.vo.OrderVO;
+import com.example.yanyue.pojo.vo.ReportVO;
 import com.google.gson.Gson;
 import org.junit.Test;
 import org.junit.runner.RunWith;
@@ -10,9 +11,11 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.context.SpringBootTest;
 import org.springframework.test.context.junit4.SpringRunner;
 
+import javax.xml.crypto.Data;
 import java.text.ParseException;
 import java.text.SimpleDateFormat;
 import java.util.Date;
+import java.util.List;
 
 
 @RunWith(SpringRunner.class)
@@ -71,4 +74,20 @@ public class OrderDaoTest {
     public void getTheMostInLastMonth(){
         System.out.println(orderDao.getTheMostInLastMonth());
     }
+
+    @Test
+    public void getSumByYear(){
+        System.out.println(orderDao.getSumByYear());
+    }
+
+    @Test
+    public void getSumByMonth() {
+        System.out.println(orderDao.getSumByMonth(2019));
+    }
+
+    @Test
+    public void getYear(){
+        System.out.println(orderDao.getYears());
+    }
+
 }

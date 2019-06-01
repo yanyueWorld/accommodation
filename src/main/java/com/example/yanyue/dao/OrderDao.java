@@ -2,9 +2,11 @@ package com.example.yanyue.dao;
 
 import com.example.yanyue.pojo.Order;
 import com.example.yanyue.pojo.vo.OrderVO;
+import com.example.yanyue.pojo.vo.ReportVO;
 import com.sun.org.apache.xpath.internal.operations.Or;
 import org.apache.ibatis.annotations.Param;
 
+import java.util.Date;
 import java.util.List;
 
 public interface OrderDao {
@@ -25,4 +27,10 @@ public interface OrderDao {
 
     Order getTheMostInTheMonth();
     Order getTheMostInLastMonth();
+
+    List<ReportVO> getSumByYear();
+
+    List<ReportVO> getSumByMonth(Integer year);
+
+    List<Integer> getYears();
 }
