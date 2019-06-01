@@ -10,8 +10,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.*;
 
-import java.util.ArrayList;
-import java.util.List;
+import java.util.*;
 
 @Controller
 @RequestMapping("/order")
@@ -113,10 +112,13 @@ public class OrderController {
     public List<ReportVO> getSumByYear(){
         return orderService.getSumByYear();
     }
+
     @RequestMapping("/getYears")
     @ResponseBody
     @CrossOrigin
     public  List<Integer> getYears(){
-        return orderService.getYears();
+        List<Integer> years=orderService.getYears();
+        years.removeAll(Collections.singleton(null));
+        return years;
     }
 }
