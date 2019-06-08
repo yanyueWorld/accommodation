@@ -6,6 +6,7 @@ com\example\yanyue\dao\AttrValDao.class
 com\example\yanyue\service\ValueService.class
 com\example\yanyue\service\OrderService.class
 com\example\yanyue\pojo\RoleResource.class
+com\example\yanyue\pojo\vo\ReportVO.class
 com\example\yanyue\pojo\AppartmentType.class
 com\example\yanyue\pojo\AttrValAppartment.class
 com\example\yanyue\pojo\vo\AttrValVO.class

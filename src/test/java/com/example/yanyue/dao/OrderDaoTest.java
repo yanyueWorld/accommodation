@@ -82,7 +82,7 @@ public class OrderDaoTest {
 
     @Test
     public void getSumByMonth() {
-        System.out.println(orderDao.getSumByMonth(2019));
+        System.out.println(orderDao.getSumByMonth(2018));
     }
 
     @Test

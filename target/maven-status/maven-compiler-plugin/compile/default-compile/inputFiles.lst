@@ -21,6 +21,7 @@ D:\idea-workspace\accommodation\src\main\java\com\example\yanyue\service\Appartm
 D:\idea-workspace\accommodation\src\main\java\com\example\yanyue\dao\AccountRoleDao.java
 D:\idea-workspace\accommodation\src\main\java\com\example\yanyue\dao\PictureDao.java
 D:\idea-workspace\accommodation\src\main\java\com\example\yanyue\pojo\common\Result.java
+D:\idea-workspace\accommodation\src\main\java\com\example\yanyue\pojo\vo\ReportVO.java
 D:\idea-workspace\accommodation\src\main\java\com\example\yanyue\service\impl\MessageServiceImpl.java
 D:\idea-workspace\accommodation\src\main\java\com\example\yanyue\service\AccountPowerVOService.java
 D:\idea-workspace\accommodation\src\main\java\com\example\yanyue\dao\AppartmentTypeDao.java

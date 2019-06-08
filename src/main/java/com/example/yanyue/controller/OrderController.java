@@ -104,6 +104,7 @@ public class OrderController {
         if(year==null||year==0){
             year=2019;
         }
+        System.out.println(orderService.getSumByMonth(year));
         return orderService.getSumByMonth(year);
     }
     @RequestMapping("/getSumByYear")
