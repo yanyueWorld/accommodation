@@ -1,7 +1,10 @@
 package com.example.yanyue.service;
 
+import com.example.yanyue.pojo.Account;
 import com.example.yanyue.pojo.Appartment;
 import com.example.yanyue.pojo.vo.AppartmentVO;
+import com.fasterxml.jackson.core.JsonProcessingException;
+import com.fasterxml.jackson.databind.ObjectMapper;
 import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.springframework.beans.factory.annotation.Autowired;

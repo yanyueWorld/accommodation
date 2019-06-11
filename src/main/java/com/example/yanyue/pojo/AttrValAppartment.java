@@ -13,7 +13,4 @@ public class AttrValAppartment implements Serializable {
     private Integer attrValAppartmentId;
     private Integer attrValId;
     private Integer appartmentId;
-
-    public AttrValAppartment() {
-    }
 }

@@ -1,5 +1,7 @@
 package com.example.yanyue.pojo;
 
+import lombok.Getter;
+import lombok.Setter;
 import lombok.ToString;
 
 import java.io.Serializable;
@@ -10,6 +12,8 @@ import java.io.Serializable;
  * @Date 9:59 2019/3/25
  * @Version 1.0
  **/
+@Getter
+@Setter
 @ToString
 public class Message implements Serializable {
 
@@ -22,67 +26,4 @@ public class Message implements Serializable {
     private String message;//留言
     private String type;//评价类型
 
-    public Integer getMessageId() {
-        return messageId;
-    }
-
-    public void setMessageId(Integer messageId) {
-        this.messageId = messageId;
-    }
-
-    public Integer getAccountId() {
-        return accountId;
-    }
-
-    public void setAccountId(Integer accountId) {
-        this.accountId = accountId;
-    }
-
-    public Integer getReplayId() {
-        return replayId;
-    }
-
-    public void setReplayId(Integer replayId) {
-        this.replayId = replayId;
-    }
-
-    public String getServiceRank() {
-        return serviceRank;
-    }
-
-    public void setServiceRank(String serviceRank) {
-        this.serviceRank = serviceRank;
-    }
-
-    public String getCustomerRank() {
-        return customerRank;
-    }
-
-    public void setCustomerRank(String customerRank) {
-        this.customerRank = customerRank;
-    }
-
-    public String getLivingRank() {
-        return livingRank;
-    }
-
-    public void setLivingRank(String livingRank) {
-        this.livingRank = livingRank;
-    }
-
-    public String getMessage() {
-        return message;
-    }
-
-    public void setMessage(String message) {
-        this.message = message;
-    }
-
-    public String getType() {
-        return type;
-    }
-
-    public void setType(String type) {
-        this.type = type;
-    }
 }

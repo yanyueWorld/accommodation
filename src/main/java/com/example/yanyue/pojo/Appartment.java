@@ -35,7 +35,5 @@ public class Appartment implements Serializable {
     private List<Value> values;//属性值链表
     private List<Picture> pictures;//图片列表
     private Account account;// 账户对象
-
-    public Appartment() {
-    }
+    
 }

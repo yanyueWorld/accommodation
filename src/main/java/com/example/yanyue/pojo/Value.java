@@ -12,7 +12,4 @@ import java.io.Serializable;
 public class Value implements Serializable {
     private Integer valueId;
     private String valueName;
-
-    public Value() {
-    }
 }

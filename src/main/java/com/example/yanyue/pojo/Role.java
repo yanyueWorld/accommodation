@@ -1,5 +1,9 @@
 package com.example.yanyue.pojo;
 
+import lombok.Getter;
+import lombok.Setter;
+import lombok.ToString;
+
 import java.io.Serializable;
 /**
  * @ClassName Role
@@ -8,24 +12,11 @@ import java.io.Serializable;
  * @Date 10:13 2019/3/25
  * @Version 1.0
  **/
+@Getter
+@Setter
+@ToString
 public class Role implements Serializable {
 
     private Integer roleId;//角色id
     private String roleName;//角色名
-
-    public Integer getRoleId() {
-        return roleId;
-    }
-
-    public void setRoleId(Integer roleId) {
-        this.roleId = roleId;
-    }
-
-    public String getRoleName() {
-        return roleName;
-    }
-
-    public void setRoleName(String roleName) {
-        this.roleName = roleName;
-    }
 }
