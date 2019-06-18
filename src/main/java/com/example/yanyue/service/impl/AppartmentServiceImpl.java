@@ -1,6 +1,5 @@
 package com.example.yanyue.service.impl;
 
-import java.math.BigDecimal;
 import java.util.ArrayList;
 import java.util.List;
 
@@ -10,16 +9,12 @@ import com.example.yanyue.dao.OrderDao;
 import com.example.yanyue.pojo.Appartment;
 import com.example.yanyue.pojo.AttrVal;
 import com.example.yanyue.pojo.AttrValAppartment;
-import com.example.yanyue.pojo.Value;
-import com.github.pagehelper.PageInfo;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
 import com.example.yanyue.dao.AppartmentDao;
 import com.example.yanyue.pojo.vo.AppartmentVO;
 import com.example.yanyue.service.AppartmentService;
-
-import javax.swing.*;
 
 /**
  * @ClassName AppartmentServiceImpl

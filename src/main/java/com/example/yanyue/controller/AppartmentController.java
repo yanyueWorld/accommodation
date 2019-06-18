@@ -4,10 +4,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 import com.example.yanyue.pojo.Appartment;
-import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
-import com.fasterxml.jackson.annotation.JsonIgnoreType;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.stereotype.Component;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.*;
 
@@ -44,19 +41,7 @@ public class AppartmentController {
         result.setCount(pageInfo.getTotal());
         return result;
     }
-    @RequestMapping("/search")
-    @ResponseBody
-    @CrossOrigin
-    public Result<List<AppartmentVO>>  search(@RequestParam(value = "page", defaultValue = "1", required = false) Integer currentPage,
-                                              @RequestParam(value = "limit", defaultValue = "5", required = false) Integer pageSize,@RequestBody AppartmentVO appartmentVO){
-        System.out.println("valueId:"+appartmentVO.getValueIds());
-        System.out.println("clasId:"+appartmentVO.getClassIds());
-        System.out.println("attrId:"+appartmentVO.getAttrIds());
-        System.out.println("typeId:"+appartmentVO.getTypeIds());
-        List<AppartmentVO> appartmentVOS=new ArrayList<>();
 
-        return null;
-    }
     /**
      * @Author yanyue
      * 根据主键删除公寓信息
